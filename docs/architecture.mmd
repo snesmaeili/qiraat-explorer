@@ -1,0 +1,65 @@
+%% Qira'at Explorer — system architecture
+%% Render with: mmdc -i architecture.mmd -o architecture.svg
+%%   or paste into https://mermaid.live/
+
+flowchart TB
+    subgraph Browser["Browser (React app)"]
+        UI[App.jsx]
+        UI --> CP[ControlPanel<br/>verse + riwāya pickers]
+        UI --> VD[VerseDisplay]
+        UI --> LG[Legend]
+        UI --> SB[ShapingBadge]
+        VD --> WT[WordToken<br/>per word, a11y button]
+        VD --> VT[VariantTooltip<br/>readings + citations]
+        WT -. click .-> VT
+    end
+
+    subgraph Logic["src/lib (pure JS)"]
+        VL[variantLookup.js<br/>computeWordStates]
+        AL[alignment.js<br/>Needleman-Wunsch]
+        AR[arabic.js<br/>strip / normalize / classify]
+        SH[shaping.js<br/>harfbuzzjs ↔ native fallback]
+    end
+
+    subgraph Data["src/data (JSON)"]
+        SAM[(sampleVariants.json<br/>hand-curated)]
+        FULL[(fullVariants.json<br/>built, optional)]
+        META[(quranMeta.json<br/>surahs + riwāyāt)]
+    end
+
+    subgraph Build["scripts/ (Node, build time)"]
+        FE[fetch-data.js]
+        BV[build-variants.js<br/>uses alignment + arabic]
+    end
+
+    subgraph Sources["External sources"]
+        TZ[Tanzil Uthmānic<br/>Hafs ʿan ʿĀṣim]
+        KF[KFGQPC JSON<br/>Warsh, Qālūn]
+        REF[Ibn al-Jazarī, an-Nashr<br/>Corpus Coranicum]
+    end
+
+    UI --> VL
+    VL --> SAM
+    VL --> FULL
+    VL --> META
+    UI --> SH
+    SH -. WASM .-> HB[(harfbuzzjs<br/>HarfBuzz WASM)]
+    SH -. fallback .-> NTV[(Browser OpenType<br/>shaper)]
+
+    FE --> TZ
+    FE --> KF
+    FE --> RAW[(scripts/_raw/<br/>downloaded sources)]
+    BV --> RAW
+    BV --> AL
+    BV --> AR
+    BV --> FULL
+
+    SAM -.attribution.-> REF
+    FULL -.attribution.-> REF
+
+    classDef ext fill:#fbeed1,stroke:#b06f00;
+    classDef data fill:#e3edff,stroke:#2562d4;
+    classDef code fill:#d8ebe0,stroke:#2e6b4f;
+    class TZ,KF,REF,HB,NTV ext;
+    class SAM,FULL,META,RAW data;
+    class UI,CP,VD,LG,SB,WT,VT,VL,AL,AR,SH,FE,BV code;

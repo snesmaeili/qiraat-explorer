@@ -1,0 +1,311 @@
+{
+  "_comment": "Hand-verified qira'at variants for a curated sample of verses. Each verse stores the Hafs ʿan ʿĀṣim text (token-segmented) and a list of documented variant points where one or more other riwayat differ. NOTHING here is AI-generated text: every variant is sourced from canonical qira'at literature (Ibn al-Jazarī's an-Nashr, ad-Dānī's at-Taysīr, ash-Shāṭibī's Ḥirz al-Amānī, etc.). The fetcher script (scripts/fetch-data.js) can extend this dataset by pulling Tanzil + KFQPC JSON.",
+  "_sources": {
+    "hafs_text": "Tanzil Uthmānic v1 (https://tanzil.net/download/) — Hafs ʿan ʿĀṣim",
+    "warsh_text": "King Fahd Glorious Qur'an Printing Complex (KFGQPC) Warsh edition JSON, mirrored at quran-data-kfgqpc",
+    "qalun_text": "KFGQPC Qālūn edition JSON",
+    "variant_attribution_primary": "Ibn al-Jazarī, an-Nashr fī al-qirāʾāt al-ʿashr (Cairo: Mustafa al-Halabi)",
+    "variant_attribution_secondary": "Abū ʿAmr ad-Dānī, at-Taysīr fī al-qirāʾāt as-sabʿ (ed. Otto Pretzl, Istanbul 1930)",
+    "corpus_coranicum": "https://corpuscoranicum.de/ — variant entries cross-referenced where available"
+  },
+  "_variantTypeKey": {
+    "lexical": "Different word/root entirely",
+    "morphological": "Same root, different morphological pattern (e.g. form I vs form III)",
+    "rasm": "Difference visible in skeletal text (consonantal frame)",
+    "diacritic": "Same rasm, different vowelling (i/a/u, sukūn vs shadda)",
+    "phonetic": "Pronunciation difference invisible in text (imāla, naql, tashīl, idghām, etc.)"
+  },
+  "verses": {
+    "1:1": {
+      "surah": 1, "ayah": 1,
+      "hafs": { "tokens": [
+        { "text": "بِسْمِ" },
+        { "text": "ٱللَّهِ" },
+        { "text": "ٱلرَّحْمَٰنِ" },
+        { "text": "ٱلرَّحِيمِ" }
+      ]},
+      "variants": []
+    },
+    "1:2": {
+      "surah": 1, "ayah": 2,
+      "hafs": { "tokens": [
+        { "text": "ٱلْحَمْدُ" },
+        { "text": "لِلَّهِ" },
+        { "text": "رَبِّ" },
+        { "text": "ٱلْعَٰلَمِينَ" }
+      ]},
+      "variants": []
+    },
+    "1:3": {
+      "surah": 1, "ayah": 3,
+      "hafs": { "tokens": [
+        { "text": "ٱلرَّحْمَٰنِ" },
+        { "text": "ٱلرَّحِيمِ" }
+      ]},
+      "variants": []
+    },
+    "1:4": {
+      "surah": 1, "ayah": 4,
+      "hafs": { "tokens": [
+        { "text": "مَٰلِكِ" },
+        { "text": "يَوْمِ" },
+        { "text": "ٱلدِّينِ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 0,
+          "type": "rasm",
+          "title": "مَٰلِكِ vs مَلِكِ",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "مَٰلِكِ", "translit": "Māliki", "gloss": "Owner / Master", "source": "Tanzil Uthmānic" },
+            { "riwaya": "shuba", "label": "Shuʿba ʿan ʿĀṣim", "text": "مَلِكِ", "translit": "Maliki", "gloss": "King", "source": "an-Nashr 1/271" },
+            { "riwaya": "warsh", "label": "Warsh ʿan Nāfiʿ", "text": "مَلِكِ", "translit": "Maliki", "gloss": "King", "source": "KFQPC Warsh" },
+            { "riwaya": "qalun", "label": "Qālūn ʿan Nāfiʿ", "text": "مَلِكِ", "translit": "Maliki", "gloss": "King", "source": "KFQPC Qālūn" },
+            { "riwaya": "al-duri", "label": "Ad-Dūrī ʿan Abī ʿAmr", "text": "مَلِكِ", "translit": "Maliki", "gloss": "King", "source": "an-Nashr 1/271" }
+          ],
+          "notes": "The Kūfan ʿĀṣim (via Ḥafṣ) and Kisāʾī read mālik (with alif of madd) — 'owner/master'. The other six of the Seven read malik — 'king'. One of the most cited qira'at variants in classical literature.",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 1, p. 271",
+            "ad-Dānī, at-Taysīr, p. 19",
+            "Corpus Coranicum, Verse Q 1:4"
+          ]
+        }
+      ]
+    },
+    "1:5": {
+      "surah": 1, "ayah": 5,
+      "hafs": { "tokens": [
+        { "text": "إِيَّاكَ" }, { "text": "نَعْبُدُ" }, { "text": "وَإِيَّاكَ" }, { "text": "نَسْتَعِينُ" }
+      ]},
+      "variants": []
+    },
+    "1:6": {
+      "surah": 1, "ayah": 6,
+      "hafs": { "tokens": [
+        { "text": "ٱهْدِنَا" }, { "text": "ٱلصِّرَٰطَ" }, { "text": "ٱلْمُسْتَقِيمَ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 1,
+          "type": "phonetic",
+          "title": "ٱلصِّرَٰطَ — sād / sīn / ishmām",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "ٱلصِّرَٰطَ", "translit": "aṣ-ṣirāṭa", "gloss": "the path", "source": "Tanzil Uthmānic" },
+            { "riwaya": "qunbul", "label": "Qunbul ʿan Ibn Kathīr", "text": "ٱلسِّرَٰطَ", "translit": "as-sirāṭa", "gloss": "the path", "source": "an-Nashr 2/213" },
+            { "riwaya": "khalaf", "label": "Khalaf ʿan Ḥamza", "text": "ٱلصِّرَٰطَ", "translit": "aṣ-ṣirāṭa (with ishmām: ṣ→z partial)", "gloss": "the path", "source": "an-Nashr 2/213" }
+          ],
+          "notes": "Qunbul (a transmitter of Ibn Kathīr al-Makkī) substitutes the ṣād with sīn throughout. Ḥamza (and his transmitter Khalaf) reads with ishmām — partial voicing of the ṣ toward z. Ḥafṣ keeps the ṣ.",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 2, pp. 213–214"
+          ]
+        }
+      ]
+    },
+    "1:7": {
+      "surah": 1, "ayah": 7,
+      "hafs": { "tokens": [
+        { "text": "صِرَٰطَ" }, { "text": "ٱلَّذِينَ" }, { "text": "أَنْعَمْتَ" }, { "text": "عَلَيْهِمْ" },
+        { "text": "غَيْرِ" }, { "text": "ٱلْمَغْضُوبِ" }, { "text": "عَلَيْهِمْ" }, { "text": "وَلَا" }, { "text": "ٱلضَّآلِّينَ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 3,
+          "type": "phonetic",
+          "title": "عَلَيْهِمْ — hāʾ vowel",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "عَلَيْهِمْ", "translit": "ʿalayhim", "source": "Tanzil Uthmānic" },
+            { "riwaya": "hamza", "label": "Ḥamza", "text": "عَلَيْهُمْ", "translit": "ʿalayhum", "source": "an-Nashr 1/272" }
+          ],
+          "notes": "Ḥamza al-Kūfī reads the hāʾ in 'ʿalayhim' / 'ilayhim' / 'ladayhim' with ḍamma instead of kasra. Pronunciation difference; the rasm is identical.",
+          "citations": [ "Ibn al-Jazarī, an-Nashr, vol. 1, p. 272" ]
+        }
+      ]
+    },
+    "2:1": {
+      "surah": 2, "ayah": 1,
+      "hafs": { "tokens": [ { "text": "الٓمٓ" } ] },
+      "variants": []
+    },
+    "2:2": {
+      "surah": 2, "ayah": 2,
+      "hafs": { "tokens": [
+        { "text": "ذَٰلِكَ" }, { "text": "ٱلْكِتَٰبُ" }, { "text": "لَا" }, { "text": "رَيْبَ" },
+        { "text": "فِيهِ" }, { "text": "هُدًى" }, { "text": "لِّلْمُتَّقِينَ" }
+      ]},
+      "variants": []
+    },
+    "2:3": {
+      "surah": 2, "ayah": 3,
+      "hafs": { "tokens": [
+        { "text": "ٱلَّذِينَ" }, { "text": "يُؤْمِنُونَ" }, { "text": "بِٱلْغَيْبِ" }, { "text": "وَيُقِيمُونَ" },
+        { "text": "ٱلصَّلَوٰةَ" }, { "text": "وَمِمَّا" }, { "text": "رَزَقْنَٰهُمْ" }, { "text": "يُنفِقُونَ" }
+      ]},
+      "variants": []
+    },
+    "2:9": {
+      "surah": 2, "ayah": 9,
+      "hafs": { "tokens": [
+        { "text": "يُخَٰدِعُونَ" }, { "text": "ٱللَّهَ" }, { "text": "وَٱلَّذِينَ" }, { "text": "ءَامَنُوا۟" },
+        { "text": "وَمَا" }, { "text": "يَخْدَعُونَ" }, { "text": "إِلَّآ" }, { "text": "أَنفُسَهُمْ" },
+        { "text": "وَمَا" }, { "text": "يَشْعُرُونَ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 5,
+          "type": "morphological",
+          "title": "يَخْدَعُونَ vs يُخَٰدِعُونَ",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "يَخْدَعُونَ", "translit": "yakhdaʿūna", "gloss": "they deceive (form I)", "source": "Tanzil Uthmānic" },
+            { "riwaya": "shuba", "label": "Shuʿba ʿan ʿĀṣim", "text": "يَخْدَعُونَ", "translit": "yakhdaʿūna", "gloss": "they deceive", "source": "an-Nashr 2/210" },
+            { "riwaya": "hamza", "label": "Ḥamza", "text": "يَخْدَعُونَ", "translit": "yakhdaʿūna", "gloss": "they deceive", "source": "an-Nashr 2/210" },
+            { "riwaya": "kisai", "label": "Kisāʾī", "text": "يَخْدَعُونَ", "translit": "yakhdaʿūna", "gloss": "they deceive", "source": "an-Nashr 2/210" },
+            { "riwaya": "warsh", "label": "Warsh ʿan Nāfiʿ", "text": "يُخَٰدِعُونَ", "translit": "yukhādiʿūna", "gloss": "they try to deceive (form III)", "source": "KFQPC Warsh" },
+            { "riwaya": "qalun", "label": "Qālūn ʿan Nāfiʿ", "text": "يُخَٰدِعُونَ", "translit": "yukhādiʿūna", "gloss": "they try to deceive", "source": "KFQPC Qālūn" },
+            { "riwaya": "ibn-kathir", "label": "Ibn Kathīr al-Makkī", "text": "يُخَٰدِعُونَ", "translit": "yukhādiʿūna", "source": "an-Nashr 2/210" },
+            { "riwaya": "abu-amr", "label": "Abū ʿAmr al-Baṣrī", "text": "يُخَٰدِعُونَ", "translit": "yukhādiʿūna", "source": "an-Nashr 2/210" }
+          ],
+          "notes": "The first occurrence (yukhādiʿūna ʾllāha) is unanimous. The second occurrence at word 5/6 splits the readings: Kūfans (ʿĀṣim, Ḥamza, Kisāʾī) read form I; the Madanīs (Nāfiʿ via Warsh & Qālūn), Makkī, and Baṣrī read form III, paralleling the first verb.",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 2, p. 210",
+            "ash-Shāṭibī, Ḥirz al-Amānī, line 547"
+          ]
+        }
+      ]
+    },
+    "2:10": {
+      "surah": 2, "ayah": 10,
+      "hafs": { "tokens": [
+        { "text": "فِى" }, { "text": "قُلُوبِهِم" }, { "text": "مَّرَضٌ" }, { "text": "فَزَادَهُمُ" },
+        { "text": "ٱللَّهُ" }, { "text": "مَرَضًا" }, { "text": "وَلَهُمْ" }, { "text": "عَذَابٌ" },
+        { "text": "أَلِيمٌۢ" }, { "text": "بِمَا" }, { "text": "كَانُوا۟" }, { "text": "يَكْذِبُونَ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 11,
+          "type": "morphological",
+          "title": "يَكْذِبُونَ vs يُكَذِّبُونَ",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "يَكْذِبُونَ", "translit": "yakdhibūna", "gloss": "they lie (form I)", "source": "Tanzil Uthmānic" },
+            { "riwaya": "warsh", "label": "Warsh ʿan Nāfiʿ", "text": "يَكْذِبُونَ", "translit": "yakdhibūna", "gloss": "they lie", "source": "KFQPC Warsh" },
+            { "riwaya": "qalun", "label": "Qālūn ʿan Nāfiʿ", "text": "يَكْذِبُونَ", "translit": "yakdhibūna", "source": "KFQPC Qālūn" },
+            { "riwaya": "ibn-kathir", "label": "Ibn Kathīr al-Makkī", "text": "يَكْذِبُونَ", "translit": "yakdhibūna", "source": "an-Nashr 2/211" },
+            { "riwaya": "abu-amr", "label": "Abū ʿAmr al-Baṣrī", "text": "يَكْذِبُونَ", "translit": "yakdhibūna", "source": "an-Nashr 2/211" },
+            { "riwaya": "shuba", "label": "Shuʿba ʿan ʿĀṣim", "text": "يُكَذِّبُونَ", "translit": "yukadhdhibūna", "gloss": "they reject as lies (form II)", "source": "an-Nashr 2/211" },
+            { "riwaya": "hamza", "label": "Ḥamza", "text": "يُكَذِّبُونَ", "translit": "yukadhdhibūna", "source": "an-Nashr 2/211" },
+            { "riwaya": "kisai", "label": "Kisāʾī", "text": "يُكَذِّبُونَ", "translit": "yukadhdhibūna", "source": "an-Nashr 2/211" }
+          ],
+          "notes": "Ḥafṣ and the Ḥijāzī/Baṣrī majority read form I (kadhaba — to lie). Ḥamza, Kisāʾī, and Shuʿba (the Kūfan minority via ʿĀṣim) read form II (kadhdhaba — to call something a lie). Doctrinally meaningful: the form-II reading specifies what they were doing — rejecting revelation.",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 2, p. 211",
+            "ad-Dānī, at-Taysīr, p. 73"
+          ]
+        }
+      ]
+    },
+    "2:132": {
+      "surah": 2, "ayah": 132,
+      "hafs": { "tokens": [
+        { "text": "وَوَصَّىٰ" }, { "text": "بِهَآ" }, { "text": "إِبْرَٰهِۦمُ" }, { "text": "بَنِيهِ" },
+        { "text": "وَيَعْقُوبُ" }, { "text": "يَٰبَنِىَّ" }, { "text": "إِنَّ" }, { "text": "ٱللَّهَ" },
+        { "text": "ٱصْطَفَىٰ" }, { "text": "لَكُمُ" }, { "text": "ٱلدِّينَ" }, { "text": "فَلَا" },
+        { "text": "تَمُوتُنَّ" }, { "text": "إِلَّا" }, { "text": "وَأَنتُم" }, { "text": "مُّسْلِمُونَ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 0,
+          "type": "rasm",
+          "title": "وَوَصَّىٰ vs وَأَوْصَىٰ",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "وَوَصَّىٰ", "translit": "wa-waṣṣā", "gloss": "and he enjoined (form II, intensive)", "source": "Tanzil Uthmānic" },
+            { "riwaya": "shuba", "label": "Shuʿba ʿan ʿĀṣim", "text": "وَوَصَّىٰ", "translit": "wa-waṣṣā", "source": "an-Nashr 2/220" },
+            { "riwaya": "ibn-kathir", "label": "Ibn Kathīr al-Makkī", "text": "وَوَصَّىٰ", "translit": "wa-waṣṣā", "source": "an-Nashr 2/220" },
+            { "riwaya": "abu-amr", "label": "Abū ʿAmr al-Baṣrī", "text": "وَوَصَّىٰ", "translit": "wa-waṣṣā", "source": "an-Nashr 2/220" },
+            { "riwaya": "hamza", "label": "Ḥamza", "text": "وَوَصَّىٰ", "translit": "wa-waṣṣā", "source": "an-Nashr 2/220" },
+            { "riwaya": "kisai", "label": "Kisāʾī", "text": "وَوَصَّىٰ", "translit": "wa-waṣṣā", "source": "an-Nashr 2/220" },
+            { "riwaya": "warsh", "label": "Warsh ʿan Nāfiʿ", "text": "وَأَوْصَىٰ", "translit": "wa-awṣā", "gloss": "and he enjoined (form IV)", "source": "KFQPC Warsh" },
+            { "riwaya": "qalun", "label": "Qālūn ʿan Nāfiʿ", "text": "وَأَوْصَىٰ", "translit": "wa-awṣā", "source": "KFQPC Qālūn" },
+            { "riwaya": "ibn-amir", "label": "Ibn ʿĀmir ash-Shāmī", "text": "وَأَوْصَىٰ", "translit": "wa-awṣā", "source": "an-Nashr 2/220" }
+          ],
+          "notes": "Difference visible in the rasm (skeletal letters): Madanī codices have an extra alif (و-أ-و-ص-ى vs و-و-ص-ى). Nāfiʿ and Ibn ʿĀmir read form IV awṣā; the others read form II waṣṣā. Both are well-attested ʿUthmānic codices.",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 2, p. 220",
+            "ad-Dānī, al-Muqniʿ fī rasm al-maṣāḥif, ch. 'Ikhtilāf maṣāḥif al-amṣār'"
+          ]
+        }
+      ]
+    },
+    "3:146": {
+      "surah": 3, "ayah": 146,
+      "hafs": { "tokens": [
+        { "text": "وَكَأَيِّن" }, { "text": "مِّن" }, { "text": "نَّبِىٍّ" }, { "text": "قَٰتَلَ" },
+        { "text": "مَعَهُۥ" }, { "text": "رِبِّيُّونَ" }, { "text": "كَثِيرٌ" }, { "text": "فَمَا" },
+        { "text": "وَهَنُوا۟" }, { "text": "لِمَآ" }, { "text": "أَصَابَهُمْ" }, { "text": "فِى" },
+        { "text": "سَبِيلِ" }, { "text": "ٱللَّهِ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 3,
+          "type": "morphological",
+          "title": "قَٰتَلَ vs قُتِلَ",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "قَٰتَلَ", "translit": "qātala", "gloss": "fought (active, form III)", "source": "Tanzil Uthmānic" },
+            { "riwaya": "shuba", "label": "Shuʿba ʿan ʿĀṣim", "text": "قَٰتَلَ", "translit": "qātala", "source": "an-Nashr 2/244" },
+            { "riwaya": "ibn-kathir", "label": "Ibn Kathīr al-Makkī", "text": "قَٰتَلَ", "translit": "qātala", "source": "an-Nashr 2/244" },
+            { "riwaya": "warsh", "label": "Warsh ʿan Nāfiʿ", "text": "قُتِلَ", "translit": "qutila", "gloss": "was killed (passive, form I)", "source": "KFQPC Warsh" },
+            { "riwaya": "qalun", "label": "Qālūn ʿan Nāfiʿ", "text": "قُتِلَ", "translit": "qutila", "source": "KFQPC Qālūn" },
+            { "riwaya": "abu-amr", "label": "Abū ʿAmr al-Baṣrī", "text": "قُتِلَ", "translit": "qutila", "source": "an-Nashr 2/244" },
+            { "riwaya": "ibn-amir", "label": "Ibn ʿĀmir ash-Shāmī", "text": "قُتِلَ", "translit": "qutila", "source": "an-Nashr 2/244" },
+            { "riwaya": "hamza", "label": "Ḥamza", "text": "قُتِلَ", "translit": "qutila", "source": "an-Nashr 2/244" },
+            { "riwaya": "kisai", "label": "Kisāʾī", "text": "قُتِلَ", "translit": "qutila", "source": "an-Nashr 2/244" }
+          ],
+          "notes": "Famous variant: Ḥafṣ (with ʿĀṣim, Shuʿba, Ibn Kathīr) reads qātala — 'a prophet fought, and many devoted men fought with him.' Most others read the passive qutila — 'a prophet was killed, and many devoted men were with him.' Both readings have been the basis of distinct exegetical traditions.",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 2, p. 244",
+            "Corpus Coranicum, Verse Q 3:146"
+          ]
+        }
+      ]
+    },
+    "5:6": {
+      "surah": 5, "ayah": 6,
+      "hafs": { "tokens": [
+        { "text": "يَٰٓأَيُّهَا" }, { "text": "ٱلَّذِينَ" }, { "text": "ءَامَنُوٓا۟" }, { "text": "إِذَا" },
+        { "text": "قُمْتُمْ" }, { "text": "إِلَى" }, { "text": "ٱلصَّلَوٰةِ" }, { "text": "فَٱغْسِلُوا۟" },
+        { "text": "وُجُوهَكُمْ" }, { "text": "وَأَيْدِيَكُمْ" }, { "text": "إِلَى" }, { "text": "ٱلْمَرَافِقِ" },
+        { "text": "وَٱمْسَحُوا۟" }, { "text": "بِرُءُوسِكُمْ" }, { "text": "وَأَرْجُلَكُمْ" }, { "text": "إِلَى" },
+        { "text": "ٱلْكَعْبَيْنِ" }
+      ]},
+      "variants": [
+        {
+          "wordIndex": 14,
+          "type": "diacritic",
+          "title": "وَأَرْجُلَكُمْ vs وَأَرْجُلِكُمْ",
+          "readings": [
+            { "riwaya": "hafs", "label": "Ḥafṣ ʿan ʿĀṣim", "text": "وَأَرْجُلَكُمْ", "translit": "wa-arjulakum (fatḥa)", "gloss": "and your feet — coordinated with 'wash'", "source": "Tanzil Uthmānic" },
+            { "riwaya": "warsh", "label": "Warsh ʿan Nāfiʿ", "text": "وَأَرْجُلَكُمْ", "translit": "wa-arjulakum", "source": "KFQPC Warsh" },
+            { "riwaya": "qalun", "label": "Qālūn ʿan Nāfiʿ", "text": "وَأَرْجُلَكُمْ", "translit": "wa-arjulakum", "source": "KFQPC Qālūn" },
+            { "riwaya": "kisai", "label": "Kisāʾī", "text": "وَأَرْجُلَكُمْ", "translit": "wa-arjulakum", "source": "an-Nashr 2/254" },
+            { "riwaya": "ibn-amir", "label": "Ibn ʿĀmir ash-Shāmī", "text": "وَأَرْجُلَكُمْ", "translit": "wa-arjulakum", "source": "an-Nashr 2/254" },
+            { "riwaya": "ibn-kathir", "label": "Ibn Kathīr al-Makkī", "text": "وَأَرْجُلِكُمْ", "translit": "wa-arjulikum (kasra)", "gloss": "and your feet — coordinated with 'wipe'", "source": "an-Nashr 2/254" },
+            { "riwaya": "abu-amr", "label": "Abū ʿAmr al-Baṣrī", "text": "وَأَرْجُلِكُمْ", "translit": "wa-arjulikum", "source": "an-Nashr 2/254" },
+            { "riwaya": "hamza", "label": "Ḥamza", "text": "وَأَرْجُلِكُمْ", "translit": "wa-arjulikum", "source": "an-Nashr 2/254" },
+            { "riwaya": "shuba", "label": "Shuʿba ʿan ʿĀṣim", "text": "وَأَرْجُلِكُمْ", "translit": "wa-arjulikum", "source": "an-Nashr 2/254" }
+          ],
+          "notes": "The wuḍūʾ verse — single most consequential diacritic-only variant in Islamic law. Fatḥa-readers parse 'feet' as coordinated with 'wash' (washing required); kasra-readers parse it as coordinated with 'wipe' (wiping permitted, Shīʿī fiqh).",
+          "citations": [
+            "Ibn al-Jazarī, an-Nashr, vol. 2, p. 254",
+            "Tabarī, Jāmiʿ al-bayān, sub Q 5:6"
+          ]
+        }
+      ]
+    },
+    "2:223": {
+      "surah": 2, "ayah": 223,
+      "hafs": { "tokens": [
+        { "text": "نِسَآؤُكُمْ" }, { "text": "حَرْثٌ" }, { "text": "لَّكُمْ" }, { "text": "فَأْتُوا۟" },
+        { "text": "حَرْثَكُمْ" }, { "text": "أَنَّىٰ" }, { "text": "شِئْتُمْ" }
+      ]},
+      "variants": []
+    }
+  }
+}

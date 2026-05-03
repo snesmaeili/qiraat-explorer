@@ -1,0 +1,1 @@
+const s="Empty stub. This file is overwritten by scripts/build-variants.js. The runtime falls back to sampleVariants.json when this is empty.",t={},e={_comment:s,verses:t};export{s as _comment,e as default,t as verses};

@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "schemaVersion": "1.0.0",
+    "purpose": "Provenance record for local external source corpora used during source matching.",
+    "generated": true,
+    "generationPolicy": "no-arabic-text-generation",
+    "createdAt": "2026-05-03T21:42:57.626Z",
+    "createdBy": "scripts/record-source-provenance.js"
+  },
+  "sources": {
+    "tanzil-hafs-uthmani": {
+      "sourceId": "tanzil",
+      "riwayah": "hafs",
+      "localPath": "scripts/_raw/quran-uthmani.txt",
+      "exists": true,
+      "fileSizeBytes": 1557,
+      "sha256": "2f21dc3851d25c05665c1e90bc9cd1336307038693b7b15ee50f83d2a2ea092c",
+      "authorityStatus": "unknown",
+      "isCompleteCorpus": false,
+      "corpusScope": "sample_subset",
+      "provenanceWarning": "Local corpus exists but source URL and retrieval method are not confirmed.",
+      "duplicateHashGroup": null,
+      "retrievalMethod": "unknown",
+      "retrievalUrl": null,
+      "retrievedAt": null,
+      "licenseNote": "User must manually accept Tanzil terms before download. Attribution required; no modification of the text.",
+      "canCommitRawFile": false,
+      "notes": "Needs manual provenance confirmation."
+    },
+    "kfgqpc-warsh": {
+      "sourceId": "kfqpc-warsh",
+      "riwayah": "warsh",
+      "localPath": "scripts/_raw/kfqpc-warsh.json",
+      "exists": true,
+      "fileSizeBytes": 1624,
+      "sha256": "50744189a4f983c2c74cef97e5ce827b0bbd7bb614278447a8d93f02ca1f1f31",
+      "authorityStatus": "unknown",
+      "isCompleteCorpus": false,
+      "corpusScope": "sample_subset",
+      "provenanceWarning": "Local corpus exists but source URL and retrieval method are not confirmed.",
+      "duplicateHashGroup": "50744189a4f983c2c74cef97e5ce827b0bbd7bb614278447a8d93f02ca1f1f31",
+      "retrievalMethod": "unknown",
+      "retrievalUrl": null,
+      "retrievedAt": null,
+      "licenseNote": "Use only under KFGQPC terms. Raw files are not bundled in this repository.",
+      "canCommitRawFile": false,
+      "notes": "Needs manual provenance confirmation."
+    },
+    "kfgqpc-qalun": {
+      "sourceId": "kfqpc-qalun",
+      "riwayah": "qalun",
+      "localPath": "scripts/_raw/kfqpc-qalun.json",
+      "exists": true,
+      "fileSizeBytes": 1624,
+      "sha256": "50744189a4f983c2c74cef97e5ce827b0bbd7bb614278447a8d93f02ca1f1f31",
+      "authorityStatus": "unknown",
+      "isCompleteCorpus": false,
+      "corpusScope": "sample_subset",
+      "provenanceWarning": "Local corpus exists but source URL and retrieval method are not confirmed.",
+      "duplicateHashGroup": "50744189a4f983c2c74cef97e5ce827b0bbd7bb614278447a8d93f02ca1f1f31",
+      "retrievalMethod": "unknown",
+      "retrievalUrl": null,
+      "retrievedAt": null,
+      "licenseNote": "Use only under KFGQPC terms. Raw files are not bundled in this repository.",
+      "canCommitRawFile": false,
+      "notes": "Needs manual provenance confirmation."
+    }
+  }
+}

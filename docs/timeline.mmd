@@ -1,0 +1,40 @@
+%% Qira'at Explorer — six-month build plan
+%% Render with: mmdc -i timeline.mmd -o timeline.svg
+
+gantt
+    title Qira'at Explorer — 6-month prototype plan (2-3 devs)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b
+
+    section Data pipeline
+    Tanzil + KFGQPC ingest          :done,    d1, 2026-05-04, 7d
+    Canonical JSON schema design    :active,  d2, after d1,    5d
+    Hafs vs Warsh alignment         :         d3, after d2,    10d
+    Add Qālūn, ad-Dūrī, Shuʿba      :         d4, after d3,    8d
+    All-10-readings extension       :         d5, after d4,    14d
+
+    section Validation
+    Hand-review with qira'at scholar:         v1, after d3,   21d
+    False-positive cleanup          :         v2, after v1,   10d
+    Tokenization edge cases (naql)  :         v3, after v2,    7d
+
+    section Phonetic variants
+    Authoring from an-Nashr         :         p1, after v3,   28d
+    Schema extension for phonetic   :         p2, after p1,    5d
+
+    section UI polish
+    Tooltip animations + a11y       :         u1, after d2,   10d
+    Keyboard nav across words       :         u2, after u1,    5d
+    Permalinks + share              :         u3, after u2,    5d
+    Export to PDF                   :         u4, after u3,    7d
+
+    section Audio integration
+    EveryAyah sync research         :         a1, after u4,    7d
+    Audio playback widget           :         a2, after a1,   14d
+    Per-riwāya audio mapping        :         a3, after a2,   10d
+
+    section Release
+    WCAG 2.1 AA audit               :         r1, after a3,   10d
+    Usability test (scholar pilot)  :         r2, after r1,    7d
+    Documentation + license review  :         r3, after r2,    5d
+    Public launch                   :milestone, r4, after r3, 0d

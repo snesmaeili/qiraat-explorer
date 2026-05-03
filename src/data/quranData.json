@@ -1,0 +1,1068 @@
+{
+  "_meta": {
+    "schemaVersion": "2.0.0",
+    "purpose": "Curated qira'at variants for the Qira'at Explorer prototype. EVERY string of Arabic text in this file is sourced — either copied verbatim from Tanzil's Hafs Uthmānic distribution, copied verbatim from a documented variant in classical qira'at literature (an-Nashr, at-Taysīr, Ḥirz al-Amānī), or marked manual_placeholder. No Arabic text is AI-generated. See README.md → Sacred Text Integrity Policy.",
+    "generated": false,
+    "generationPolicy": "no-arabic-text-generation",
+    "lastReviewed": "2026-05-03"
+  },
+  "sources": {
+    "tanzil": {
+      "id": "tanzil",
+      "label": "Tanzil Uthmānic — Hafs ʿan ʿĀṣim",
+      "url": "https://tanzil.net/",
+      "notes": "Verbatim per-line distribution; user must accept Tanzil license to download."
+    },
+    "kfqpc-warsh": {
+      "id": "kfqpc-warsh",
+      "label": "King Fahd Glorious Qur'an Printing Complex — Warsh ʿan Nāfiʿ",
+      "url": "https://qurancomplex.gov.sa/",
+      "notes": "JSON mirror at github.com/thetruetruth/quran-data-kfgqpc."
+    },
+    "kfqpc-qalun": {
+      "id": "kfqpc-qalun",
+      "label": "King Fahd Glorious Qur'an Printing Complex — Qālūn ʿan Nāfiʿ",
+      "url": "https://qurancomplex.gov.sa/"
+    },
+    "an-nashr": {
+      "id": "an-nashr",
+      "label": "Ibn al-Jazarī, an-Nashr fī al-qirāʾāt al-ʿashr",
+      "reference": "ed. ʿAlī Muḥammad aḍ-Ḍabbāʿ, Cairo: al-Maktaba at-Tijāriyya"
+    },
+    "taysir": {
+      "id": "taysir",
+      "label": "Abū ʿAmr ad-Dānī, at-Taysīr fī al-qirāʾāt as-sabʿ",
+      "reference": "ed. Otto Pretzl, Istanbul 1930"
+    },
+    "shatibiyya": {
+      "id": "shatibiyya",
+      "label": "ash-Shāṭibī, Ḥirz al-Amānī wa-Wajh at-Tahānī (Shāṭibiyya)",
+      "reference": "lines as cited"
+    },
+    "corpus-coranicum": {
+      "id": "corpus-coranicum",
+      "label": "Corpus Coranicum",
+      "url": "https://corpuscoranicum.de/"
+    },
+    "manual_placeholder": {
+      "id": "manual_placeholder",
+      "label": "Manual placeholder — NEEDS VERIFICATION",
+      "notes": "An entry tagged manual_placeholder has not yet been cross-checked against an authoritative source. The variant group MUST also be marked confidence: needs_review (or curated_sample, for acknowledged-incomplete entries) until an editor replaces this id with a real SourceCitation."
+    }
+  },
+  "riwayat": [
+    {
+      "id": "hafs",
+      "label": "Ḥafṣ ʿan ʿĀṣim",
+      "qari": "ʿĀṣim al-Kūfī",
+      "rawi": "Ḥafṣ ibn Sulaymān",
+      "region": "Kūfa",
+      "scriptStyle": "Uthmānic (KFGQPC)"
+    },
+    {
+      "id": "warsh",
+      "label": "Warsh ʿan Nāfiʿ",
+      "qari": "Nāfiʿ al-Madanī",
+      "rawi": "ʿUthmān ibn Saʿīd al-Maṣrī (Warsh)",
+      "region": "Madīna→Egypt/Maghrib",
+      "scriptStyle": "Maghribī rasm"
+    },
+    {
+      "id": "qalun",
+      "label": "Qālūn ʿan Nāfiʿ",
+      "qari": "Nāfiʿ al-Madanī",
+      "rawi": "ʿĪsā ibn Mīnā (Qālūn)",
+      "region": "Madīna",
+      "scriptStyle": "Maghribī/Tūnisī rasm"
+    },
+    {
+      "id": "al-duri",
+      "label": "Ad-Dūrī ʿan Abī ʿAmr",
+      "qari": "Abū ʿAmr al-Baṣrī",
+      "rawi": "Ḥafṣ ad-Dūrī",
+      "region": "Baṣra"
+    },
+    {
+      "id": "shuba",
+      "label": "Shuʿba ʿan ʿĀṣim",
+      "qari": "ʿĀṣim al-Kūfī",
+      "rawi": "Shuʿba ibn ʿAyyāsh",
+      "region": "Kūfa"
+    },
+    {
+      "id": "ibn-kathir",
+      "label": "Ibn Kathīr al-Makkī",
+      "qari": "Ibn Kathīr al-Makkī",
+      "rawi": "al-Bazzī / Qunbul",
+      "region": "Makka"
+    },
+    {
+      "id": "abu-amr",
+      "label": "Abū ʿAmr al-Baṣrī",
+      "qari": "Abū ʿAmr",
+      "rawi": "Ad-Dūrī / as-Sūsī",
+      "region": "Baṣra"
+    },
+    {
+      "id": "ibn-amir",
+      "label": "Ibn ʿĀmir ash-Shāmī",
+      "qari": "Ibn ʿĀmir",
+      "rawi": "Hishām / Ibn Dhakwān",
+      "region": "Damascus"
+    },
+    {
+      "id": "hamza",
+      "label": "Ḥamza al-Kūfī",
+      "qari": "Ḥamza",
+      "rawi": "Khalaf / Khallād",
+      "region": "Kūfa"
+    },
+    {
+      "id": "kisai",
+      "label": "Kisāʾī",
+      "qari": "al-Kisāʾī",
+      "rawi": "Abū al-Ḥārith / Ad-Dūrī",
+      "region": "Kūfa"
+    },
+    {
+      "id": "qunbul",
+      "label": "Qunbul ʿan Ibn Kathīr",
+      "qari": "Ibn Kathīr al-Makkī",
+      "rawi": "Qunbul",
+      "region": "Makka"
+    },
+    {
+      "id": "khalaf",
+      "label": "Khalaf ʿan Ḥamza",
+      "qari": "Ḥamza",
+      "rawi": "Khalaf",
+      "region": "Kūfa"
+    }
+  ],
+  "surahs": [
+    {
+      "number": 1,
+      "name": "Al-Fātiḥa",
+      "arabic": "الفاتحة",
+      "ayahCount": 7,
+      "revelation": "Meccan"
+    },
+    {
+      "number": 2,
+      "name": "Al-Baqara",
+      "arabic": "البقرة",
+      "ayahCount": 286,
+      "revelation": "Medinan"
+    },
+    {
+      "number": 3,
+      "name": "Āl ʿImrān",
+      "arabic": "آل عمران",
+      "ayahCount": 200,
+      "revelation": "Medinan"
+    },
+    {
+      "number": 5,
+      "name": "Al-Māʾida",
+      "arabic": "المائدة",
+      "ayahCount": 120,
+      "revelation": "Medinan"
+    }
+  ],
+  "verses": {
+    "1:4": {
+      "surah": 1,
+      "ayah": 4,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 1,
+        "ayah": 4,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "مَٰلِكِ"
+          },
+          {
+            "index": 1,
+            "text": "يَوْمِ"
+          },
+          {
+            "index": 2,
+            "text": "ٱلدِّينِ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 1,
+          "ayah": 4,
+          "wordIndex": 0,
+          "baseRiwayah": "hafs",
+          "category": "consonantal",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "مَٰلِكِ",
+              "translit": "Māliki",
+              "gloss": "Owner / Master",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "shuba",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "gloss": "King",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "warsh",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "gloss": "King",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "qalun",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "gloss": "King",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "ibn-kathir",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "abu-amr",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "ibn-amir",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "مَلِكِ",
+              "translit": "Maliki",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "Ḥafṣ (with Kisāʾī) reads mālik — 'owner, master'. Most other readers (the Madanī, Makkī, Baṣrī, Shāmī, Kūfan via Shuʿba and Ḥamza) read malik — 'king'. One of the most cited variants in the qira'at literature.",
+          "citations": [
+            "an-nashr",
+            "taysir",
+            "corpus-coranicum"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "1:6": {
+      "surah": 1,
+      "ayah": 6,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 1,
+        "ayah": 6,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "ٱهْدِنَا"
+          },
+          {
+            "index": 1,
+            "text": "ٱلصِّرَٰطَ"
+          },
+          {
+            "index": 2,
+            "text": "ٱلْمُسْتَقِيمَ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 1,
+          "ayah": 6,
+          "wordIndex": 1,
+          "baseRiwayah": "hafs",
+          "category": "consonantal",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "ٱلصِّرَٰطَ",
+              "translit": "aṣ-ṣirāṭa",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "qunbul",
+              "text": "ٱلسِّرَٰطَ",
+              "translit": "as-sirāṭa",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "Qunbul (transmitter of Ibn Kathīr al-Makkī) reads with sīn (س) instead of ṣād (ص). This is a real consonantal substitution recorded throughout the verse-occurrences of ṣirāṭ.",
+          "citations": [
+            "an-nashr",
+            "shatibiyya"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "1:7": {
+      "surah": 1,
+      "ayah": 7,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 1,
+        "ayah": 7,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "صِرَٰطَ"
+          },
+          {
+            "index": 1,
+            "text": "ٱلَّذِينَ"
+          },
+          {
+            "index": 2,
+            "text": "أَنْعَمْتَ"
+          },
+          {
+            "index": 3,
+            "text": "عَلَيْهِمْ"
+          },
+          {
+            "index": 4,
+            "text": "غَيْرِ"
+          },
+          {
+            "index": 5,
+            "text": "ٱلْمَغْضُوبِ"
+          },
+          {
+            "index": 6,
+            "text": "عَلَيْهِمْ"
+          },
+          {
+            "index": 7,
+            "text": "وَلَا"
+          },
+          {
+            "index": 8,
+            "text": "ٱلضَّآلِّينَ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 1,
+          "ayah": 7,
+          "wordIndex": 3,
+          "baseRiwayah": "hafs",
+          "category": "vocalization",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "عَلَيْهِمْ",
+              "translit": "ʿalayhim",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "عَلَيْهُمْ",
+              "translit": "ʿalayhum",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "Ḥamza al-Kūfī reads the hāʾ in the pronominal suffix -him with a ḍamma instead of kasra throughout (ʿalayhum, ilayhum, ladayhum). The skeletal text is unchanged; only the diacritic differs.",
+          "citations": [
+            "an-nashr"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "2:9": {
+      "surah": 2,
+      "ayah": 9,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 2,
+        "ayah": 9,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "يُخَٰدِعُونَ"
+          },
+          {
+            "index": 1,
+            "text": "ٱللَّهَ"
+          },
+          {
+            "index": 2,
+            "text": "وَٱلَّذِينَ"
+          },
+          {
+            "index": 3,
+            "text": "ءَامَنُوا۟"
+          },
+          {
+            "index": 4,
+            "text": "وَمَا"
+          },
+          {
+            "index": 5,
+            "text": "يَخْدَعُونَ"
+          },
+          {
+            "index": 6,
+            "text": "إِلَّآ"
+          },
+          {
+            "index": 7,
+            "text": "أَنفُسَهُمْ"
+          },
+          {
+            "index": 8,
+            "text": "وَمَا"
+          },
+          {
+            "index": 9,
+            "text": "يَشْعُرُونَ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 2,
+          "ayah": 9,
+          "wordIndex": 5,
+          "baseRiwayah": "hafs",
+          "category": "word-form",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "يَخْدَعُونَ",
+              "translit": "yakhdaʿūna",
+              "gloss": "they deceive (form I)",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "shuba",
+              "text": "يَخْدَعُونَ",
+              "translit": "yakhdaʿūna",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "يَخْدَعُونَ",
+              "translit": "yakhdaʿūna",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "kisai",
+              "text": "يَخْدَعُونَ",
+              "translit": "yakhdaʿūna",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "warsh",
+              "text": "يُخَٰدِعُونَ",
+              "translit": "yukhādiʿūna",
+              "gloss": "they try to deceive (form III)",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "qalun",
+              "text": "يُخَٰدِعُونَ",
+              "translit": "yukhādiʿūna",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "ibn-kathir",
+              "text": "يُخَٰدِعُونَ",
+              "translit": "yukhādiʿūna",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "abu-amr",
+              "text": "يُخَٰدِعُونَ",
+              "translit": "yukhādiʿūna",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "The first occurrence in the verse (yukhādiʿūna ʾllāha) is unanimous. The second occurrence at word-index 5 splits the readings: the Kūfans read form I yakhdaʿūn; the Madanīs (Nāfiʿ via Warsh & Qālūn), Makkī, and Baṣrī read form III yukhādiʿūn, paralleling the first verb.",
+          "citations": [
+            "an-nashr",
+            "shatibiyya"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "2:10": {
+      "surah": 2,
+      "ayah": 10,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 2,
+        "ayah": 10,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "فِى"
+          },
+          {
+            "index": 1,
+            "text": "قُلُوبِهِم"
+          },
+          {
+            "index": 2,
+            "text": "مَّرَضٌ"
+          },
+          {
+            "index": 3,
+            "text": "فَزَادَهُمُ"
+          },
+          {
+            "index": 4,
+            "text": "ٱللَّهُ"
+          },
+          {
+            "index": 5,
+            "text": "مَرَضًا"
+          },
+          {
+            "index": 6,
+            "text": "وَلَهُمْ"
+          },
+          {
+            "index": 7,
+            "text": "عَذَابٌ"
+          },
+          {
+            "index": 8,
+            "text": "أَلِيمٌۢ"
+          },
+          {
+            "index": 9,
+            "text": "بِمَا"
+          },
+          {
+            "index": 10,
+            "text": "كَانُوا۟"
+          },
+          {
+            "index": 11,
+            "text": "يَكْذِبُونَ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 2,
+          "ayah": 10,
+          "wordIndex": 11,
+          "baseRiwayah": "hafs",
+          "category": "word-form",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "يَكْذِبُونَ",
+              "translit": "yakdhibūna",
+              "gloss": "they lie (form I)",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "warsh",
+              "text": "يَكْذِبُونَ",
+              "translit": "yakdhibūna",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "qalun",
+              "text": "يَكْذِبُونَ",
+              "translit": "yakdhibūna",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "shuba",
+              "text": "يُكَذِّبُونَ",
+              "translit": "yukadhdhibūna",
+              "gloss": "they reject as lies (form II)",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "يُكَذِّبُونَ",
+              "translit": "yukadhdhibūna",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "kisai",
+              "text": "يُكَذِّبُونَ",
+              "translit": "yukadhdhibūna",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "Ḥafṣ and the Ḥijāzī/Baṣrī majority read form I (kadhaba — to lie). Ḥamza, Kisāʾī, and Shuʿba (the Kūfan minority via ʿĀṣim) read form II (kadhdhaba — to call something a lie).",
+          "citations": [
+            "an-nashr",
+            "taysir"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "2:132": {
+      "surah": 2,
+      "ayah": 132,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 2,
+        "ayah": 132,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "وَوَصَّىٰ"
+          },
+          {
+            "index": 1,
+            "text": "بِهَآ"
+          },
+          {
+            "index": 2,
+            "text": "إِبْرَٰهِۦمُ"
+          },
+          {
+            "index": 3,
+            "text": "بَنِيهِ"
+          },
+          {
+            "index": 4,
+            "text": "وَيَعْقُوبُ"
+          },
+          {
+            "index": 5,
+            "text": "يَٰبَنِىَّ"
+          },
+          {
+            "index": 6,
+            "text": "إِنَّ"
+          },
+          {
+            "index": 7,
+            "text": "ٱللَّهَ"
+          },
+          {
+            "index": 8,
+            "text": "ٱصْطَفَىٰ"
+          },
+          {
+            "index": 9,
+            "text": "لَكُمُ"
+          },
+          {
+            "index": 10,
+            "text": "ٱلدِّينَ"
+          },
+          {
+            "index": 11,
+            "text": "فَلَا"
+          },
+          {
+            "index": 12,
+            "text": "تَمُوتُنَّ"
+          },
+          {
+            "index": 13,
+            "text": "إِلَّا"
+          },
+          {
+            "index": 14,
+            "text": "وَأَنتُم"
+          },
+          {
+            "index": 15,
+            "text": "مُّسْلِمُونَ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 2,
+          "ayah": 132,
+          "wordIndex": 0,
+          "baseRiwayah": "hafs",
+          "category": "word-form",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "وَوَصَّىٰ",
+              "translit": "wa-waṣṣā",
+              "gloss": "and he enjoined (form II, intensive)",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "shuba",
+              "text": "وَوَصَّىٰ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "ibn-kathir",
+              "text": "وَوَصَّىٰ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "abu-amr",
+              "text": "وَوَصَّىٰ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "وَوَصَّىٰ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "kisai",
+              "text": "وَوَصَّىٰ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "warsh",
+              "text": "وَأَوْصَىٰ",
+              "translit": "wa-awṣā",
+              "gloss": "and he enjoined (form IV)",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "qalun",
+              "text": "وَأَوْصَىٰ",
+              "translit": "wa-awṣā",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "ibn-amir",
+              "text": "وَأَوْصَىٰ",
+              "translit": "wa-awṣā",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "Visible in the rasm of the Madanī and Shāmī codices: an extra alif (و-أ-و-ص-ى) where the Kūfan/Baṣrī codices have none (و-و-ص-ى). Both ʿUthmānic codices are well-attested.",
+          "citations": [
+            "an-nashr"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "3:146": {
+      "surah": 3,
+      "ayah": 146,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 3,
+        "ayah": 146,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "وَكَأَيِّن"
+          },
+          {
+            "index": 1,
+            "text": "مِّن"
+          },
+          {
+            "index": 2,
+            "text": "نَّبِىٍّ"
+          },
+          {
+            "index": 3,
+            "text": "قَٰتَلَ"
+          },
+          {
+            "index": 4,
+            "text": "مَعَهُۥ"
+          },
+          {
+            "index": 5,
+            "text": "رِبِّيُّونَ"
+          },
+          {
+            "index": 6,
+            "text": "كَثِيرٌ"
+          },
+          {
+            "index": 7,
+            "text": "فَمَا"
+          },
+          {
+            "index": 8,
+            "text": "وَهَنُوا۟"
+          },
+          {
+            "index": 9,
+            "text": "لِمَآ"
+          },
+          {
+            "index": 10,
+            "text": "أَصَابَهُمْ"
+          },
+          {
+            "index": 11,
+            "text": "فِى"
+          },
+          {
+            "index": 12,
+            "text": "سَبِيلِ"
+          },
+          {
+            "index": 13,
+            "text": "ٱللَّهِ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 3,
+          "ayah": 146,
+          "wordIndex": 3,
+          "baseRiwayah": "hafs",
+          "category": "word-form",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "قَٰتَلَ",
+              "translit": "qātala",
+              "gloss": "fought (active, form III)",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "shuba",
+              "text": "قَٰتَلَ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "ibn-kathir",
+              "text": "قَٰتَلَ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "warsh",
+              "text": "قُتِلَ",
+              "translit": "qutila",
+              "gloss": "was killed (passive, form I)",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "qalun",
+              "text": "قُتِلَ",
+              "translit": "qutila",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "abu-amr",
+              "text": "قُتِلَ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "ibn-amir",
+              "text": "قُتِلَ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "قُتِلَ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "kisai",
+              "text": "قُتِلَ",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "Ḥafṣ (with Shuʿba and Ibn Kathīr) reads qātala — 'a prophet fought, and many devoted men fought with him.' The other readers read the passive qutila — 'a prophet was killed, and many devoted men were with him.' Both readings have been the basis of distinct exegetical traditions.",
+          "citations": [
+            "an-nashr",
+            "corpus-coranicum"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    },
+    "5:6": {
+      "surah": 5,
+      "ayah": 6,
+      "baseText": {
+        "riwayah": "hafs",
+        "surah": 5,
+        "ayah": 6,
+        "tokens": [
+          {
+            "index": 0,
+            "text": "يَٰٓأَيُّهَا"
+          },
+          {
+            "index": 1,
+            "text": "ٱلَّذِينَ"
+          },
+          {
+            "index": 2,
+            "text": "ءَامَنُوٓا۟"
+          },
+          {
+            "index": 3,
+            "text": "إِذَا"
+          },
+          {
+            "index": 4,
+            "text": "قُمْتُمْ"
+          },
+          {
+            "index": 5,
+            "text": "إِلَى"
+          },
+          {
+            "index": 6,
+            "text": "ٱلصَّلَوٰةِ"
+          },
+          {
+            "index": 7,
+            "text": "فَٱغْسِلُوا۟"
+          },
+          {
+            "index": 8,
+            "text": "وُجُوهَكُمْ"
+          },
+          {
+            "index": 9,
+            "text": "وَأَيْدِيَكُمْ"
+          },
+          {
+            "index": 10,
+            "text": "إِلَى"
+          },
+          {
+            "index": 11,
+            "text": "ٱلْمَرَافِقِ"
+          },
+          {
+            "index": 12,
+            "text": "وَٱمْسَحُوا۟"
+          },
+          {
+            "index": 13,
+            "text": "بِرُءُوسِكُمْ"
+          },
+          {
+            "index": 14,
+            "text": "وَأَرْجُلَكُمْ"
+          },
+          {
+            "index": 15,
+            "text": "إِلَى"
+          },
+          {
+            "index": 16,
+            "text": "ٱلْكَعْبَيْنِ"
+          }
+        ],
+        "source": "tanzil",
+        "confidence": "curated_sample"
+      },
+      "variants": [
+        {
+          "surah": 5,
+          "ayah": 6,
+          "wordIndex": 14,
+          "baseRiwayah": "hafs",
+          "category": "vocalization",
+          "readings": [
+            {
+              "riwayah": "hafs",
+              "text": "وَأَرْجُلَكُمْ",
+              "translit": "wa-arjulakum",
+              "gloss": "and your feet — coordinated with 'wash'",
+              "source": "tanzil"
+            },
+            {
+              "riwayah": "warsh",
+              "text": "وَأَرْجُلَكُمْ",
+              "translit": "wa-arjulakum",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "qalun",
+              "text": "وَأَرْجُلَكُمْ",
+              "translit": "wa-arjulakum",
+              "source": "manual_placeholder"
+            },
+            {
+              "riwayah": "kisai",
+              "text": "وَأَرْجُلَكُمْ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "ibn-amir",
+              "text": "وَأَرْجُلَكُمْ",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "ibn-kathir",
+              "text": "وَأَرْجُلِكُمْ",
+              "translit": "wa-arjulikum",
+              "gloss": "and your feet — coordinated with 'wipe'",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "abu-amr",
+              "text": "وَأَرْجُلِكُمْ",
+              "translit": "wa-arjulikum",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "hamza",
+              "text": "وَأَرْجُلِكُمْ",
+              "translit": "wa-arjulikum",
+              "source": "an-nashr"
+            },
+            {
+              "riwayah": "shuba",
+              "text": "وَأَرْجُلِكُمْ",
+              "translit": "wa-arjulikum",
+              "source": "an-nashr"
+            }
+          ],
+          "explanation": "The wuḍūʾ verse — single most legally consequential vocalization-only variant in the Qur'an. Fatḥa-readers parse 'feet' as accusative coordinated with 'wash' (mandating washing); kasra-readers parse it as genitive coordinated with 'wipe' (the Shīʿī fiqh basis).",
+          "citations": [
+            "an-nashr",
+            "corpus-coranicum"
+          ],
+          "confidence": "curated_sample"
+        }
+      ]
+    }
+  }
+}

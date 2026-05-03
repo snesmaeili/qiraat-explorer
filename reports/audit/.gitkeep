@@ -1,0 +1,6 @@
+# This directory holds audit reports produced by `npm run audit:data`.
+#
+# Tracking policy (see .gitignore):
+#   - quran-data-audit.md   tracked: human-readable snapshot of the latest audit
+#   - quran-data-audit.json tracked: machine-readable snapshot
+#   - any timestamped or experimental output files are ignored

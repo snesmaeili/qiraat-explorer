@@ -1,0 +1,28 @@
+node_modules
+dist
+.DS_Store
+*.log
+scripts/_raw/
+src/data/fullVariants.json
+reports/audit/backups/*.json
+public/fonts/*.ttf
+public/fonts/*.otf
+.vite
+coverage
+
+# Audit reports policy:
+#   reports/audit/quran-data-audit.md     --> tracked (human-readable snapshot)
+#   reports/audit/quran-data-audit.json   --> tracked (machine-readable snapshot)
+# Source-match reports DEPEND on local raw corpora that we never bundle, so
+# they are ignored by default. If you have a reproducible local corpus
+# (pinned via expectedHash in sourceManifest.json), commit the snapshot
+# manually — but the default is "ignored" because two reviewers running
+# the same script with different upstream files would otherwise collide.
+reports/audit/source-match-report.json
+reports/audit/source-match-report.md
+
+# Timestamped or per-run experimental files:
+reports/audit/*-[0-9]*.json
+reports/audit/*-[0-9]*.md
+reports/audit/tmp-*
+src/data/quranData.before-source-apply.json

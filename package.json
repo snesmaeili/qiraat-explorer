@@ -1,0 +1,38 @@
+{
+  "name": "qiraat-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype web app visualizing Quranic textual variants across qiraat (Hafs, Warsh, Qalun, etc.)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "fetch-data": "node scripts/fetch-data.js",
+    "build-variants": "node scripts/build-variants.js",
+    "init:ledger": "node scripts/init-verification-ledger.js",
+    "audit:data": "node scripts/audit-data.js",
+    "match:sources": "node scripts/match-sources.js",
+    "match:sources:strict": "node scripts/match-sources.js --strict",
+    "apply:source-matches": "node scripts/apply-source-matches.js",
+    "record:provenance": "node scripts/record-source-provenance.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "optionalDependencies": {
+    "harfbuzzjs": "^0.4.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.0",
+    "jsdom": "^25.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.4.0"
+  }
+}
