@@ -4,7 +4,7 @@
     "purpose": "Provenance record for local external source corpora used during source matching.",
     "generated": true,
     "generationPolicy": "no-arabic-text-generation",
-    "createdAt": "2026-05-03T21:42:57.626Z",
+    "createdAt": "2026-05-03T21:53:35.589Z",
     "createdBy": "scripts/record-source-provenance.js"
   },
   "sources": {

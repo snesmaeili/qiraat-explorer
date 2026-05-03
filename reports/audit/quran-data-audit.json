@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T21:43:23.047Z",
+  "generatedAt": "2026-05-03T21:54:04.469Z",
   "datasetMeta": {
     "schemaVersion": "2.0.0",
     "purpose": "Curated qira'at variants for the Qira'at Explorer prototype. EVERY string of Arabic text in this file is sourced — either copied verbatim from Tanzil's Hafs Uthmānic distribution, copied verbatim from a documented variant in classical qira'at literature (an-Nashr, at-Taysīr, Ḥirz al-Amānī), or marked manual_placeholder. No Arabic text is AI-generated. See README.md → Sacred Text Integrity Policy.",
