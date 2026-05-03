@@ -196,7 +196,7 @@ The Qur'an is sacred text. This project's first obligation is to its readers: wh
 5. **LLMs may help with code and metadata structure only.** When this codebase is updated by a language-model-assisted workflow, the model may write JavaScript, JSDoc types, tests, CSS, and English-language documentation. It MAY NOT author or "complete" any Arabic verse text. Variant readings, transliterations, and glosses must be added by a human editor citing a primary source.
 6. **Uncertain variants are flagged.** Every `VariantGroup` carries `confidence`: one of `curated_sample` (representative example, not exhaustive), `verified` (cross-checked against a primary source by a reviewer), or `needs_review` (machine-imported, awaiting human review). The UI renders this label as a badge in the variant panel. Anything sourced as `manual_placeholder` is automatically rendered as either `curated_sample` (if acknowledged) or `needs_review`.
 
-These rules apply equally to PRs, automated import scripts, and any future schemas. If you can't trace a string back to a SourceCitation, it doesn't ship.
+These rules apply equally to internal branches, automated import scripts, and any future schemas. If you can't trace a string back to a SourceCitation, it doesn't ship.
 
 ---
 
@@ -365,7 +365,7 @@ A six-month plan with two to three developers (see `docs/timeline.mmd`):
 
 ## Contributing
 
-PRs welcome. The data files are intentionally formatted for line diffs — please don't reformat them. Variant additions require a citation that traces back to a published primary source (`an-Nashr`, `at-Taysīr`, `Ḥirz al-Amānī`, or a peer-reviewed academic edition). No verse text may be authored — only copied from a cited source dataset.
+This is a private academic research repository. Contributions are limited to the core research team until publication. The data files are intentionally formatted for line diffs — please don't reformat them. Variant additions require a citation that traces back to a published primary source (`an-Nashr`, `at-Taysīr`, `Ḥirz al-Amānī`, or a peer-reviewed academic edition). No verse text may be authored — only copied from a cited source dataset.
 
 ## License
 
