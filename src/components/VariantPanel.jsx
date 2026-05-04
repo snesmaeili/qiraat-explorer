@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { getSource } from '../lib/dataLoader.js';
 import { ccReadingsFor, ccTotalAttestations, CC_SOURCE } from '../lib/ccVariants.js';
+import { firstAvailableReciter, audioUrl, AUDIO_SOURCE } from '../lib/audio.js';
 
 const CATEGORY_LABEL = {
   vocalization: 'Vocalization',
@@ -39,12 +40,16 @@ export function VariantPanel({ diff, baseRiwayah, compRiwayah, onClose }) {
           riwayah={baseRiwayah}
           text={diff.baseText}
           reading={findReading(group, baseRiwayah?.id)}
+          surah={group?.surah}
+          ayah={group?.ayah}
           isBase
         />
         <ReadingRow
           riwayah={compRiwayah}
           text={diff.compText}
           reading={findReading(group, compRiwayah?.id)}
+          surah={group?.surah}
+          ayah={group?.ayah}
         />
       </ul>
 
@@ -61,6 +66,8 @@ export function VariantPanel({ diff, baseRiwayah, compRiwayah, onClose }) {
                   riwayah={{ id: r.riwayah, label: humanRiwayah(r.riwayah) }}
                   text={r.text}
                   reading={r}
+                  surah={group?.surah}
+                  ayah={group?.ayah}
                 />
               ))}
           </ul>
@@ -107,7 +114,7 @@ export function VariantPanel({ diff, baseRiwayah, compRiwayah, onClose }) {
   );
 }
 
-function ReadingRow({ riwayah, text, reading, isBase }) {
+function ReadingRow({ riwayah, text, reading, surah, ayah, isBase }) {
   const sourceId = reading?.source ?? null;
   const src = sourceId ? getSource(sourceId) : null;
   return (
@@ -129,9 +136,78 @@ function ReadingRow({ riwayah, text, reading, isBase }) {
               {sourceId === 'manual_placeholder' ? 'Placeholder' : (src?.label?.split(' ')[0] ?? sourceId)}
             </span>
           )}
+          <AudioButton riwayahId={riwayah?.id} surah={surah} ayah={ayah} />
         </span>
       </div>
     </li>
+  );
+}
+
+/**
+ * Lazy-loading audio button. On first click, creates a single HTMLAudioElement
+ * pointing at the EveryAyah CDN URL for this riwāya's preferred reciter and
+ * starts playback. Subsequent clicks toggle play/pause. If no reciter exists
+ * for the riwāya (e.g. Qālūn — EveryAyah doesn't host one), renders disabled.
+ */
+function AudioButton({ riwayahId, surah, ayah }) {
+  const [playing, setPlaying] = useState(false);
+  const audioRef = useRef(null);
+  const reciter = riwayahId ? firstAvailableReciter(riwayahId) : null;
+  const url = reciter && surah != null && ayah != null ? audioUrl(reciter, surah, ayah) : null;
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  if (!url) {
+    return (
+      <button
+        type="button"
+        className="tooltip__audio-btn is-disabled"
+        disabled
+        title={`Audio not available for riwāya '${riwayahId ?? '?'}' on EveryAyah`}
+        aria-label="Audio not available"
+      >
+        ♪
+      </button>
+    );
+  }
+
+  function toggle() {
+    if (!audioRef.current) {
+      audioRef.current = new Audio(url);
+      audioRef.current.addEventListener('ended', () => setPlaying(false));
+      audioRef.current.addEventListener('error', () => setPlaying(false));
+    }
+    if (playing) {
+      audioRef.current.pause();
+      setPlaying(false);
+    } else {
+      const p = audioRef.current.play();
+      if (p && typeof p.then === 'function') {
+        p.then(() => setPlaying(true)).catch(() => setPlaying(false));
+      } else {
+        setPlaying(true);
+      }
+    }
+  }
+
+  return (
+    <button
+      type="button"
+      className={'tooltip__audio-btn ' + (playing ? 'is-playing' : '')}
+      onClick={toggle}
+      title={`Play ${reciter.name} (${reciter.bitrate}) — via ${AUDIO_SOURCE.label}`}
+      aria-label={`Play audio of ${reciter.name}`}
+      data-src={url}
+    >
+      {playing ? '◼' : '▶'}
+    </button>
   );
 }
 

@@ -55,6 +55,21 @@ describe('<VerseDisplay>', () => {
     // Q 2:9 word 5 (يَخْدَعُونَ) has CC entries — assert the summary
     // header is present.
     expect(dialog).toHaveTextContent(/Corpus Coranicum attestations/i);
+
+    // Audio play buttons render for both rows (Hafs + Warsh both have
+    // EveryAyah reciters configured in src/data/audioReciters.json).
+    // We don't assert real playback (jsdom lacks HTMLAudioElement support);
+    // we just check the button is enabled and has a constructed data-src.
+    const playButtons = dialog.querySelectorAll('button.tooltip__audio-btn');
+    expect(playButtons.length).toBeGreaterThanOrEqual(2);
+    const enabledButtons = Array.from(playButtons).filter(
+      (b) => !b.classList.contains('is-disabled') && b.hasAttribute('data-src'),
+    );
+    expect(enabledButtons.length).toBeGreaterThanOrEqual(2);
+    // Exactly one of the constructed URLs should target the warsh CDN path.
+    const srcs = enabledButtons.map((b) => b.getAttribute('data-src'));
+    expect(srcs.some((s) => /everyayah\.com\/data\/Husary_128kbps/.test(s))).toBe(true);
+    expect(srcs.some((s) => /everyayah\.com\/data\/warsh\//.test(s))).toBe(true);
   });
 
   it('shows an empty-state when no ayah data is available', () => {

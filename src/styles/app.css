@@ -378,6 +378,40 @@ a:hover { text-decoration: underline; }
   margin: 0.5rem 0 0; font-size: 0.72rem; color: var(--ink-soft);
 }
 
+/* ----- Audio play button (per-reading, EveryAyah-backed) ----- */
+.tooltip__audio-btn {
+  margin-left: 0.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.65rem;
+  line-height: 1;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.tooltip__audio-btn:hover:not(.is-disabled) {
+  border-color: var(--accent, #2563eb);
+  color: var(--accent, #2563eb);
+}
+.tooltip__audio-btn:focus-visible {
+  outline: 2px solid var(--accent, #2563eb);
+  outline-offset: 2px;
+}
+.tooltip__audio-btn.is-playing {
+  background: var(--accent, #2563eb);
+  color: white;
+  border-color: var(--accent, #2563eb);
+}
+.tooltip__audio-btn.is-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 /* ----- Legend ----- */
 .legend {
   border: 1px solid var(--line); border-radius: var(--radius);

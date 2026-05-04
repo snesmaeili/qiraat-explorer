@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "schemaVersion": "1.0.0",
+    "source": "EveryAyah.com",
+    "sourceUrl": "https://everyayah.com/",
+    "recitationsIndex": "https://everyayah.com/recitations_ayat.html",
+    "license": "Each reciter's audio is hosted by EveryAyah under the original recording's license. EveryAyah aggregates publicly available recitations; consult https://everyayah.com/recitations_ayat.html for per-reciter terms. Attribution to the reciter and EveryAyah is required when redistributing.",
+    "urlTemplate": "https://everyayah.com/data/{slug}/{paddedSurah}{paddedAyah}.mp3",
+    "padding": "3-digit zero-padded surah followed immediately by 3-digit zero-padded ayah (e.g. Q 1:1 -> 001001.mp3)",
+    "verifiedAt": "2026-05-04",
+    "verifiedNote": "All slug paths in this file were probed via HTTP HEAD against everyayah.com on the verifiedAt date and returned HTTP 200 for the test fixture (Q 1:1).",
+    "noQalunReciter": "EveryAyah does not host any Qālūn ʿan Nāfiʿ reciter as of 2026-05-04. The variant panel renders 'audio not available' for the Qālūn row. QUL (qul.tarteel.ai/resources/recitation) hosts Ali al-Huthaify Qālūn but downloads are JS-rendered; that's documented as future-work in docs/research-vision.md."
+  },
+  "reciters": {
+    "husary": {
+      "id": "husary",
+      "name": "Mahmoud Khalil al-Husary",
+      "riwayah": "hafs",
+      "slug": "Husary_128kbps",
+      "bitrate": "128kbps",
+      "preferred": true
+    },
+    "alafasy": {
+      "id": "alafasy",
+      "name": "Mishary Rashid Alafasy",
+      "riwayah": "hafs",
+      "slug": "Alafasy_128kbps",
+      "bitrate": "128kbps"
+    },
+    "maher": {
+      "id": "maher",
+      "name": "Maher al-Muaiqly",
+      "riwayah": "hafs",
+      "slug": "MaherAlMuaiqly128kbps",
+      "bitrate": "128kbps"
+    },
+    "abdul-basit-murattal": {
+      "id": "abdul-basit-murattal",
+      "name": "Abdul Basit Abdul Samad (Murattal)",
+      "riwayah": "hafs",
+      "slug": "Abdul_Basit_Murattal_192kbps",
+      "bitrate": "192kbps"
+    },
+    "abdul-basit-warsh": {
+      "id": "abdul-basit-warsh",
+      "name": "Abdul Basit Abdul Samad (Warsh)",
+      "riwayah": "warsh",
+      "slug": "warsh/warsh_Abdul_Basit_128kbps",
+      "bitrate": "128kbps",
+      "preferred": true
+    },
+    "dosary-warsh": {
+      "id": "dosary-warsh",
+      "name": "Ibrahim Al-Dosary (Warsh)",
+      "riwayah": "warsh",
+      "slug": "warsh/warsh_ibrahim_aldosary_128kbps",
+      "bitrate": "128kbps"
+    },
+    "yassin-warsh": {
+      "id": "yassin-warsh",
+      "name": "Yassin Al-Jazaery (Warsh)",
+      "riwayah": "warsh",
+      "slug": "warsh/warsh_yassin_al_jazaery_64kbps",
+      "bitrate": "64kbps"
+    }
+  }
+}
