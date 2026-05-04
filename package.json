@@ -16,6 +16,7 @@
     "build:hafs-corpus": "node scripts/build-hafs-corpus.js",
     "build:morphology": "node scripts/fetch-morphology.js",
     "build:manuscripts": "node scripts/extract-manuscripts.js",
+    "build:cc-variants": "node scripts/extract-cc-variants.js",
     "init:ledger": "node scripts/init-verification-ledger.js",
     "audit:data": "node scripts/audit-data.js",
     "match:sources": "node scripts/match-sources.js",

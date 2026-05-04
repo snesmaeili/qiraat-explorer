@@ -1,0 +1,5305 @@
+{
+  "_meta": {
+    "schemaVersion": "1.0.0",
+    "source": "Corpus Coranicum (Berlin-Brandenburgische Akademie der Wissenschaften)",
+    "sourceUrl": "https://corpuscoranicum.de/",
+    "apiUrl": "https://corpuscoranicum.de/api/xmltei/variants",
+    "extractedFrom": [
+      "scripts/_raw/quran_variants.xml",
+      "scripts/_raw/quran_variants_readers.xml"
+    ],
+    "extractedAt": "2026-05-04T19:52:49.611Z",
+    "generated": false,
+    "generationPolicy": "no-arabic-text-generation",
+    "containsArabicText": false,
+    "containsTransliteration": true,
+    "coverageNote": "Limited to the 8 verses currently in src/data/quranData.json. The CC TEI distribution carries Latin transliteration with diacritics in <w n=...> elements; the nested <w xml:lang=\"ara\"/> elements are self-closing in this distribution, so Arabic surface forms are not present. This overlay therefore documents reader attribution + transliteration only, and cannot be byte-matched against quranData.json's Arabic.",
+    "curatedVerses": [
+      "1:4",
+      "1:6",
+      "1:7",
+      "2:9",
+      "2:10",
+      "2:132",
+      "3:146",
+      "5:6"
+    ],
+    "readerCount": 870,
+    "itemCount": 231,
+    "licenseNote": "Academic project. Consult https://corpuscoranicum.de/ for terms of use before redistribution. Attribution to the Corpus Coranicum project (Berlin-Brandenburgische Akademie der Wissenschaften) is required."
+  },
+  "verses": {
+    "1:4": [
+      {
+        "ccId": "variant_1166",
+        "readers": [
+          {
+            "id": "375",
+            "display": "Abū Huraira",
+            "formal": "Abū Huraira Abdarraḥmān b. Ṣāḫr Bayāḍ ad-Dausī (Abū al-ʾAswad) (gest. ca. 676-678)",
+            "sigle": "0015217",
+            "residence": null
+          },
+          {
+            "id": "376",
+            "display": "ʿUmar b. ʿAbdalʿazīz",
+            "formal": "ʿUmar b. ʿAbdalʿazīz b. Marwān b. al-Ḥakam al-ʾUmawī ʾAmīr al-Muʾminīn, Abū Ḥafṣ (gest. ca. 719)",
+            "sigle": "0015218",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika",
+          "2": "yaumi"
+        }
+      },
+      {
+        "ccId": "variant_1167",
+        "readers": [
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malika",
+          "2": "yaumi",
+          "3": "d-dīni"
+        }
+      },
+      {
+        "ccId": "variant_1168",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malki"
+        }
+      },
+      {
+        "ccId": "variant_1911",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki",
+          "2": "yaumi",
+          "3": "d-dīni"
+        }
+      },
+      {
+        "ccId": "variant_2254",
+        "readers": [
+          {
+            "id": "245",
+            "display": "Anas b. Mālik",
+            "formal": "Anas b. Mālik b. an-Naḍr  al-Anṣārī, Abū Ḥamza",
+            "sigle": "0015112",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malaka",
+          "2": "yaumi",
+          "3": "d-dīni"
+        }
+      },
+      {
+        "ccId": "variant_2255",
+        "readers": [
+          {
+            "id": "374",
+            "display": "Hārūn b. Mūsā",
+            "formal": "Hārūn b. Mūsā al-ʾAʿwar",
+            "sigle": "0015216",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālik"
+        }
+      },
+      {
+        "ccId": "variant_2256",
+        "readers": [
+          {
+            "id": "774",
+            "display": "einige [Leser, Überlieferer, Gelehrte,..?]",
+            "formal": "ʿan baʿḍihim",
+            "sigle": "0015903",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malīki"
+        }
+      },
+      {
+        "ccId": "variant_3067",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki"
+        }
+      },
+      {
+        "ccId": "variant_3068",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_3069",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_4300",
+        "readers": [
+          {
+            "id": "372",
+            "display": "grammatisch möglich",
+            "formal": "Aufgrund von Grammatikregeln erschlossene oder durch Sprachgebrauch nachgewiesene Lesart, wie sie z.B. in Sprichwörtern oder der altarabischen Dichtung belegt ist.",
+            "sigle": "0015214",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_4328",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_7153",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          },
+          {
+            "id": "283",
+            "display": "der Prophet",
+            "formal": "Muḥammad, der Prophet",
+            "sigle": "0015000",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_7154",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          },
+          {
+            "id": "283",
+            "display": "der Prophet",
+            "formal": "Muḥammad, der Prophet",
+            "sigle": "0015000",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki"
+        }
+      },
+      {
+        "ccId": "variant_7156",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "4",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf b. Hišām b. Ṯaʿlab b. Dāwūd b. Miqsam b- Ġālib (b. Ṭālib b. Ġurāb) al-Asadī al-Bazzār al-Baġdādī, Abū Muḥammad (gest. ca. 844)",
+            "sigle": "1000",
+            "residence": "(Kufa?) Bagdad"
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          },
+          {
+            "id": "43",
+            "display": "Yaʿqūb",
+            "formal": "Yaʿqūb b. Isḥāq b. Zaid b. Abdallāh b. Abī Isḥāq Maulā al-Ḥaḍramī, Abū Muḥammad (gest. ca. 821)",
+            "sigle": "0900",
+            "residence": "Basra"
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_7157",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "3",
+            "display": "Abū Ǧaʿfar",
+            "formal": "Yazīd b. al-Qaʿqāʿ al-Maḫzūmī al.Madanī al-Qāriʾ, Abū Ǧaʿfar, maulā Ibn ʿAyyāš (gest. ca. 744-750)",
+            "sigle": "0800",
+            "residence": "Medina"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          },
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          },
+          {
+            "id": "45",
+            "display": "al-Yazīdī",
+            "formal": "Yaḥyā b. al-Mubārak al-Yazīdī = Abū Muḥammad Yaḥyā ibn al-Mubārak ibn al-Muġīra al-Yazīdī al-Baṣrī al-ʿAdawi an-Naḥwī (st. 817/818)",
+            "sigle": "1200",
+            "residence": null
+          },
+          {
+            "id": "191",
+            "display": "aš-Šaṭawī",
+            "formal": "Muḥammad b. Aḥmad b. Ibrāhīm b. Yusūf b. al-ʿAbbās b. Maimūn aš-Šanabūḏī  aš-Šaṭawī al-Baġdādī, Abū al-Faraǧ, Ġulām Ibn Šanabūḏ (gest. ca. 998)",
+            "sigle": "1402",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki"
+        }
+      },
+      {
+        "ccId": "variant_7158",
+        "readers": [
+          {
+            "id": "190",
+            "display": "al-Muṭṭawwiʿī",
+            "formal": "al-Ḥasan b. Saʿīd b. Ǧaʿfar b. Faḍl b. Šāḏān al-Muṭṭawwiʿī al-ʿAbbādānī al-ʿUmarī (ʿAmrī?) al-Baṣrī, Abū al-ʿAbbās (gest. 981/982)",
+            "sigle": "1401",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_7413",
+        "readers": [
+          {
+            "id": "199",
+            "display": "Muḥammad b. ʿAbdarraḥmān b. as-Samaifaʿ al-Yamānī",
+            "formal": "Muḥammad b. ʿAbdarraḥmān b. as-Samaifaʿ al-Yamānī, Abū ʿAbdallāh",
+            "sigle": "0015081",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_7414",
+        "readers": [
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malaka",
+          "2": "yauma",
+          "3": "d-dīni"
+        }
+      },
+      {
+        "ccId": "variant_7415",
+        "readers": [
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malika",
+          "2": "yauma",
+          "3": "d-dīni"
+        }
+      },
+      {
+        "ccId": "variant_7431",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_7432",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki"
+        }
+      },
+      {
+        "ccId": "variant_8058",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "4",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf b. Hišām b. Ṯaʿlab b. Dāwūd b. Miqsam b- Ġālib (b. Ṭālib b. Ġurāb) al-Asadī al-Bazzār al-Baġdādī, Abū Muḥammad (gest. ca. 844)",
+            "sigle": "1000",
+            "residence": "(Kufa?) Bagdad"
+          },
+          {
+            "id": "12",
+            "display": "Ṭalḥa b. Muṣarrif",
+            "formal": "Ṭalḥa b. Muṣarrif b. ʿAmr b. Kaʿb al-Hamādanī al-Yāmī al-Kūfī, Abū Muḥammad (Abū ʿAbdallāh) (gest. ca. 730)",
+            "sigle": "0015008",
+            "residence": null
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          },
+          {
+            "id": "43",
+            "display": "Yaʿqūb",
+            "formal": "Yaʿqūb b. Isḥāq b. Zaid b. Abdallāh b. Abī Isḥāq Maulā al-Ḥaḍramī, Abū Muḥammad (gest. ca. 821)",
+            "sigle": "0900",
+            "residence": "Basra"
+          },
+          {
+            "id": "67",
+            "display": "az-Zubair",
+            "formal": "az-Zubair b. ʿĀmr b. Ṣāliḥ",
+            "sigle": "0115",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_8059",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "7",
+            "display": "ʿĪsā b. ʿUmar",
+            "formal": "ʿĪsā b. ʿUmar aṯ-Ṯaqafī",
+            "sigle": "0015003",
+            "residence": null
+          },
+          {
+            "id": "17",
+            "display": "Abū ad-Dardāʾ",
+            "formal": "ʿUwaimir b. Zaid ʿĀmir (b. ʿAbdallāh / b. Ṯaʿlaba / b. ʿĀmir b. Ġanam) al-Anṣārī al-Ḫazraǧī, Abū ad-Dardāʾ (gest. ca. 652)",
+            "sigle": "0015013",
+            "residence": "Medina, Damaskus"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          },
+          {
+            "id": "47",
+            "display": "al-Aʿmaš",
+            "formal": "al-Aʿmaš = Abū Muḥammad Sulaimān ibn Mihrān al-Aʿmaš al-Kūfī al-Asadī al-Kāhilī (gest. 764/765)",
+            "sigle": "1400",
+            "residence": null
+          },
+          {
+            "id": "192",
+            "display": "Ibn ʿAbbās",
+            "formal": "ʿAbdallāh b. ʿAbbās b. Abdalmuṭṭalib b. Hāšim al-Hāšimī, Abū Hāšim (gest. ca. 687)",
+            "sigle": "0015037",
+            "residence": null
+          },
+          {
+            "id": "231",
+            "display": "Qatāda",
+            "formal": "Qatāda",
+            "sigle": "0015048",
+            "residence": null
+          },
+          {
+            "id": "239",
+            "display": "Zaid b. Ṯābit",
+            "formal": "Zaid b. Ṯābit b. aḍ-Ḍaḥḥāk b. Zaid b. Lauḏān b. ʿAmr b. ʿAbd ʿAun b. Ġanam b. Mālik b. an-Naǧǧār al-Anṣārī al-Ḫazraǧī an-Naǧǧāri, Abū Saʿīd und Abū Ḫāriǧa (gest. ca. 674)",
+            "sigle": "0015039",
+            "residence": null
+          },
+          {
+            "id": "240",
+            "display": "Ubayy b. Kaʿb",
+            "formal": "Ubayy b. Kaʿb b. Qais b. ʿUbaid b. Zaid b. Muʿāwia b. ʿAmr b. Mālik b. an-Naǧǧār al-Ḫazraǧī al-Anṣārī, Abū al-Munḏir oder Abū aṭ-Ṭufail (gest. ca. 642)",
+            "sigle": "0015002",
+            "residence": "Medina"
+          },
+          {
+            "id": "489",
+            "display": "Muʿāḏ al-Qāriʾ",
+            "formal": "Muʿāḏ al-Qāriʾ",
+            "sigle": "0015330",
+            "residence": null
+          },
+          {
+            "id": "492",
+            "display": "al-Musawwir",
+            "formal": "al-Musawwir",
+            "sigle": "0015333",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki"
+        }
+      },
+      {
+        "ccId": "variant_8060",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "23",
+            "display": "ʿĀṣim al-Ǧaḥdarī",
+            "formal": "ʿĀṣim b. Abī aṣ-Ṣabbāḥ al-ʿAǧǧāǧ (Maimūn) al-Ǧaḥdarī al-Baṣrī, Abū al-Muǧaššir (gest. ca. 746/748)",
+            "sigle": "0015019",
+            "residence": null
+          },
+          {
+            "id": "375",
+            "display": "Abū Huraira",
+            "formal": "Abū Huraira Abdarraḥmān b. Ṣāḫr Bayāḍ ad-Dausī (Abū al-ʾAswad) (gest. ca. 676-678)",
+            "sigle": "0015217",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malki"
+        }
+      },
+      {
+        "ccId": "variant_8061",
+        "readers": [
+          {
+            "id": "54",
+            "display": "Warš",
+            "formal": "Warš, ʿUṯmān b. Saʿīd (b. ʿAbdallāh b. ʿAmr b. Sulaimān b ʾIbrāhīm b. .ʿAdī b. Ġazwān b. Dāwūd b. Sābiq al-Qibṭī al-Miṣrī) al-Muqrī, Maulā ʾĀl az-Zubair b. al-ʿAwwām oder al-Qibṭī, Abū Saʿīd (Abū ʿAmr, Abū al-Qāsim) (gest. 812/13)",
+            "sigle": "0102",
+            "residence": "Ägypten"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malkī"
+        }
+      },
+      {
+        "ccId": "variant_8062",
+        "readers": [
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          },
+          {
+            "id": "368",
+            "display": "ʿAṭiyya al-ʿAufī",
+            "formal": "ʿAṭiyya al-ʿAufī",
+            "sigle": "0015211",
+            "residence": null
+          },
+          {
+            "id": "491",
+            "display": "aš-Šaʿbī",
+            "formal": "aš-Šaʿbī, ʿĀmir b. Šarāḥīl b. ʿAbd ʿAmr al-Kūfī",
+            "sigle": "0015332",
+            "residence": null
+          },
+          {
+            "id": "494",
+            "display": "Abū ʿUṯmān an-Nahdī",
+            "formal": "Abū ʿUṯmān an-Nahdī",
+            "sigle": "0015334",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "milki"
+        }
+      },
+      {
+        "ccId": "variant_8063",
+        "readers": [
+          {
+            "id": "332",
+            "display": "Ibn ʿAṭiyya",
+            "formal": "Ibn ʿAṭiyya",
+            "sigle": "0015177",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "milka"
+        }
+      },
+      {
+        "ccId": "variant_8064",
+        "readers": [
+          {
+            "id": "30",
+            "display": "Abū Naufal",
+            "formal": "ʿUmar (oder: ʿAmr) b. Muslim, Abū Naufal",
+            "sigle": "0015026",
+            "residence": null
+          },
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          },
+          {
+            "id": "245",
+            "display": "Anas b. Mālik",
+            "formal": "Anas b. Mālik b. an-Naḍr  al-Anṣārī, Abū Ḥamza",
+            "sigle": "0015112",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malika"
+        }
+      },
+      {
+        "ccId": "variant_8065",
+        "readers": [
+          {
+            "id": "227",
+            "display": "ʿĀʾiša",
+            "formal": "ʿĀʾiša bint Abī Bakr",
+            "sigle": "0015052",
+            "residence": null
+          },
+          {
+            "id": "284",
+            "display": "Saʿd b. Abī Waqqāṣ",
+            "formal": "Saʿd b. Abī Waqqāṣ, Mālik b. ʾUhaib (Wuhaib) b. Abdalmannāf b. Zuhra b. Kilāb al-Qurašī az-Zuhrī, Abu Isḥāq (gest. ca. 671/675)",
+            "sigle": "0015132",
+            "residence": null
+          },
+          {
+            "id": "351",
+            "display": "Muwarriq al-ʿIǧlī",
+            "formal": "Muwarriq b. Mušamriǧ b. ʿAbdallāh al-ʿIǧlī al-Baṣrī, Abū al-Muʿtamir",
+            "sigle": "0015194",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliku"
+        }
+      },
+      {
+        "ccId": "variant_8066",
+        "readers": [
+          {
+            "id": "23",
+            "display": "ʿĀṣim al-Ǧaḥdarī",
+            "formal": "ʿĀṣim b. Abī aṣ-Ṣabbāḥ al-ʿAǧǧāǧ (Maimūn) al-Ǧaḥdarī al-Baṣrī, Abū al-Muǧaššir (gest. ca. 746/748)",
+            "sigle": "0015019",
+            "residence": null
+          },
+          {
+            "id": "37",
+            "display": "Yaḥyā b. Yaʿmar",
+            "formal": "Yaḥyā b. Yaʿmar al-Qaisī al-Ǧadalī al-ʿAdwānī al-Baṣrī, Abū Sulaimān (gest. vor 90AH)",
+            "sigle": "0015034",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          },
+          {
+            "id": "197",
+            "display": "ʿUbaid b. ʿUmair",
+            "formal": "ʿUbaid b. ʿUmair b. Qatāda al-Laiṯī al-Makkī al-Qāṣṣ, Abū ʿĀṣim (gest. ca. 693)",
+            "sigle": "0015083",
+            "residence": null
+          },
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          },
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          },
+          {
+            "id": "495",
+            "display": "Abū Ḥanīfa",
+            "formal": "Abū Ḥanīfa an-Nuʿmān b. Ṯābit Zūṭā",
+            "sigle": "0015335",
+            "residence": null
+          },
+          {
+            "id": "496",
+            "display": "Ǧubair b. Muṭʿam",
+            "formal": "Ǧubair b. Muṭʿam",
+            "sigle": "0015336",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malaka",
+          "2": "yauma"
+        }
+      },
+      {
+        "ccId": "variant_8067",
+        "readers": [
+          {
+            "id": "47",
+            "display": "al-Aʿmaš",
+            "formal": "al-Aʿmaš = Abū Muḥammad Sulaimān ibn Mihrān al-Aʿmaš al-Kūfī al-Asadī al-Kāhilī (gest. 764/765)",
+            "sigle": "1400",
+            "residence": null
+          },
+          {
+            "id": "199",
+            "display": "Muḥammad b. ʿAbdarraḥmān b. as-Samaifaʿ al-Yamānī",
+            "formal": "Muḥammad b. ʿAbdarraḥmān b. as-Samaifaʿ al-Yamānī, Abū ʿAbdallāh",
+            "sigle": "0015081",
+            "residence": null
+          },
+          {
+            "id": "376",
+            "display": "ʿUmar b. ʿAbdalʿazīz",
+            "formal": "ʿUmar b. ʿAbdalʿazīz b. Marwān b. al-Ḥakam al-ʾUmawī ʾAmīr al-Muʾminīn, Abū Ḥafṣ (gest. ca. 719)",
+            "sigle": "0015218",
+            "residence": null
+          },
+          {
+            "id": "480",
+            "display": "Abū Ṣāliḥ al-Hamaḏānī",
+            "formal": "Muḥammad b. ʿUmair b. ar-Rabīʿ al-Hamaḏānī al-Kūfī al-Qādī, Abū Ṣāliḥ (gest. ca. 922)",
+            "sigle": "0015321",
+            "residence": null
+          },
+          {
+            "id": "498",
+            "display": "ʿAbdalmalik",
+            "formal": "ʿAbdalmalik al-Qāḍī al-Hind",
+            "sigle": "0015338",
+            "residence": null
+          },
+          {
+            "id": "499",
+            "display": "Abū ʿAbdalmalik",
+            "formal": "Abū ʿAbdalmalik aš-Šāmī",
+            "sigle": "0015339",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_8068",
+        "readers": [
+          {
+            "id": "500",
+            "display": "al-Yamān",
+            "formal": "al-Yamān",
+            "sigle": "0015340",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malikan"
+        }
+      },
+      {
+        "ccId": "variant_8069",
+        "readers": [
+          {
+            "id": "4",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf b. Hišām b. Ṯaʿlab b. Dāwūd b. Miqsam b- Ġālib (b. Ṭālib b. Ġurāb) al-Asadī al-Bazzār al-Baġdādī, Abū Muḥammad (gest. ca. 844)",
+            "sigle": "1000",
+            "residence": "(Kufa?) Bagdad"
+          },
+          {
+            "id": "318",
+            "display": "Abū Ḥātim as-Siǧistānī",
+            "formal": "Sahl b. Muḥammad b. ʿUṯmān b. Yazīd as-Siǧistānī, Abū Ḥātim (gest. ca. 864/869)",
+            "sigle": "0015164",
+            "residence": "Basra"
+          },
+          {
+            "id": "502",
+            "display": "Abū ʿUbaid",
+            "formal": "Abū ʿUbaid",
+            "sigle": "0015342",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālikun",
+          "2": "yauma"
+        }
+      },
+      {
+        "ccId": "variant_8070",
+        "readers": [
+          {
+            "id": "501",
+            "display": "ʿAun al-ʿUqailī",
+            "formal": "ʿAun b. Abī Šaddād al-ʿUqailī, Abū Rauḥ",
+            "sigle": "0015341",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālikun"
+        }
+      },
+      {
+        "ccId": "variant_8071",
+        "readers": [
+          {
+            "id": "241",
+            "display": "Abū Ḥaiwa",
+            "formal": "Šuraiḥ b. Yazīd al-Ḥaḍramī al-Ḥimṣī, Abū Ḥaiwa (gest. ca. 818)",
+            "sigle": "0015066",
+            "residence": "Ḥimṣ (Homs)"
+          },
+          {
+            "id": "375",
+            "display": "Abū Huraira",
+            "formal": "Abū Huraira Abdarraḥmān b. Ṣāḫr Bayāḍ ad-Dausī (Abū al-ʾAswad) (gest. ca. 676-678)",
+            "sigle": "0015217",
+            "residence": null
+          },
+          {
+            "id": "376",
+            "display": "ʿUmar b. ʿAbdalʿazīz",
+            "formal": "ʿUmar b. ʿAbdalʿazīz b. Marwān b. al-Ḥakam al-ʾUmawī ʾAmīr al-Muʾminīn, Abū Ḥafṣ (gest. ca. 719)",
+            "sigle": "0015218",
+            "residence": null
+          },
+          {
+            "id": "501",
+            "display": "ʿAun al-ʿUqailī",
+            "formal": "ʿAun b. Abī Šaddād al-ʿUqailī, Abū Rauḥ",
+            "sigle": "0015341",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliku",
+          "2": "yaumi"
+        }
+      },
+      {
+        "ccId": "variant_8072",
+        "readers": [
+          {
+            "id": "28",
+            "display": "Abū Raǧāʾ al-ʿUṭāridī",
+            "formal": "Abū Raǧāʾ ʿImrān b. Taim (Ibn Milḥān) al-ʿUṭāridī al-Baṣrī (gest. ca. 723)",
+            "sigle": "0015024",
+            "residence": null
+          },
+          {
+            "id": "240",
+            "display": "Ubayy b. Kaʿb",
+            "formal": "Ubayy b. Kaʿb b. Qais b. ʿUbaid b. Zaid b. Muʿāwia b. ʿAmr b. Mālik b. an-Naǧǧār al-Ḫazraǧī al-Anṣārī, Abū al-Munḏir oder Abū aṭ-Ṭufail (gest. ca. 642)",
+            "sigle": "0015002",
+            "residence": "Medina"
+          },
+          {
+            "id": "375",
+            "display": "Abū Huraira",
+            "formal": "Abū Huraira Abdarraḥmān b. Ṣāḫr Bayāḍ ad-Dausī (Abū al-ʾAswad) (gest. ca. 676-678)",
+            "sigle": "0015217",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malīki"
+        }
+      },
+      {
+        "ccId": "variant_8073",
+        "readers": [
+          {
+            "id": "37",
+            "display": "Yaḥyā b. Yaʿmar",
+            "formal": "Yaḥyā b. Yaʿmar al-Qaisī al-Ǧadalī al-ʿAdwānī al-Baṣrī, Abū Sulaimān (gest. vor 90AH)",
+            "sigle": "0015034",
+            "residence": null
+          },
+          {
+            "id": "367",
+            "display": "Ayyūb as-Saḫtiyānī",
+            "formal": "Ayyūb b. Abī Tamīma Kaisān as-Saḫtiyānī, Abū Bakr",
+            "sigle": "0015210",
+            "residence": "Baṣra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mēliki"
+        }
+      },
+      {
+        "ccId": "variant_8074",
+        "readers": [
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mæliki"
+        }
+      },
+      {
+        "ccId": "variant_8075",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mallāki"
+        }
+      },
+      {
+        "ccId": "variant_10051",
+        "readers": [
+          {
+            "id": "372",
+            "display": "grammatisch möglich",
+            "formal": "Aufgrund von Grammatikregeln erschlossene oder durch Sprachgebrauch nachgewiesene Lesart, wie sie z.B. in Sprichwörtern oder der altarabischen Dichtung belegt ist.",
+            "sigle": "0015214",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_11777",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "107",
+            "display": "ʿAbdalwāriṯ b. Saʿīd",
+            "formal": "ʿAbdalwāriṯ b. Saʿīd b. Ḏakwān at-Tannūrī al-ʿAnbarī, Abū ʿUbaida (gest. ca. 796)",
+            "sigle": "0307",
+            "residence": null
+          },
+          {
+            "id": "707",
+            "display": "Abū Maʿmar",
+            "formal": "Abū Maʿmar ʿAbdallāh b. ʿAmr b. Abī al-Ḥaǧǧāǧ Maisara at-Tamīmī al-Munqarī (gest. ca. 856)",
+            "sigle": "0015543",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "malki"
+        }
+      },
+      {
+        "ccId": "variant_11778",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "107",
+            "display": "ʿAbdalwāriṯ b. Saʿīd",
+            "formal": "ʿAbdalwāriṯ b. Saʿīd b. Ḏakwān at-Tannūrī al-ʿAnbarī, Abū ʿUbaida (gest. ca. 796)",
+            "sigle": "0307",
+            "residence": null
+          },
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "milki"
+        }
+      },
+      {
+        "ccId": "variant_11779",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "107",
+            "display": "ʿAbdalwāriṯ b. Saʿīd",
+            "formal": "ʿAbdalwāriṯ b. Saʿīd b. Ḏakwān at-Tannūrī al-ʿAnbarī, Abū ʿUbaida (gest. ca. 796)",
+            "sigle": "0307",
+            "residence": null
+          },
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "miliki"
+        }
+      },
+      {
+        "ccId": "variant_12433",
+        "readers": [
+          {
+            "id": "458",
+            "display": "allgemein übliche Lesart",
+            "formal": "al-qirāʾa al-ʿāmma",
+            "sigle": "0015299",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "[maliki]"
+        }
+      },
+      {
+        "ccId": "variant_13324",
+        "readers": [
+          {
+            "id": "283",
+            "display": "der Prophet",
+            "formal": "Muḥammad, der Prophet",
+            "sigle": "0015000",
+            "residence": null
+          },
+          {
+            "id": "615",
+            "display": "Abū Bakr aṣ-Ṣiddīq",
+            "formal": "Abū Bakr, ʿAbdallāh b. ʿUṯmān b. ʿĀmir b. ʿAmir b. Kaʿb b. Saʿd b. Taim b. Murra b. Kaʿb b. Luʾī b. Ġālib b. Fah b. Abī Quḥāfa aṣ-Ṣiddīq (gest. ca. 634)",
+            "sigle": "0015454",
+            "residence": null
+          },
+          {
+            "id": "757",
+            "display": "ʿUmar b. al-Ḫaṭṭāb",
+            "formal": "ʿUmar b. al-Ḫaṭṭāb",
+            "sigle": "0015888",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_13603",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "māliki"
+        }
+      },
+      {
+        "ccId": "variant_13604",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      },
+      {
+        "ccId": "variant_16217",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "maliki"
+        }
+      },
+      {
+        "ccId": "variant_16218",
+        "readers": [
+          {
+            "id": "445",
+            "display": "Lesart der Leute",
+            "formal": "qirāʾātu n-nās",
+            "sigle": "0015286",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "mālika"
+        }
+      }
+    ],
+    "1:6": [
+      {
+        "ccId": "variant_1844",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "ṣirāṭan",
+          "3": "mustaqīman"
+        }
+      },
+      {
+        "ccId": "variant_1912",
+        "readers": [
+          {
+            "id": "148",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf ʿan Ḥamza (gest. 844)",
+            "sigle": "0601",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "z(ṣ)-z(ṣ)irāṭa",
+          "3": "l-mustaqīma"
+        }
+      },
+      {
+        "ccId": "variant_1913",
+        "readers": [
+          {
+            "id": "149",
+            "display": "Ḫallād",
+            "formal": "Ḫallād b. Ḫālid (b.ʿĪsā) al-Baġdādī aš-Šaibānī aṣ-Ṣairafī al-Kūfī al-Aḥwal, Abū ʿĪsā (Abū ʿAbdallāh) (gest. ca. 835)",
+            "sigle": "0602",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "z(ṣ)-z(ṣ)irāṭa",
+          "3": "l-mustaqīma"
+        }
+      },
+      {
+        "ccId": "variant_1914",
+        "readers": [
+          {
+            "id": "81",
+            "display": "Qunbul",
+            "formal": "Qunbul = Muḥammad b. ʿAbdarraḥmān b. Muḥammad b. Ḫālid b. Saʿīd b. Ǧurǧa al-Makki al-Maḫzūmī, Abū ʿUmar (gest. ca. 893-904)",
+            "sigle": "0202",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s(ṣ)-s(ṣ)irāṭa",
+          "3": "l-mustaqīma"
+        }
+      },
+      {
+        "ccId": "variant_2261",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ʾaršidnā"
+        }
+      },
+      {
+        "ccId": "variant_7161",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s(ṣ)-s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7162",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "ṣ-ṣirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7163",
+        "readers": [
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "z(ṣ)-z(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7164",
+        "readers": [
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          },
+          {
+            "id": "81",
+            "display": "Qunbul",
+            "formal": "Qunbul = Muḥammad b. ʿAbdarraḥmān b. Muḥammad b. Ḫālid b. Saʿīd b. Ǧurǧa al-Makki al-Maḫzūmī, Abū ʿUmar (gest. ca. 893-904)",
+            "sigle": "0202",
+            "residence": null
+          },
+          {
+            "id": "191",
+            "display": "aš-Šaṭawī",
+            "formal": "Muḥammad b. Aḥmad b. Ibrāhīm b. Yusūf b. al-ʿAbbās b. Maimūn aš-Šanabūḏī  aš-Šaṭawī al-Baġdādī, Abū al-Faraǧ, Ġulām Ibn Šanabūḏ (gest. ca. 998)",
+            "sigle": "1402",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s(ṣ)-s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7166",
+        "readers": [
+          {
+            "id": "148",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf ʿan Ḥamza (gest. 844)",
+            "sigle": "0601",
+            "residence": null
+          },
+          {
+            "id": "190",
+            "display": "al-Muṭṭawwiʿī",
+            "formal": "al-Ḥasan b. Saʿīd b. Ǧaʿfar b. Faḍl b. Šāḏān al-Muṭṭawwiʿī al-ʿAbbādānī al-ʿUmarī (ʿAmrī?) al-Baṣrī, Abū al-ʿAbbās (gest. 981/982)",
+            "sigle": "1401",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "z(ṣ)-z(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7167",
+        "readers": [
+          {
+            "id": "149",
+            "display": "Ḫallād",
+            "formal": "Ḫallād b. Ḫālid (b.ʿĪsā) al-Baġdādī aš-Šaibānī aṣ-Ṣairafī al-Kūfī al-Aḥwal, Abū ʿĪsā (Abū ʿAbdallāh) (gest. ca. 835)",
+            "sigle": "0602",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "z(ṣ)-z(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7172",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "ṣirāṭan",
+          "3": "mustaqīman"
+        }
+      },
+      {
+        "ccId": "variant_7419",
+        "readers": [
+          {
+            "id": "192",
+            "display": "Ibn ʿAbbās",
+            "formal": "ʿAbdallāh b. ʿAbbās b. Abdalmuṭṭalib b. Hāšim al-Hāšimī, Abū Hāšim (gest. ca. 687)",
+            "sigle": "0015037",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s-sirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_8085",
+        "readers": [
+          {
+            "id": "81",
+            "display": "Qunbul",
+            "formal": "Qunbul = Muḥammad b. ʿAbdarraḥmān b. Muḥammad b. Ḫālid b. Saʿīd b. Ǧurǧa al-Makki al-Maḫzūmī, Abū ʿUmar (gest. ca. 893-904)",
+            "sigle": "0202",
+            "residence": null
+          },
+          {
+            "id": "181",
+            "display": "Ruwais",
+            "formal": "Ruwais Muḥammad ibn al-Mutawakkil al-Baṣrī al-Luʾluʾī, Abū ʿAbdallāh (gest. ca. 852)",
+            "sigle": "0901",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s-sirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_8086",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "278",
+            "display": "Quṭrub",
+            "formal": "Muḥammad b. al-Mustanīr, Quṭrub, Abū ʿAlī",
+            "sigle": "0015128",
+            "residence": "Basra, Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "z(ṣ)-z(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_8087",
+        "readers": [
+          {
+            "id": "15",
+            "display": "aḍ-Ḍaḥḥāk",
+            "formal": "aḍ-Ḍaḥḥāk b. Muzāḥim al-Hilālī al-Ḫurāsānī, Abū al-Qāsim oder Abū Muḥammad",
+            "sigle": "0015011",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          },
+          {
+            "id": "236",
+            "display": "Zaid b. ʿAlī",
+            "formal": "Zaid b. ʿAlī",
+            "sigle": "0015042",
+            "residence": null
+          },
+          {
+            "id": "415",
+            "display": "Naṣr b. ʿAlī",
+            "formal": "Naṣr b. ʿAlī",
+            "sigle": "0015257",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "ṣirāṭan",
+          "3": "mustaqīman"
+        }
+      },
+      {
+        "ccId": "variant_8096",
+        "readers": [
+          {
+            "id": "505",
+            "display": "Ṯābit al-Bunanī",
+            "formal": "Ṯābit b. Aslam al-Bunanī al-Miṣrī, Abū Muḥammad (gest. ca. 745)",
+            "sigle": "0015345",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "baṣṣirnā",
+          "2": "ṣ-ṣirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_8097",
+        "readers": [
+          {
+            "id": "253",
+            "display": "Ǧaʿfar aṣ-Ṣādiq",
+            "formal": "Ǧaʿfar b. Muḥammad b. ʿAlī b. al-Ḥusain b. ʿAlī b. Abī Ṭālib aṣ-Ṣādiq Al-Madanī, Abū ʿAbdallāh (gest. 765/766)",
+            "sigle": "0015089",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "ṣirāṭa",
+          "3": "mustaqīmin"
+        }
+      },
+      {
+        "ccId": "variant_8603",
+        "readers": [
+          {
+            "id": "442",
+            "display": "Mehrheit der Leser",
+            "formal": "al-ǧumhūr, ʾakṯaru l-qirāʾati",
+            "sigle": "0015284",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s(ṣ)-s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_12347",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "s(ṣ)-s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_12533",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ʾaršidnā"
+        }
+      },
+      {
+        "ccId": "variant_12536",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "hdina"
+        }
+      }
+    ],
+    "1:7": [
+      {
+        "ccId": "variant_1845",
+        "readers": [
+          {
+            "id": "7",
+            "display": "ʿĪsā b. ʿUmar",
+            "formal": "ʿĪsā b. ʿUmar aṯ-Ṯaqafī",
+            "sigle": "0015003",
+            "residence": null
+          },
+          {
+            "id": "20",
+            "display": "ʿAbdallāh b. Abī Isḥāq al-Ḥaḍramī",
+            "formal": "ʿAbdallāh b. Abī Isḥāq al-Ḥaḍramī an-Naḥwī al-Baṣrī (gest. ca. 747)",
+            "sigle": "0015016",
+            "residence": null
+          },
+          {
+            "id": "211",
+            "display": "al-Aʿraǧ",
+            "formal": "ʿAbdarraḥmān b. Hurmuz al-Aʿraǧ al-Hāšimī al-Madanī, Maulā Muḥammad b. Rabīʿa, Abū Dāwūd (gest. ca. 735/737)",
+            "sigle": "0015069",
+            "residence": "Medina"
+          },
+          {
+            "id": "220",
+            "display": "ʿAbdallāh b. Yazīd",
+            "formal": "Abū ʿAbdarraḥmān ʿAbdallāh b. Yazīd al-Qurašī",
+            "sigle": "0015059",
+            "residence": null
+          },
+          {
+            "id": "346",
+            "display": "Muslim b. Ǧundab",
+            "formal": "Muslim b. Ǧundab al-Huḏalī al-Madanī, Abū ʿAbdallāh",
+            "sigle": "0015190",
+            "residence": null
+          },
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumū",
+          "7": "ʿalaihumū"
+        }
+      },
+      {
+        "ccId": "variant_1846",
+        "readers": [
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_1847",
+        "readers": [
+          {
+            "id": "18",
+            "display": "ʿAmr b. Fāʾid",
+            "formal": "ʿAmr b. Fāʾid al-Aswārī al-Baṣrī, Abū ʿAlī",
+            "sigle": "0015014",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          },
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimī",
+          "7": "ʿalaihimī"
+        }
+      },
+      {
+        "ccId": "variant_1848",
+        "readers": [
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihim",
+          "7": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_1849",
+        "readers": [
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_1850",
+        "readers": [
+          {
+            "id": "211",
+            "display": "al-Aʿraǧ",
+            "formal": "ʿAbdarraḥmān b. Hurmuz al-Aʿraǧ al-Hāšimī al-Madanī, Maulā Muḥammad b. Rabīʿa, Abū Dāwūd (gest. ca. 735/737)",
+            "sigle": "0015069",
+            "residence": "Medina"
+          },
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimu",
+          "7": "ʿalaihimu"
+        }
+      },
+      {
+        "ccId": "variant_1851",
+        "readers": [
+          {
+            "id": "211",
+            "display": "al-Aʿraǧ",
+            "formal": "ʿAbdarraḥmān b. Hurmuz al-Aʿraǧ al-Hāšimī al-Madanī, Maulā Muḥammad b. Rabīʿa, Abū Dāwūd (gest. ca. 735/737)",
+            "sigle": "0015069",
+            "residence": "Medina"
+          },
+          {
+            "id": "361",
+            "display": "Ibn Muǧāhid",
+            "formal": "Abū Bakr Aḥmad b. Mūsā b. al-ʿAbbās b. Muǧāhid at-Tamīmī al-ʿAṭašī al-Baġdādī (gest. ca. 936)",
+            "sigle": "0015202",
+            "residence": "Bagdad"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumu",
+          "7": "ʿalaihumu"
+        }
+      },
+      {
+        "ccId": "variant_1852",
+        "readers": [
+          {
+            "id": "362",
+            "display": "al-Aḫfaš al-Ausaṭ",
+            "formal": "Saʿīd b. Masʿada al-Aḫfaš al-Ausaṭ, Abū al-Ḥasan",
+            "sigle": "0015203",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumī",
+          "7": "ʿalaihumī"
+        }
+      },
+      {
+        "ccId": "variant_1915",
+        "readers": [
+          {
+            "id": "148",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf ʿan Ḥamza (gest. 844)",
+            "sigle": "0601",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "z(ṣ)irāṭa",
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_1916",
+        "readers": [
+          {
+            "id": "81",
+            "display": "Qunbul",
+            "formal": "Qunbul = Muḥammad b. ʿAbdarraḥmān b. Muḥammad b. Ḫālid b. Saʿīd b. Ǧurǧa al-Makki al-Maḫzūmī, Abū ʿUmar (gest. ca. 893-904)",
+            "sigle": "0202",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "s(ṣ)irāṭa",
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_1918",
+        "readers": [
+          {
+            "id": "82",
+            "display": "al-Bazzī",
+            "formal": "al-Bazzī, Abū al-Ḥasan Aḥmad ibn Muḥammad ibn ʿAbdallāh ibn al-Qāsim ibn Nāfiʿ ibn Abī Bazza al-Bazzī al-Makkī al-Muqrī (al-muʾaḏḏin) (gest. ca. 854-865)",
+            "sigle": "0201",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_1919",
+        "readers": [
+          {
+            "id": "53",
+            "display": "Qālūn",
+            "formal": "Qālūn, ʿĪsā b. Mīnā b. Wardān b. ʿĪsā b. Abdaṣṣamad b. ʿUmar b. Abdallāh az-Zuraqī al-Murrī (?), Abū Mūsā (gest. ca. 835)",
+            "sigle": "0101",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihim | ʿalaihimū",
+          "7": "ʿalaihim | ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_2212",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "2": "llaḏīna",
+          "3": "ʾanʿamta",
+          "4": "ʿalaihim",
+          "5": "ġairi",
+          "6": "l-maġḍūbi",
+          "7": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_2262",
+        "readers": [
+          {
+            "id": "856",
+            "display": "Aʿrābī",
+            "formal": "Aʿrābī",
+            "sigle": "0016037",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ṣirāṭa",
+          "2": "laḏīna"
+        }
+      },
+      {
+        "ccId": "variant_2263",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ṣirāṭa",
+          "2": "man",
+          "3": "ʾanʿamta",
+          "4": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_2264",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "283",
+            "display": "der Prophet",
+            "formal": "Muḥammad, der Prophet",
+            "sigle": "0015000",
+            "residence": null
+          },
+          {
+            "id": "338",
+            "display": "ʿUmar b. al-Ḫaṭṭāb",
+            "formal": "ʿUmar b. al-Ḫaṭṭāb",
+            "sigle": "0015182",
+            "residence": "Mekka, Medina,Syrien"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira",
+          "6": "l-maġḍūbi"
+        }
+      },
+      {
+        "ccId": "variant_2265",
+        "readers": [
+          {
+            "id": "20",
+            "display": "ʿAbdallāh b. Abī Isḥāq al-Ḥaḍramī",
+            "formal": "ʿAbdallāh b. Abī Isḥāq al-Ḥaḍramī an-Naḥwī al-Baṣrī (gest. ca. 747)",
+            "sigle": "0015016",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "7": "ʿalaihumu"
+        }
+      },
+      {
+        "ccId": "variant_2266",
+        "readers": [
+          {
+            "id": "18",
+            "display": "ʿAmr b. Fāʾid",
+            "formal": "ʿAmr b. Fāʾid al-Aswārī al-Baṣrī, Abū ʿAlī",
+            "sigle": "0015014",
+            "residence": null
+          },
+          {
+            "id": "289",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan b. Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd",
+            "sigle": "0015136",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "7": "ʿalaihimi"
+        }
+      },
+      {
+        "ccId": "variant_2267",
+        "readers": [
+          {
+            "id": "367",
+            "display": "Ayyūb as-Saḫtiyānī",
+            "formal": "Ayyūb b. Abī Tamīma Kaisān as-Saḫtiyānī, Abū Bakr",
+            "sigle": "0015210",
+            "residence": "Baṣra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "9": "ḍ-ḍaʾallīna"
+        }
+      },
+      {
+        "ccId": "variant_3378",
+        "readers": [
+          {
+            "id": "442",
+            "display": "Mehrheit der Leser",
+            "formal": "al-ǧumhūr, ʾakṯaru l-qirāʾati",
+            "sigle": "0015284",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġairi"
+        }
+      },
+      {
+        "ccId": "variant_3379",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira"
+        }
+      },
+      {
+        "ccId": "variant_3799",
+        "readers": [
+          {
+            "id": "338",
+            "display": "ʿUmar b. al-Ḫaṭṭāb",
+            "formal": "ʿUmar b. al-Ḫaṭṭāb",
+            "sigle": "0015182",
+            "residence": "Mekka, Medina,Syrien"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġairi",
+          "6": "l-maġḍūbi",
+          "7": "ʿalaihim",
+          "8": "wa-ġairi",
+          "9": "ḍ-ḍāllīna"
+        }
+      },
+      {
+        "ccId": "variant_3800",
+        "readers": [
+          {
+            "id": "307",
+            "display": "ʿAbdallāh b. az-Zubair",
+            "formal": "ʿAbdallāh b. az-Zubair b. al-ʿAwwām al-Qurašī al-ʾAsadī, Abū Bakr (gest. ca. 693)",
+            "sigle": "0015153",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ṣirāṭa",
+          "2": "man",
+          "3": "ʾanʿamta",
+          "4": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_4330",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira"
+        }
+      },
+      {
+        "ccId": "variant_5549",
+        "readers": [
+          {
+            "id": "149",
+            "display": "Ḫallād",
+            "formal": "Ḫallād b. Ḫālid (b.ʿĪsā) al-Baġdādī aš-Šaibānī aṣ-Ṣairafī al-Kūfī al-Aḥwal, Abū ʿĪsā (Abū ʿAbdallāh) (gest. ca. 835)",
+            "sigle": "0602",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_7165",
+        "readers": [
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          },
+          {
+            "id": "81",
+            "display": "Qunbul",
+            "formal": "Qunbul = Muḥammad b. ʿAbdarraḥmān b. Muḥammad b. Ḫālid b. Saʿīd b. Ǧurǧa al-Makki al-Maḫzūmī, Abū ʿUmar (gest. ca. 893-904)",
+            "sigle": "0202",
+            "residence": null
+          },
+          {
+            "id": "191",
+            "display": "aš-Šaṭawī",
+            "formal": "Muḥammad b. Aḥmad b. Ibrāhīm b. Yusūf b. al-ʿAbbās b. Maimūn aš-Šanabūḏī  aš-Šaṭawī al-Baġdādī, Abū al-Faraǧ, Ġulām Ibn Šanabūḏ (gest. ca. 998)",
+            "sigle": "1402",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "s(ṣ)-s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7168",
+        "readers": [
+          {
+            "id": "148",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf ʿan Ḥamza (gest. 844)",
+            "sigle": "0601",
+            "residence": null
+          },
+          {
+            "id": "190",
+            "display": "al-Muṭṭawwiʿī",
+            "formal": "al-Ḥasan b. Saʿīd b. Ǧaʿfar b. Faḍl b. Šāḏān al-Muṭṭawwiʿī al-ʿAbbādānī al-ʿUmarī (ʿAmrī?) al-Baṣrī, Abū al-ʿAbbās (gest. 981/982)",
+            "sigle": "1401",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "z(ṣ)irāṭa",
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_7169",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ṣirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7170",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7171",
+        "readers": [
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "z(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_7173",
+        "readers": [
+          {
+            "id": "43",
+            "display": "Yaʿqūb",
+            "formal": "Yaʿqūb b. Isḥāq b. Zaid b. Abdallāh b. Abī Isḥāq Maulā al-Ḥaḍramī, Abū Muḥammad (gest. ca. 821)",
+            "sigle": "0900",
+            "residence": "Basra"
+          },
+          {
+            "id": "149",
+            "display": "Ḫallād",
+            "formal": "Ḫallād b. Ḫālid (b.ʿĪsā) al-Baġdādī aš-Šaibānī aṣ-Ṣairafī al-Kūfī al-Aḥwal, Abū ʿĪsā (Abū ʿAbdallāh) (gest. ca. 835)",
+            "sigle": "0602",
+            "residence": "Kufa"
+          },
+          {
+            "id": "191",
+            "display": "aš-Šaṭawī",
+            "formal": "Muḥammad b. Aḥmad b. Ibrāhīm b. Yusūf b. al-ʿAbbās b. Maimūn aš-Šanabūḏī  aš-Šaṭawī al-Baġdādī, Abū al-Faraǧ, Ġulām Ibn Šanabūḏ (gest. ca. 998)",
+            "sigle": "1402",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_7174",
+        "readers": [
+          {
+            "id": "3",
+            "display": "Abū Ǧaʿfar",
+            "formal": "Yazīd b. al-Qaʿqāʿ al-Maḫzūmī al.Madanī al-Qāriʾ, Abū Ǧaʿfar, maulā Ibn ʿAyyāš (gest. ca. 744-750)",
+            "sigle": "0800",
+            "residence": "Medina"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          },
+          {
+            "id": "53",
+            "display": "Qālūn",
+            "formal": "Qālūn, ʿĪsā b. Mīnā b. Wardān b. ʿĪsā b. Abdaṣṣamad b. ʿUmar b. Abdallāh az-Zuraqī al-Murrī (?), Abū Mūsā (gest. ca. 835)",
+            "sigle": "0101",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_7175",
+        "readers": [
+          {
+            "id": "53",
+            "display": "Qālūn",
+            "formal": "Qālūn, ʿĪsā b. Mīnā b. Wardān b. ʿĪsā b. Abdaṣṣamad b. ʿUmar b. Abdallāh az-Zuraqī al-Murrī (?), Abū Mūsā (gest. ca. 835)",
+            "sigle": "0101",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_7176",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "5": "ġairi/ ġaira",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_7420",
+        "readers": [
+          {
+            "id": "20",
+            "display": "ʿAbdallāh b. Abī Isḥāq al-Ḥaḍramī",
+            "formal": "ʿAbdallāh b. Abī Isḥāq al-Ḥaḍramī an-Naḥwī al-Baṣrī (gest. ca. 747)",
+            "sigle": "0015016",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "3": "ʾanʿamta",
+          "4": "ʿalaihumū"
+        }
+      },
+      {
+        "ccId": "variant_7421",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "3": "ʾanʿamta",
+          "4": "ʿalaihimī"
+        }
+      },
+      {
+        "ccId": "variant_7422",
+        "readers": [
+          {
+            "id": "403",
+            "display": "Lesart der Leute aus Medina",
+            "formal": "ahl al-Madīnah",
+            "sigle": "0015245",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihim",
+          "7": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_7423",
+        "readers": [
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "401",
+            "display": "Lesart der Leute aus Kufa",
+            "formal": "ahl al-Kūfah",
+            "sigle": "0015243",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_7424",
+        "readers": [
+          {
+            "id": "211",
+            "display": "al-Aʿraǧ",
+            "formal": "ʿAbdarraḥmān b. Hurmuz al-Aʿraǧ al-Hāšimī al-Madanī, Maulā Muḥammad b. Rabīʿa, Abū Dāwūd (gest. ca. 735/737)",
+            "sigle": "0015069",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_7425",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumu",
+          "7": "ʿalaihumu"
+        }
+      },
+      {
+        "ccId": "variant_7426",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimi",
+          "7": "ʿalaihimi"
+        }
+      },
+      {
+        "ccId": "variant_7427",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira",
+          "6": "l-maġḍūbi"
+        }
+      },
+      {
+        "ccId": "variant_7428",
+        "readers": [
+          {
+            "id": "367",
+            "display": "Ayyūb as-Saḫtiyānī",
+            "formal": "Ayyūb b. Abī Tamīma Kaisān as-Saḫtiyānī, Abū Bakr",
+            "sigle": "0015210",
+            "residence": "Baṣra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "9": "ḍ-ḍaʾllīna"
+        }
+      },
+      {
+        "ccId": "variant_7434",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihim",
+          "7": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_7435",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_7436",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimī",
+          "7": "ʿalaihimī"
+        }
+      },
+      {
+        "ccId": "variant_7437",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumū",
+          "7": "ʿalaihumū"
+        }
+      },
+      {
+        "ccId": "variant_7438",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġairi"
+        }
+      },
+      {
+        "ccId": "variant_7439",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira"
+        }
+      },
+      {
+        "ccId": "variant_7620",
+        "readers": [
+          {
+            "id": "362",
+            "display": "al-Aḫfaš al-Ausaṭ",
+            "formal": "Saʿīd b. Masʿada al-Aḫfaš al-Ausaṭ, Abū al-Ḥasan",
+            "sigle": "0015203",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumi",
+          "7": "ʿalaihumi"
+        }
+      },
+      {
+        "ccId": "variant_7621",
+        "readers": [
+          {
+            "id": "362",
+            "display": "al-Aḫfaš al-Ausaṭ",
+            "formal": "Saʿīd b. Masʿada al-Aḫfaš al-Ausaṭ, Abū al-Ḥasan",
+            "sigle": "0015203",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimi",
+          "7": "ʿalaihimi"
+        }
+      },
+      {
+        "ccId": "variant_7622",
+        "readers": [
+          {
+            "id": "367",
+            "display": "Ayyūb as-Saḫtiyānī",
+            "formal": "Ayyūb b. Abī Tamīma Kaisān as-Saḫtiyānī, Abū Bakr",
+            "sigle": "0015210",
+            "residence": "Baṣra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "9": "ḍ-ḍaʾallīna"
+        }
+      },
+      {
+        "ccId": "variant_8088",
+        "readers": [
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihum",
+          "7": "ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_8089",
+        "readers": [
+          {
+            "id": "18",
+            "display": "ʿAmr b. Fāʾid",
+            "formal": "ʿAmr b. Fāʾid al-Aswārī al-Baṣrī, Abū ʿAlī",
+            "sigle": "0015014",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimī",
+          "7": "ʿalaihimī"
+        }
+      },
+      {
+        "ccId": "variant_8090",
+        "readers": [
+          {
+            "id": "18",
+            "display": "ʿAmr b. Fāʾid",
+            "formal": "ʿAmr b. Fāʾid al-Aswārī al-Baṣrī, Abū ʿAlī",
+            "sigle": "0015014",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimi",
+          "7": "ʿalaihimi"
+        }
+      },
+      {
+        "ccId": "variant_8091",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "53",
+            "display": "Qālūn",
+            "formal": "Qālūn, ʿĪsā b. Mīnā b. Wardān b. ʿĪsā b. Abdaṣṣamad b. ʿUmar b. Abdallāh az-Zuraqī al-Murrī (?), Abū Mūsā (gest. ca. 835)",
+            "sigle": "0101",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimū",
+          "7": "ʿalaihimū"
+        }
+      },
+      {
+        "ccId": "variant_8092",
+        "readers": [
+          {
+            "id": "211",
+            "display": "al-Aʿraǧ",
+            "formal": "ʿAbdarraḥmān b. Hurmuz al-Aʿraǧ al-Hāšimī al-Madanī, Maulā Muḥammad b. Rabīʿa, Abū Dāwūd (gest. ca. 735/737)",
+            "sigle": "0015069",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihimu",
+          "7": "ʿalaihimu"
+        }
+      },
+      {
+        "ccId": "variant_8093",
+        "readers": [
+          {
+            "id": "211",
+            "display": "al-Aʿraǧ",
+            "formal": "ʿAbdarraḥmān b. Hurmuz al-Aʿraǧ al-Hāšimī al-Madanī, Maulā Muḥammad b. Rabīʿa, Abū Dāwūd (gest. ca. 735/737)",
+            "sigle": "0015069",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumu",
+          "7": "ʿalaihumu"
+        }
+      },
+      {
+        "ccId": "variant_8094",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumī",
+          "7": "ʿalaihumī"
+        }
+      },
+      {
+        "ccId": "variant_8095",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihumi",
+          "7": "ʿalaihumi"
+        }
+      },
+      {
+        "ccId": "variant_8098",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "236",
+            "display": "Zaid b. ʿAlī",
+            "formal": "Zaid b. ʿAlī",
+            "sigle": "0015042",
+            "residence": null
+          },
+          {
+            "id": "338",
+            "display": "ʿUmar b. al-Ḫaṭṭāb",
+            "formal": "ʿUmar b. al-Ḫaṭṭāb",
+            "sigle": "0015182",
+            "residence": "Mekka, Medina,Syrien"
+          },
+          {
+            "id": "421",
+            "display": "Ibn az-Zubair",
+            "formal": "Ibn az-Zubair",
+            "sigle": "0015263",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ṣirāṭa",
+          "2": "man",
+          "3": "ʾanʿamta"
+        }
+      },
+      {
+        "ccId": "variant_8099",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          },
+          {
+            "id": "307",
+            "display": "ʿAbdallāh b. az-Zubair",
+            "formal": "ʿAbdallāh b. az-Zubair b. al-ʿAwwām al-Qurašī al-ʾAsadī, Abū Bakr (gest. ca. 693)",
+            "sigle": "0015153",
+            "residence": null
+          },
+          {
+            "id": "338",
+            "display": "ʿUmar b. al-Ḫaṭṭāb",
+            "formal": "ʿUmar b. al-Ḫaṭṭāb",
+            "sigle": "0015182",
+            "residence": "Mekka, Medina,Syrien"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira"
+        }
+      },
+      {
+        "ccId": "variant_8100",
+        "readers": [
+          {
+            "id": "240",
+            "display": "Ubayy b. Kaʿb",
+            "formal": "Ubayy b. Kaʿb b. Qais b. ʿUbaid b. Zaid b. Muʿāwia b. ʿAmr b. Mālik b. an-Naǧǧār al-Ḫazraǧī al-Anṣārī, Abū al-Munḏir oder Abū aṭ-Ṭufail (gest. ca. 642)",
+            "sigle": "0015002",
+            "residence": "Medina"
+          },
+          {
+            "id": "338",
+            "display": "ʿUmar b. al-Ḫaṭṭāb",
+            "formal": "ʿUmar b. al-Ḫaṭṭāb",
+            "sigle": "0015182",
+            "residence": "Mekka, Medina,Syrien"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira",
+          "8": "wa-ġaira",
+          "9": "ḍ-ḍāllīna"
+        }
+      },
+      {
+        "ccId": "variant_8101",
+        "readers": [
+          {
+            "id": "367",
+            "display": "Ayyūb as-Saḫtiyānī",
+            "formal": "Ayyūb b. Abī Tamīma Kaisān as-Saḫtiyānī, Abū Bakr",
+            "sigle": "0015210",
+            "residence": "Baṣra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "9": "ḍ-ḍaʾallīna"
+        }
+      },
+      {
+        "ccId": "variant_8604",
+        "readers": [
+          {
+            "id": "442",
+            "display": "Mehrheit der Leser",
+            "formal": "al-ǧumhūr, ʾakṯaru l-qirāʾati",
+            "sigle": "0015284",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihim",
+          "7": "ʿalaihim"
+        }
+      },
+      {
+        "ccId": "variant_8605",
+        "readers": [
+          {
+            "id": "442",
+            "display": "Mehrheit der Leser",
+            "formal": "al-ǧumhūr, ʾakṯaru l-qirāʾati",
+            "sigle": "0015284",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġairi"
+        }
+      },
+      {
+        "ccId": "variant_12338",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "s(ṣ)irāṭa"
+        }
+      },
+      {
+        "ccId": "variant_13606",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          },
+          {
+            "id": "765",
+            "display": "Mögliche Wortfom",
+            "formal": "luġa",
+            "sigle": "0015893",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "ṣirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_13607",
+        "readers": [
+          {
+            "id": "765",
+            "display": "Mögliche Wortfom",
+            "formal": "luġa",
+            "sigle": "0015893",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "sirāṭa"
+        }
+      },
+      {
+        "ccId": "variant_13608",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira"
+        }
+      },
+      {
+        "ccId": "variant_13609",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          },
+          {
+            "id": "760",
+            "display": "Wortform der Leute aus dem Hedschas",
+            "formal": "luġat ʾahl al-ḥiǧāz",
+            "sigle": "0015891",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġairi"
+        }
+      },
+      {
+        "ccId": "variant_17342",
+        "readers": [
+          {
+            "id": "765",
+            "display": "Mögliche Wortfom",
+            "formal": "luġa",
+            "sigle": "0015893",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "ʿalaihim | ʿalaihum"
+        }
+      },
+      {
+        "ccId": "variant_17343",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġairi"
+        }
+      },
+      {
+        "ccId": "variant_17344",
+        "readers": [
+          {
+            "id": "372",
+            "display": "grammatisch möglich",
+            "formal": "Aufgrund von Grammatikregeln erschlossene oder durch Sprachgebrauch nachgewiesene Lesart, wie sie z.B. in Sprichwörtern oder der altarabischen Dichtung belegt ist.",
+            "sigle": "0015214",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "ġaira"
+        }
+      }
+    ],
+    "2:9": [
+      {
+        "ccId": "variant_1126",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yuḫādiʿūna"
+        }
+      },
+      {
+        "ccId": "variant_1862",
+        "readers": [
+          {
+            "id": "350",
+            "display": "al-Ǧārūd",
+            "formal": "al-Ǧārūd b. Abī Sabra",
+            "sigle": "0015193",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "wa-mā",
+          "6": "yuḫdaʿūna",
+          "7": "ʾillā",
+          "8": "ʾanfusuhum"
+        }
+      },
+      {
+        "ccId": "variant_1863",
+        "readers": [
+          {
+            "id": "351",
+            "display": "Muwarriq al-ʿIǧlī",
+            "formal": "Muwarriq b. Mušamriǧ b. ʿAbdallāh al-ʿIǧlī al-Baṣrī, Abū al-Muʿtamir",
+            "sigle": "0015194",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yaḫaddaʿūna"
+        }
+      },
+      {
+        "ccId": "variant_1865",
+        "readers": [
+          {
+            "id": "354",
+            "display": "Abū Ṭālūt",
+            "formal": "ʿAbdassalām b. Šaddād, Abū Ṭālūt",
+            "sigle": "0015197",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "5": "wa-mā",
+          "6": "yuḫādaʿūna"
+        }
+      },
+      {
+        "ccId": "variant_2479",
+        "readers": [
+          {
+            "id": "350",
+            "display": "al-Ǧārūd",
+            "formal": "al-Ǧārūd b. Abī Sabra",
+            "sigle": "0015193",
+            "residence": null
+          },
+          {
+            "id": "354",
+            "display": "Abū Ṭālūt",
+            "formal": "ʿAbdassalām b. Šaddād, Abū Ṭālūt",
+            "sigle": "0015197",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yuḫdaʿūna",
+          "7": "ʾillā",
+          "8": "ʾanfusahum"
+        }
+      },
+      {
+        "ccId": "variant_3070",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yuḫādiʿūna"
+        }
+      },
+      {
+        "ccId": "variant_12435",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yaḫdaʿūna"
+        }
+      },
+      {
+        "ccId": "variant_13677",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yaḫdaʿūna"
+        }
+      },
+      {
+        "ccId": "variant_13678",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          },
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "yuḫādiʿūna"
+        }
+      }
+    ],
+    "2:10": [
+      {
+        "ccId": "variant_1127",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "12": "yukaḏḏibūna"
+        }
+      },
+      {
+        "ccId": "variant_1838",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "fī",
+          "2": "qulūbihim",
+          "3": "marḍun"
+        }
+      },
+      {
+        "ccId": "variant_2480",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "3": "marḍun"
+        }
+      },
+      {
+        "ccId": "variant_3071",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          },
+          {
+            "id": "391",
+            "display": "Koranleser in Kufa",
+            "formal": "Die Textform wird als übliche Lesart der Stadt Kufa (Irak) genannt, in der Quelle steht z.B.: qurrāʾ al-Kūfah \"Koranleser [aus der Stadt] Kufa\".",
+            "sigle": "0015233",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "12": "yakḏibūna"
+        }
+      },
+      {
+        "ccId": "variant_3072",
+        "readers": [
+          {
+            "id": "390",
+            "display": "Koranleser im Ḥiǧāz",
+            "formal": "Die Textform wird als übliche Lesart der Region des Ḥiǧāz genannt, in der Mekka und Medina liegen, in der Quelle steht z.B.: qurrāʾ al-Ḥiǧāz \"Leser [aus der Region] des Ḥiǧāz\".",
+            "sigle": "0015232",
+            "residence": null
+          },
+          {
+            "id": "392",
+            "display": "Koranleser in Medina",
+            "formal": "Die Textform wird als übliche Lesart von Medina genannt, in der Quelle steht z.B.: qurrāʾ al-Madīnah \"Koranleser [aus der Stadt] Medina\".",
+            "sigle": "0015234",
+            "residence": null
+          },
+          {
+            "id": "393",
+            "display": "Koranleser in Basra",
+            "formal": "Die Textform wird als übliche Lesart von Basra (Irak) genannt, in der Quelle steht z.B.: qurrāʾ al-Baṣrah \"Koranleser [aus der Stadt] Basra\".",
+            "sigle": "0015235",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "12": "yukaḏḏibūna"
+        }
+      },
+      {
+        "ccId": "variant_12873",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          },
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "10": "bi-mā",
+          "11": "kānū",
+          "12": "yakḏibūna"
+        }
+      },
+      {
+        "ccId": "variant_12874",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "10": "bi-mā",
+          "11": "kānū",
+          "12": "yukaḏḏibūna"
+        }
+      },
+      {
+        "ccId": "variant_13679",
+        "readers": [
+          {
+            "id": "761",
+            "display": "einige (Grammatiker?, Koranleser?)",
+            "formal": "Die Quelle hat qāla baʿḍuhum (\"einige haben gesagt\"), baʿḍuhum yaqūlu (\"einige sagen\"), oder eine ähnliche Formulierung. Es bleibt unklar, ob Koranleser die angebene Wortform rezitiert haben oder ob Grammatiker sie lediglich als mögliche Lesart betra",
+            "sigle": "0015892",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "zādahumu"
+        }
+      },
+      {
+        "ccId": "variant_13680",
+        "readers": [
+          {
+            "id": "760",
+            "display": "Wortform der Leute aus dem Hedschas",
+            "formal": "luġat ʾahl al-ḥiǧāz",
+            "sigle": "0015891",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "fa-ziādahumu"
+        }
+      },
+      {
+        "ccId": "variant_13681",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          },
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          },
+          {
+            "id": "761",
+            "display": "einige (Grammatiker?, Koranleser?)",
+            "formal": "Die Quelle hat qāla baʿḍuhum (\"einige haben gesagt\"), baʿḍuhum yaqūlu (\"einige sagen\"), oder eine ähnliche Formulierung. Es bleibt unklar, ob Koranleser die angebene Wortform rezitiert haben oder ob Grammatiker sie lediglich als mögliche Lesart betra",
+            "sigle": "0015892",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "12": "yakḏibūna"
+        }
+      },
+      {
+        "ccId": "variant_13682",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "12": "yukḏḏibūna"
+        }
+      }
+    ],
+    "2:132": [
+      {
+        "ccId": "variant_2857",
+        "readers": [
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_2999",
+        "readers": [
+          {
+            "id": "124",
+            "display": "Hišām",
+            "formal": "Hišām b. ʿAmmār b. Nuṣair b. Abān (oder b. Maisara) as-Sulamī aẓ-Ẓafarī(?) al-Qāḍī ad-Dimašqī, Abū al-Walīd (gest. 858/860)",
+            "sigle": "0402",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā",
+          "3": "ʾibrāhāmu"
+        }
+      },
+      {
+        "ccId": "variant_3120",
+        "readers": [
+          {
+            "id": "12",
+            "display": "Ṭalḥa b. Muṣarrif",
+            "formal": "Ṭalḥa b. Muṣarrif b. ʿAmr b. Kaʿb al-Hamādanī al-Yāmī al-Kūfī, Abū Muḥammad (Abū ʿAbdallāh) (gest. ca. 730)",
+            "sigle": "0015008",
+            "residence": null
+          },
+          {
+            "id": "18",
+            "display": "ʿAmr b. Fāʾid",
+            "formal": "ʿAmr b. Fāʾid al-Aswārī al-Baṣrī, Abū ʿAlī",
+            "sigle": "0015014",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "banīhi",
+          "5": "wa-yaʿqūba"
+        }
+      },
+      {
+        "ccId": "variant_3427",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā"
+        }
+      },
+      {
+        "ccId": "variant_3428",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_5651",
+        "readers": [
+          {
+            "id": "123",
+            "display": "Ibn Ḏakwān",
+            "formal": "ʿAbdallāh b. Aḥmad b. Bišr  (Bašīr) b. Ḏakwān b. ʿAmr b. Ḥassān b. Dāwūd b. Ḥasnūn  b. Saʿd b. Ġālib b. Fahr b. Mālik  b. an-Naḍr al-Bahrānī al-Qurašī al-Fihrī ad-Dimašqī, Abū ʿAmr und Abū Muḥammad (gest. ca. 857)",
+            "sigle": "0401",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā",
+          "3": "ʾibrāhīmu/ ʾibrāhāmu"
+        }
+      },
+      {
+        "ccId": "variant_6643",
+        "readers": [
+          {
+            "id": "432",
+            "display": "Korankodex der Leute von Medina",
+            "formal": "muṣḥaf ʾahli l-Madīna",
+            "sigle": "0015274",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_7041",
+        "readers": [
+          {
+            "id": "3",
+            "display": "Abū Ǧaʿfar",
+            "formal": "Yazīd b. al-Qaʿqāʿ al-Maḫzūmī al.Madanī al-Qāriʾ, Abū Ǧaʿfar, maulā Ibn ʿAyyāš (gest. ca. 744-750)",
+            "sigle": "0800",
+            "residence": "Medina"
+          },
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_7043",
+        "readers": [
+          {
+            "id": "4",
+            "display": "Ḫalaf",
+            "formal": "Ḫalaf b. Hišām b. Ṯaʿlab b. Dāwūd b. Miqsam b- Ġālib (b. Ṭālib b. Ġurāb) al-Asadī al-Bazzār al-Baġdādī, Abū Muḥammad (gest. ca. 844)",
+            "sigle": "1000",
+            "residence": "(Kufa?) Bagdad"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣē"
+        }
+      },
+      {
+        "ccId": "variant_7044",
+        "readers": [
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_7177",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā"
+        }
+      },
+      {
+        "ccId": "variant_7178",
+        "readers": [
+          {
+            "id": "1",
+            "display": "ʿĀṣim",
+            "formal": "ʿĀṣim b. Abī an-Naǧūd Bahdala al-Asadī al-Kūfī al-Ḥannāṭ, Abū Bakr (gest. 744-747)",
+            "sigle": "0500",
+            "residence": "Kufa"
+          },
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "43",
+            "display": "Yaʿqūb",
+            "formal": "Yaʿqūb b. Isḥāq b. Zaid b. Abdallāh b. Abī Isḥāq Maulā al-Ḥaḍramī, Abū Muḥammad (gest. ca. 821)",
+            "sigle": "0900",
+            "residence": "Basra"
+          },
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          },
+          {
+            "id": "45",
+            "display": "al-Yazīdī",
+            "formal": "Yaḥyā b. al-Mubārak al-Yazīdī = Abū Muḥammad Yaḥyā ibn al-Mubārak ibn al-Muġīra al-Yazīdī al-Baṣrī al-ʿAdawi an-Naḥwī (st. 817/818)",
+            "sigle": "1200",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          },
+          {
+            "id": "47",
+            "display": "al-Aʿmaš",
+            "formal": "al-Aʿmaš = Abū Muḥammad Sulaimān ibn Mihrān al-Aʿmaš al-Kūfī al-Asadī al-Kāhilī (gest. 764/765)",
+            "sigle": "1400",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā"
+        }
+      },
+      {
+        "ccId": "variant_7544",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā"
+        }
+      },
+      {
+        "ccId": "variant_7545",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_7550",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā"
+        }
+      },
+      {
+        "ccId": "variant_7551",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_9596",
+        "readers": [
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "631",
+            "display": "ʿAṭiyya b. Qais",
+            "formal": "ʿAṭiyya b. Qais al-Kilābī al-Ḥimṣī ad-Dimašqī, Abū Yaḥyā (gest. ca. 738)",
+            "sigle": "0015470",
+            "residence": null
+          },
+          {
+            "id": "632",
+            "display": "Yazīd b. Abī Mālik",
+            "formal": "Yazīd b. Abī Mālik",
+            "sigle": "0015471",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "3": "ʾibrāhīmu"
+        }
+      },
+      {
+        "ccId": "variant_9597",
+        "readers": [
+          {
+            "id": "39",
+            "display": "Ibn ʿĀmir",
+            "formal": "ʿAbdallāh b. ʿĀmir b. Yazīd b. Tamīm b. Rabīʿa b. ʿĀmir b. ʿAbdallāh al-Yaḥṣubī ad-Dimašqī, Abū Imrān (Abū ʿĀmir, Abū Naʿīm, Abū ʿĀlīm, Abū ʿUbaid, Abū Muḥammad, Abū Mūsā, Abū Maʿbad, Abū ʿUṯmān) (gest. ca. 736)",
+            "sigle": "0400",
+            "residence": "Damaskus"
+          },
+          {
+            "id": "631",
+            "display": "ʿAṭiyya b. Qais",
+            "formal": "ʿAṭiyya b. Qais al-Kilābī al-Ḥimṣī ad-Dimašqī, Abū Yaḥyā (gest. ca. 738)",
+            "sigle": "0015470",
+            "residence": null
+          },
+          {
+            "id": "632",
+            "display": "Yazīd b. Abī Mālik",
+            "formal": "Yazīd b. Abī Mālik",
+            "sigle": "0015471",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "3": "ʾibrāhāmu"
+        }
+      },
+      {
+        "ccId": "variant_9706",
+        "readers": [
+          {
+            "id": "432",
+            "display": "Korankodex der Leute von Medina",
+            "formal": "muṣḥaf ʾahli l-Madīna",
+            "sigle": "0015274",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ʾauṣā"
+        }
+      },
+      {
+        "ccId": "variant_9707",
+        "readers": [
+          {
+            "id": "467",
+            "display": "Korankodex der Leute aus dem Irak",
+            "formal": "muṣḥaf ʾahli l-ʿIrāq",
+            "sigle": "0015308",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā"
+        }
+      },
+      {
+        "ccId": "variant_18059",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "240",
+            "display": "Ubayy b. Kaʿb",
+            "formal": "Ubayy b. Kaʿb b. Qais b. ʿUbaid b. Zaid b. Muʿāwia b. ʿAmr b. Mālik b. an-Naǧǧār al-Ḫazraǧī al-Anṣārī, Abū al-Munḏir oder Abū aṭ-Ṭufail (gest. ca. 642)",
+            "sigle": "0015002",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā",
+          "2": "bihā",
+          "3": "ʾibrāhīmu",
+          "4": "---",
+          "5": "---",
+          "6": "---",
+          "7": "ʾan yā-baniyya ʾinna",
+          "8": "llāha",
+          "9": "ṣṭafā",
+          "10": "lakumu",
+          "11": "d-dīna"
+        }
+      },
+      {
+        "ccId": "variant_18060",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "240",
+            "display": "Ubayy b. Kaʿb",
+            "formal": "Ubayy b. Kaʿb b. Qais b. ʿUbaid b. Zaid b. Muʿāwia b. ʿAmr b. Mālik b. an-Naǧǧār al-Ḫazraǧī al-Anṣārī, Abū al-Munḏir oder Abū aṭ-Ṭufail (gest. ca. 642)",
+            "sigle": "0015002",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-waṣṣā",
+          "2": "bihā",
+          "3": "ʾibrāhīmu",
+          "4": "---",
+          "5": "---",
+          "6": "---",
+          "7": "ʾan yā-baniyya ʾinna",
+          "8": "llāha",
+          "9": "ṣṭafā",
+          "10": "lakumu",
+          "11": "d-dīna"
+        }
+      }
+    ],
+    "3:146": [
+      {
+        "ccId": "variant_2352",
+        "readers": [
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-kayan"
+        }
+      },
+      {
+        "ccId": "variant_2353",
+        "readers": [
+          {
+            "id": "231",
+            "display": "Qatāda",
+            "formal": "Qatāda",
+            "sigle": "0015048",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-kāyin",
+          "2": "min",
+          "3": "nabiyyin",
+          "4": "quttila"
+        }
+      },
+      {
+        "ccId": "variant_2354",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "192",
+            "display": "Ibn ʿAbbās",
+            "formal": "ʿAbdallāh b. ʿAbbās b. Abdalmuṭṭalib b. Hāšim al-Hāšimī, Abū Hāšim (gest. ca. 687)",
+            "sigle": "0015037",
+            "residence": null
+          },
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "rubbiyyūna"
+        }
+      },
+      {
+        "ccId": "variant_2355",
+        "readers": [
+          {
+            "id": "192",
+            "display": "Ibn ʿAbbās",
+            "formal": "ʿAbdallāh b. ʿAbbās b. Abdalmuṭṭalib b. Hāšim al-Hāšimī, Abū Hāšim (gest. ca. 687)",
+            "sigle": "0015037",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "rabbiyyūna"
+        }
+      },
+      {
+        "ccId": "variant_2356",
+        "readers": [
+          {
+            "id": "29",
+            "display": "Abū as-Sammāl",
+            "formal": "Abū as-Sammāl, Qaʿnab b. Abī Qaʿnab al-ʿAdawī al-Baṣrī",
+            "sigle": "0015025",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          },
+          {
+            "id": "282",
+            "display": "Abū Nahīk",
+            "formal": "Abū Nahīk, ʿIlbāʾ b. ʾAḥmad al-Yaškurī al-Ḫurāsānī",
+            "sigle": "0804",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "9": "wahinū"
+        }
+      },
+      {
+        "ccId": "variant_2899",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "qutila"
+        }
+      },
+      {
+        "ccId": "variant_2901",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-kā-ʾin",
+          "4": "qutila"
+        }
+      },
+      {
+        "ccId": "variant_3343",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-kāyin"
+        }
+      },
+      {
+        "ccId": "variant_3344",
+        "readers": [
+          {
+            "id": "410",
+            "display": "Lesart aus Basra",
+            "formal": "baʿḍ al-baṣriyyīna / baʿḍ ahl al-Baṣra",
+            "sigle": "0015252",
+            "residence": "Basra"
+          },
+          {
+            "id": "425",
+            "display": "grammatisch korrekte Lesart",
+            "formal": "Grammatisch korrekte und zu bevorzugende Lesart",
+            "sigle": "0015267",
+            "residence": null
+          },
+          {
+            "id": "696",
+            "display": "Lesart aus dem Ḥiǧāz",
+            "formal": "baʿḍ al-ḥiǧāziyyīna/ baʿḍ ʾahl al-ḥiǧāz",
+            "sigle": "0015535",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "qutila"
+        }
+      },
+      {
+        "ccId": "variant_3345",
+        "readers": [
+          {
+            "id": "408",
+            "display": "Lesart aus Kufa",
+            "formal": "baʿḍ al-kūfiyyīna / baʿḍ ahl al-Kūfa",
+            "sigle": "0015250",
+            "residence": "Kufa"
+          },
+          {
+            "id": "696",
+            "display": "Lesart aus dem Ḥiǧāz",
+            "formal": "baʿḍ al-ḥiǧāziyyīna/ baʿḍ ʾahl al-ḥiǧāz",
+            "sigle": "0015535",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "qātala"
+        }
+      },
+      {
+        "ccId": "variant_3541",
+        "readers": [
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-kā-ʾin"
+        }
+      },
+      {
+        "ccId": "variant_3542",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "qutila"
+        }
+      },
+      {
+        "ccId": "variant_3583",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ka-ʾayyin",
+          "2": "min",
+          "3": "nabiyyin",
+          "4": "qutila",
+          "5": "maʿahū",
+          "6": "ribbiyyūna",
+          "7": "kaṯīrun",
+          "8": "fa-mā",
+          "9": "wahanū"
+        }
+      },
+      {
+        "ccId": "variant_5539",
+        "readers": [
+          {
+            "id": "41",
+            "display": "Nāfiʿ",
+            "formal": "Nāfiʿ b. ʿAbdarraḥmān b. Abī Nuʿaim al-Laiṯī al-Iṣbahānī, Abū Ruwaim (gest. ca. 786)",
+            "sigle": "0100",
+            "residence": "Medina"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "3": "nabīʾin",
+          "4": "qutila"
+        }
+      },
+      {
+        "ccId": "variant_7776",
+        "readers": [
+          {
+            "id": "44",
+            "display": "Ibn Muḥaiṣin",
+            "formal": "Ibn Muḥaiṣin = Abū ʿAbdallāh Muḥammad (oder ʿUmar) b. ʿAbdarraḥmān b. Muḥaiṣin as-Sahmī al-Makkī (gest. 739-741)",
+            "sigle": "1100",
+            "residence": null
+          },
+          {
+            "id": "47",
+            "display": "al-Aʿmaš",
+            "formal": "al-Aʿmaš = Abū Muḥammad Sulaimān ibn Mihrān al-Aʿmaš al-Kūfī al-Asadī al-Kāhilī (gest. 764/765)",
+            "sigle": "1400",
+            "residence": null
+          },
+          {
+            "id": "313",
+            "display": "al-Ašhab",
+            "formal": "al-Ašhab al-ʿUqailī",
+            "sigle": "0015159",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ka-ʾyin"
+        }
+      },
+      {
+        "ccId": "variant_7777",
+        "readers": [
+          {
+            "id": "231",
+            "display": "Qatāda",
+            "formal": "Qatāda",
+            "sigle": "0015048",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "4": "quttila"
+        }
+      },
+      {
+        "ccId": "variant_7778",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "21",
+            "display": "ʿIkrima b. Ḫālid",
+            "formal": "ʿIkrima b. Ḫālid b. al-ʿĀṣ al-Maḫzūmī al-Makkī, Abū Ḫālid",
+            "sigle": "0015017",
+            "residence": null
+          },
+          {
+            "id": "28",
+            "display": "Abū Raǧāʾ al-ʿUṭāridī",
+            "formal": "Abū Raǧāʾ ʿImrān b. Taim (Ibn Milḥān) al-ʿUṭāridī al-Baṣrī (gest. ca. 723)",
+            "sigle": "0015024",
+            "residence": null
+          },
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          },
+          {
+            "id": "192",
+            "display": "Ibn ʿAbbās",
+            "formal": "ʿAbdallāh b. ʿAbbās b. Abdalmuṭṭalib b. Hāšim al-Hāšimī, Abū Hāšim (gest. ca. 687)",
+            "sigle": "0015037",
+            "residence": null
+          },
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          },
+          {
+            "id": "232",
+            "display": "ʿAmr b. ʿUbaid",
+            "formal": "ʿAmr b. ʿUbaid b. Bāb al-Baṣrī, Abū ʿUṯmān (gest. ca. 761)",
+            "sigle": "0015047",
+            "residence": null
+          },
+          {
+            "id": "464",
+            "display": "ʿAṭāʾ b. as-Sāʾib",
+            "formal": "ʿAṭāʾ b. as-Sāʾib aṯ-Ṯaqafī al-Kūfī, Abū Zaid (gest. ca. 754)",
+            "sigle": "0015305",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "rubbiyyūna"
+        }
+      },
+      {
+        "ccId": "variant_7779",
+        "readers": [
+          {
+            "id": "192",
+            "display": "Ibn ʿAbbās",
+            "formal": "ʿAbdallāh b. ʿAbbās b. Abdalmuṭṭalib b. Hāšim al-Hāšimī, Abū Hāšim (gest. ca. 687)",
+            "sigle": "0015037",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "6": "rabbiyyūna"
+        }
+      },
+      {
+        "ccId": "variant_7780",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "9": "wahinū"
+        }
+      },
+      {
+        "ccId": "variant_16225",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ka-ʾayyin",
+          "2": "min",
+          "3": "nabiyyin",
+          "4": "qutila",
+          "5": "maʿahū",
+          "6": "ribbiyyūna",
+          "7": "kaṯīrun"
+        }
+      },
+      {
+        "ccId": "variant_16226",
+        "readers": [
+          {
+            "id": "646",
+            "display": "Einige Koranleser",
+            "formal": "baʿḍ al-qurrāʾ",
+            "sigle": "0015485",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ka-ʾayyin",
+          "2": "min",
+          "3": "nabiyyin",
+          "4": "qātala",
+          "5": "maʿahū"
+        }
+      },
+      {
+        "ccId": "variant_17604",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "1": "wa-ka-ʾayyin"
+        }
+      }
+    ],
+    "5:6": [
+      {
+        "ccId": "variant_3494",
+        "readers": [
+          {
+            "id": "2",
+            "display": "Abū ʿAmr",
+            "formal": "Zabbān (ʿUriānn Yaḥyā, Maḥbūb, Ǧunaid, ʿUyainan ʿUṯmān, ʿIyād) b. al-ʿAlāʾ b. ʿAmmār at-Tamīmī al-Māzinī al-Baṣrī an-Naḥwī, Abū ʿAmr  (gest. ca. 765-774)",
+            "sigle": "0300",
+            "residence": "Basra"
+          },
+          {
+            "id": "40",
+            "display": "Ibn Kaṯīr",
+            "formal": "ʿAbdallāh b. Kaṯīr b. al-Muṭṭalib al-Kinānī ad-Dārī al-Makkī al-Qurašī, Abū Maʿbad (gest. ca. 737-740)",
+            "sigle": "0200",
+            "residence": "Mekka"
+          },
+          {
+            "id": "128",
+            "display": "Šuʿba",
+            "formal": "Šuʿba b. ʿAyyāš b. Sālim al-Kūfī al-Asadī an-Nahšalī al-Ḥannāṭ, Abū Bakr (gest. 808/809)",
+            "sigle": "0501",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulikum"
+        }
+      },
+      {
+        "ccId": "variant_3683",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulukum"
+        }
+      },
+      {
+        "ccId": "variant_3685",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulikum"
+        }
+      },
+      {
+        "ccId": "variant_3686",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          },
+          {
+            "id": "19",
+            "display": "Muǧāhid b. Ǧabr",
+            "formal": "Muǧāhid b. Ǧabr al-Makkī Maulā Sāʾib b. Abī Sāʾib al-Maḫzūmī al-Makkī, Abū al-Ḥaǧǧāǧ (gest. 722 n. Chr.)",
+            "sigle": "0015015",
+            "residence": null
+          },
+          {
+            "id": "47",
+            "display": "al-Aʿmaš",
+            "formal": "al-Aʿmaš = Abū Muḥammad Sulaimān ibn Mihrān al-Aʿmaš al-Kūfī al-Asadī al-Kāhilī (gest. 764/765)",
+            "sigle": "1400",
+            "residence": null
+          },
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          },
+          {
+            "id": "290",
+            "display": "ʿUrwa b. az-Zubair",
+            "formal": "ʿUrwa b. az-Zubair b. al-ʿAwwām al-Madanī, Abū ʿAbdallāh (gest. ca. 711-713)",
+            "sigle": "0015137",
+            "residence": null
+          },
+          {
+            "id": "696",
+            "display": "Lesart aus dem Ḥiǧāz",
+            "formal": "baʿḍ al-ḥiǧāziyyīna/ baʿḍ ʾahl al-ḥiǧāz",
+            "sigle": "0015535",
+            "residence": null
+          },
+          {
+            "id": "752",
+            "display": "Lesart aus dem Irak",
+            "formal": "baʿḍ al-ʿIrāqiyyīna / baʿḍ ahl al-ʿIrāq",
+            "sigle": "0015901",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_3687",
+        "readers": [
+          {
+            "id": "3",
+            "display": "Abū Ǧaʿfar",
+            "formal": "Yazīd b. al-Qaʿqāʿ al-Maḫzūmī al.Madanī al-Qāriʾ, Abū Ǧaʿfar, maulā Ibn ʿAyyāš (gest. ca. 744-750)",
+            "sigle": "0800",
+            "residence": "Medina"
+          },
+          {
+            "id": "15",
+            "display": "aḍ-Ḍaḥḥāk",
+            "formal": "aḍ-Ḍaḥḥāk b. Muzāḥim al-Hilālī al-Ḫurāsānī, Abū al-Qāsim oder Abū Muḥammad",
+            "sigle": "0015011",
+            "residence": null
+          },
+          {
+            "id": "19",
+            "display": "Muǧāhid b. Ǧabr",
+            "formal": "Muǧāhid b. Ǧabr al-Makkī Maulā Sāʾib b. Abī Sāʾib al-Maḫzūmī al-Makkī, Abū al-Ḥaǧǧāǧ (gest. 722 n. Chr.)",
+            "sigle": "0015015",
+            "residence": null
+          },
+          {
+            "id": "217",
+            "display": "ʿAlqama b. Qais",
+            "formal": "ʿAlqama b. Qais b. ʿAbdallāh b. Mālikan-Naḫaʿī, Abū Šibl (gest. ca. 681)",
+            "sigle": "0015062",
+            "residence": null
+          },
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          },
+          {
+            "id": "491",
+            "display": "aš-Šaʿbī",
+            "formal": "aš-Šaʿbī, ʿĀmir b. Šarāḥīl b. ʿAbd ʿAmr al-Kūfī",
+            "sigle": "0015332",
+            "residence": null
+          },
+          {
+            "id": "696",
+            "display": "Lesart aus dem Ḥiǧāz",
+            "formal": "baʿḍ al-ḥiǧāziyyīna/ baʿḍ ʾahl al-ḥiǧāz",
+            "sigle": "0015535",
+            "residence": null
+          },
+          {
+            "id": "752",
+            "display": "Lesart aus dem Irak",
+            "formal": "baʿḍ al-ʿIrāqiyyīna / baʿḍ ahl al-ʿIrāq",
+            "sigle": "0015901",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulikum"
+        }
+      },
+      {
+        "ccId": "variant_3688",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_3789",
+        "readers": [
+          {
+            "id": "230",
+            "display": "ʿAlī b. Abī Ṭālib",
+            "formal": "ʿAlī b. Abī Ṭālib b. ʿAbdalmuṭṭalib b. Hāšim b. ʿAbdalmannāf b. Quṣai b. Kilāb al-Hāšimī, ʾAmīr al-Muʾminīn, Abū al-Ḥasan",
+            "sigle": "0015049",
+            "residence": "Medina, Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulikum"
+        }
+      },
+      {
+        "ccId": "variant_5383",
+        "readers": [
+          {
+            "id": "5",
+            "display": "Ḥamza",
+            "formal": "Ḥamza b. Ḥabīb ibn ʿUmāra b. ʾIsmāʿīl at-Taimī al-Kūfī al-Faraḍī az-Zayyāt al-ʾImām, Maulā ʾĀl ʿIrkimah b. Ribʿī Abū ʿUmāra (gest. ca. 770-775)",
+            "sigle": "0600",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulikum",
+          "35": "lamastumu"
+        }
+      },
+      {
+        "ccId": "variant_5384",
+        "readers": [
+          {
+            "id": "42",
+            "display": "al-Kisāʾī",
+            "formal": "ʿAlī b. Ḥamza b. ʿAbdallahb. Bahman b. Fairūz al-Kisāʾī al-Asadī al-Kūfī an-Naḥwī, Abū al-Ḥasan (gest. 804/805)",
+            "sigle": "0700",
+            "residence": "Kufa"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "35": "lamastumu"
+        }
+      },
+      {
+        "ccId": "variant_7264",
+        "readers": [
+          {
+            "id": "459",
+            "display": "Anhänger des ʿAbdallāh b. Masʿūd",
+            "formal": "aṣḥāb ʿAbdallāh b. Masʿūd",
+            "sigle": "0015300",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "8": "ʾaġsilū",
+          "10": "ʾaidiyakum",
+          "15": "wa-ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_8651",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulukum"
+        }
+      },
+      {
+        "ccId": "variant_14007",
+        "readers": [
+          {
+            "id": "761",
+            "display": "einige (Grammatiker?, Koranleser?)",
+            "formal": "Die Quelle hat qāla baʿḍuhum (\"einige haben gesagt\"), baʿḍuhum yaqūlu (\"einige sagen\"), oder eine ähnliche Formulierung. Es bleibt unklar, ob Koranleser die angebene Wortform rezitiert haben oder ob Grammatiker sie lediglich als mögliche Lesart betra",
+            "sigle": "0015892",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "ʾarǧulikum"
+        }
+      },
+      {
+        "ccId": "variant_14008",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          },
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_14974",
+        "readers": [
+          {
+            "id": "399",
+            "display": "Yazīd",
+            "formal": "Yazīd (ohne weitere Angaben)",
+            "sigle": "0015241",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "21": "fa-ṭharū"
+        }
+      },
+      {
+        "ccId": "variant_14975",
+        "readers": [
+          {
+            "id": "19",
+            "display": "Muǧāhid b. Ǧabr",
+            "formal": "Muǧāhid b. Ǧabr al-Makkī Maulā Sāʾib b. Abī Sāʾib al-Maḫzūmī al-Makkī, Abū al-Ḥaǧǧāǧ (gest. 722 n. Chr.)",
+            "sigle": "0015015",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "21": "fa-ṭṭaharū"
+        }
+      },
+      {
+        "ccId": "variant_14977",
+        "readers": [
+          {
+            "id": "46",
+            "display": "al-Ḥasan al-Baṣrī",
+            "formal": "al-Ḥasan ibn Abī al-Ḥasan Yasār al-Baṣrī, Abū Saʿīd (gest. 728/729)",
+            "sigle": "1300",
+            "residence": "Basra"
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulukum"
+        }
+      },
+      {
+        "ccId": "variant_17359",
+        "readers": [
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "ʾarǧulikum"
+        }
+      },
+      {
+        "ccId": "variant_17360",
+        "readers": [
+          {
+            "id": "193",
+            "display": "unbenannt (ohne nähere Angaben)",
+            "formal": "Unspezifierte Lesart. Die genannte Quelle erwähnt diese Lesart ohne Angabe eines Lesers¸ einer Lesergruppe, eines Kodex oder einer Region. In den ausgewerteten Quellen steht z.B. tuqraʾu (\"es wird gelesen\") oder quriʾa (\"es wurde gelesen\").",
+            "sigle": "0015108",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_17758",
+        "readers": [
+          {
+            "id": "372",
+            "display": "grammatisch möglich",
+            "formal": "Aufgrund von Grammatikregeln erschlossene oder durch Sprachgebrauch nachgewiesene Lesart, wie sie z.B. in Sprichwörtern oder der altarabischen Dichtung belegt ist.",
+            "sigle": "0015214",
+            "residence": null
+          },
+          {
+            "id": "750",
+            "display": "Referenztext",
+            "formal": "Referenztext, d.h. der in der Quelle als üblich angesetzte Wortlaut des Textes.",
+            "sigle": "0015883",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "13": "wa-msaḥū",
+          "14": "bi-ruʾūsikum",
+          "15": "wa-ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_17759",
+        "readers": [
+          {
+            "id": "372",
+            "display": "grammatisch möglich",
+            "formal": "Aufgrund von Grammatikregeln erschlossene oder durch Sprachgebrauch nachgewiesene Lesart, wie sie z.B. in Sprichwörtern oder der altarabischen Dichtung belegt ist.",
+            "sigle": "0015214",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "13": "wa-msaḥū",
+          "14": "bi-ruʾūsikum",
+          "15": "wa-ʾarǧulakum"
+        }
+      },
+      {
+        "ccId": "variant_18249",
+        "readers": [
+          {
+            "id": "6",
+            "display": "Ibn Masʿūd",
+            "formal": "ʿAbdallāh b. Masʿūd b. Ġāfil b. Ḥabīb b. Šamḫ b. Qār b. Maḫzūm b. Ṣāhila b. Kāhil b. al-Ḥāriṯ b. Tamīm b. Saʿd b. Huḏail b. Mudrika b. ʾIlyās b. Muḍar b. Nizār al-Huḏalī al-Makkī, Abū ʿAbdarraḥmān (gest. ca. 653)",
+            "sigle": "0015001",
+            "residence": null
+          }
+        ],
+        "sourceId": null,
+        "words": {
+          "15": "wa-ʾarǧulikum"
+        }
+      }
+    ]
+  }
+}
