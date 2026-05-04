@@ -1,7 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import {
   getAyah,
+  listSurahs,
   listVersesWithVariants,
+  dataMeta,
 } from '../src/lib/dataLoader.js';
 import { diffByCuratedVariants } from '../src/lib/diff.js';
 
@@ -32,9 +34,27 @@ describe('Curated dataset', () => {
     expect(hafs.text).toBe('وَأَرْجُلَكُمْ');
   });
 
-  it('returns null for verses not in the curated sample', () => {
-    expect(getAyah(114, 6)).toBeNull();
+  it('returns complete Hafs corpus verses outside the curated sample (when corpus is built)', () => {
+    // hafsCorpusData.json is built locally (`npm run build:hafs-corpus`) and
+    // git-ignored. On a fresh clone the loader exposes 0 ayahs from it.
+    const meta = dataMeta();
+    if ((meta.completeHafsAyahs ?? 0) === 0) {
+      expect(getAyah(114, 6)).toBeNull();
+      expect(getAyah(2, 999)).toBeNull();
+      return;
+    }
+    const v = getAyah(114, 6);
+    expect(v).toBeTruthy();
+    expect(v.baseText.riwayah).toBe('hafs');
+    expect(v.variants).toEqual([]);
     expect(getAyah(2, 999)).toBeNull();
+  });
+
+  it('lists all 114 surahs for complete UI browsing', () => {
+    const surahs = listSurahs();
+    expect(surahs).toHaveLength(114);
+    expect(surahs[0].number).toBe(1);
+    expect(surahs[113].number).toBe(114);
   });
 
   it('lists curated verses sorted by surah/ayah', () => {

@@ -53,6 +53,8 @@ export function parseTanzilLinePerAyah(text) {
  *
  *   shape A: array of records with surah/ayah/text
  *     [ { "surah": 1, "ayah": 1, "text": "..." }, ... ]
+ *     [ { "sura_no": 1, "aya_no": 1, "aya_text": "..." }, ... ]
+ *     [ { "sora": 1, "aya_no": 1, "aya_text": "..." }, ... ]
  *
  *   shape B: flat object keyed by "S:A"
  *     { "1:1": "...", "1:2": "...", ... }
@@ -72,16 +74,31 @@ export function parseKfgqpcJson(json) {
   if (Array.isArray(json)) {
     const out = new Map();
     for (const r of json) {
-      if (
+      const hasCanonicalFields =
         r != null &&
         (typeof r.surah === 'number' || typeof r.surah === 'string') &&
         (typeof r.ayah === 'number' || typeof r.ayah === 'string') &&
-        typeof r.text === 'string'
-      ) {
+        typeof r.text === 'string';
+      const hasKfgqpcFields =
+        r != null &&
+        (typeof r.sura_no === 'number' || typeof r.sura_no === 'string') &&
+        (typeof r.aya_no === 'number' || typeof r.aya_no === 'string') &&
+        typeof r.aya_text === 'string';
+      const hasKfgqpcHafsFields =
+        r != null &&
+        (typeof r.sora === 'number' || typeof r.sora === 'string') &&
+        (typeof r.aya_no === 'number' || typeof r.aya_no === 'string') &&
+        typeof r.aya_text === 'string';
+
+      if (hasCanonicalFields) {
         out.set(String(r.surah) + ':' + String(r.ayah), r.text);
+      } else if (hasKfgqpcFields) {
+        out.set(String(r.sura_no) + ':' + String(r.aya_no), r.aya_text);
+      } else if (hasKfgqpcHafsFields) {
+        out.set(String(r.sora) + ':' + String(r.aya_no), r.aya_text);
       } else {
         throw new Error(
-          'parseKfgqpcJson: array entry missing surah/ayah/text fields',
+          'parseKfgqpcJson: array entry missing surah/ayah/text, sura_no/aya_no/aya_text, or sora/aya_no/aya_text fields',
         );
       }
     }
@@ -137,7 +154,8 @@ export function parseKfgqpcJson(json) {
   }
   throw new Error(
     'parseKfgqpcJson: unrecognised shape — expected array of {surah,ayah,text}, ' +
-      'flat "S:A" object, or nested {surah:{ayah:text}} object.',
+      'array of {sura_no,aya_no,aya_text}, array of {sora,aya_no,aya_text}, flat "S:A" object, ' +
+      'or nested {surah:{ayah:text}} object.',
   );
 }
 

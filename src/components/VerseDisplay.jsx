@@ -41,8 +41,8 @@ export function VerseDisplay({
       <div className="verse verse--empty">
         <p>
           No data for {surah}:{ayah} in the curated sample. The dataset
-          contains 8 well-documented variant verses; pick one from the
-          sidebar, or extend <code>src/data/quranData.json</code>.
+          should include complete Hafs browsing data when
+          <code>src/data/hafsCorpusData.json</code> has been built.
         </p>
       </div>
     );
@@ -75,6 +75,12 @@ export function VerseDisplay({
         Comparing <strong>{baseRiwayah?.label ?? '-'}</strong> against{' '}
         <strong>{compRiwayah?.label ?? '-'}</strong>
       </p>
+      {variantCount === 0 && (
+        <p className="verse__compare">
+          Complete Hafs text is available for this ayah; no curated variant
+          points are recorded here yet.
+        </p>
+      )}
 
       <div
         className="verse__text"

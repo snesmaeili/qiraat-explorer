@@ -52,6 +52,32 @@ describe('parseKfgqpcJson', () => {
     expect(() => parseKfgqpcJson([])).toThrow(/array is empty/);
   });
 
+  it('parses KFGQPC mirror array fields without rewriting text', () => {
+    const json = [
+      {
+        sura_no: 1,
+        aya_no: 4,
+        aya_text: 'source text with marker ٣',
+      },
+    ];
+    const ayahs = parseKfgqpcJson(json);
+    expect(ayahs.size).toBe(1);
+    expect(ayahs.get('1:4')).toBe(json[0].aya_text);
+  });
+
+  it('parses KFGQPC Hafs array fields without rewriting text', () => {
+    const json = [
+      {
+        sora: 114,
+        aya_no: 6,
+        aya_text: 'source text with marker ٦',
+      },
+    ];
+    const ayahs = parseKfgqpcJson(json);
+    expect(ayahs.size).toBe(1);
+    expect(ayahs.get('114:6')).toBe(json[0].aya_text);
+  });
+
   it('throws if array entries lack surah, ayah, or text', () => {
     expect(() => parseKfgqpcJson([{ surah: 1, text: 'Text' }])).toThrow(/missing surah\/ayah\/text/);
   });

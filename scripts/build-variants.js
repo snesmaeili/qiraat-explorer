@@ -17,16 +17,16 @@ import { existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  stripDiacritics,
-  normalizeRasm,
   tokenize,
   classifyDiff,
 } from '../src/lib/arabic.js';
 import { alignWords } from '../src/lib/alignment.js';
+import { parseKfgqpcJson } from '../src/lib/sourceParsers.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const RAW = resolve(__dirname, '_raw');
 const OUT = resolve(__dirname, '..', 'src', 'data', 'fullVariants.json');
+const TRAILING_VERSE_NUMBER_RE = /[\s\u00a0]*[\u0660-\u0669\u06f0-\u06f9]+[\s\u00a0]*$/u;
 
 function classifyDiffOrGap(a, b) {
   if (b == null) return 'omission';
@@ -59,23 +59,30 @@ async function loadHafs() {
 async function loadKFQPC(file) {
   const path = resolve(RAW, file);
   const data = JSON.parse(await readFile(path, 'utf8'));
-  if (Array.isArray(data)) {
-    const map = {};
-    for (const v of data) {
-      if (v.surah && v.ayah && v.text) map[v.surah + ':' + v.ayah] = v.text;
-    }
-    return map;
+  const parsed = parseKfgqpcJson(data);
+  return Object.fromEntries(
+    Array.from(parsed, ([key, value]) => [
+      key,
+      stripAlignmentOnlyVerseNumber(value),
+    ]),
+  );
+}
+
+function stripAlignmentOnlyVerseNumber(text) {
+  return text.replace(TRAILING_VERSE_NUMBER_RE, '').trim();
+}
+
+function comparisonVerseForKey(corpus, key) {
+  // The KFGQPC Warsh/Qalun files in scripts/_raw do not count the Fatiha
+  // basmala as verse 1, while the Tanzil sample does. Reconcile only the
+  // sample verses this prototype currently emits; broader verse-numbering
+  // support belongs in the roadmap's numbering-map work.
+  if (key === '1:4') return corpus['1:3'];
+  if (key === '1:6') return corpus['1:5'];
+  if (key === '1:7') {
+    return [corpus['1:6'], corpus['1:7']].filter(Boolean).join(' ') || null;
   }
-  if (data && typeof data === 'object') {
-    const sample = Object.keys(data)[0];
-    if (sample && /^\d+:\d+$/.test(sample)) return data;
-    const map = {};
-    for (const [s, ayat] of Object.entries(data)) {
-      for (const [a, t] of Object.entries(ayat)) map[s + ':' + a] = t;
-    }
-    return map;
-  }
-  throw new Error('Unrecognized KFQPC shape in ' + file);
+  return corpus[key];
 }
 
 function detectVariants(hafsVerse, others) {
@@ -133,8 +140,8 @@ async function main() {
   for (const [key, hafsVerse] of Object.entries(hafs)) {
     const [s, a] = key.split(':').map(Number);
     const variants = detectVariants(hafsVerse, {
-      warsh: warsh[key],
-      qalun: qalun[key],
+      warsh: comparisonVerseForKey(warsh, key),
+      qalun: comparisonVerseForKey(qalun, key),
     });
     verses[key] = {
       surah: s,

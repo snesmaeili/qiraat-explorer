@@ -2,6 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { VerseDisplay } from '../src/components/VerseDisplay.jsx';
 import { Legend } from '../src/components/Legend.jsx';
+import { MorphologyBrowser } from '../src/components/MorphologyBrowser.jsx';
+import { ManuscriptTimeline } from '../src/components/ManuscriptTimeline.jsx';
 import { getAyah, getRiwayah } from '../src/lib/dataLoader.js';
 import { diffByCuratedVariants } from '../src/lib/diff.js';
 
@@ -74,5 +76,28 @@ describe('<Legend>', () => {
     expect(screen.getByText('Word-form')).toBeInTheDocument();
     expect(screen.getByText('Orthographic')).toBeInTheDocument();
     expect(screen.getByText('Verse numbering')).toBeInTheDocument();
+  });
+});
+
+describe('<MorphologyBrowser>', () => {
+  it('renders morphology comparisons for sample-backed verses', () => {
+    render(<MorphologyBrowser surah={1} ayah={4} ayahData={getAyah(1, 4)} />);
+    expect(screen.getByText('Morphological Analysis')).toBeInTheDocument();
+    expect(screen.getAllByText('QAC').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Talmon').length).toBeGreaterThan(0);
+  });
+
+  it('renders an empty state when the selected verse has no morphology sample', () => {
+    render(<MorphologyBrowser surah={1} ayah={6} ayahData={getAyah(1, 6)} />);
+    expect(screen.getByText(/No morphology comparison is available/)).toBeInTheDocument();
+  });
+});
+
+describe('<ManuscriptTimeline>', () => {
+  it('renders dated manuscript records and the selected detail panel', () => {
+    render(<ManuscriptTimeline />);
+    expect(screen.getByText("Early Qur'anic Manuscripts")).toBeInTheDocument();
+    expect(screen.getAllByText('Parisino-petropolitanus').length).toBeGreaterThan(0);
+    expect(screen.getByText(/C-14 range:/)).toBeInTheDocument();
   });
 });
