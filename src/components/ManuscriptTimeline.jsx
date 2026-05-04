@@ -1,25 +1,61 @@
 import React, { useMemo, useState } from 'react';
-import manuscriptsData from '../data/manuscriptsData.json';
+import ccManuscripts from '../data/ccManuscripts.json';
 
 function clampPercent(value) {
   return Math.max(0, Math.min(100, value));
 }
 
+/** Map Corpus Coranicum's msDesc parse onto the visualization's expected
+ *  shape. Preserves the existing timeline CSS. */
+function adapt(m) {
+  const parsed = m.origDate?.parsed;
+  let start = m.origDate?.centerYear ?? null;
+  let end = m.origDate?.centerYear ?? null;
+  if (parsed?.kind === 'before') {
+    start = parsed.year - 100;
+    end = parsed.year;
+  } else if (parsed?.kind === 'after') {
+    start = parsed.year;
+    end = parsed.year + 100;
+  } else if (parsed?.kind === 'range') {
+    start = parsed.year;
+    end = parsed.year2;
+  }
+  const w = m.physical?.widthMm;
+  const h = m.physical?.heightMm;
+  const dimensions = w && h ? `${w} × ${h} ${m.physical?.dimUnit ?? 'mm'}` : null;
+  return {
+    ccId: m.ccId,
+    id: m.shelfmark || m.title || m.ccId,
+    title: m.title,
+    repository: m.repository,
+    script: m.script,
+    provenance: m.provenance,
+    prose: m.summary,
+    extracted: {
+      c14: { start, end, center: m.origDate?.centerYear ?? null },
+      dimensions,
+      imageUrl: m.imageUrls?.[0] ?? null,
+    },
+  };
+}
+
 export function ManuscriptTimeline() {
   const manuscripts = useMemo(
     () =>
-      manuscriptsData
-        .filter((ms) => ms.extracted?.c14)
-        .sort((a, b) => a.extracted.c14.center - b.extracted.c14.center),
+      (ccManuscripts.manuscripts ?? [])
+        .filter((m) => m.featured && m.origDate?.centerYear != null)
+        .map(adapt)
+        .sort((a, b) => (a.extracted.c14.center ?? 0) - (b.extracted.c14.center ?? 0)),
     [],
   );
 
   const [activeId, setActiveId] = useState(manuscripts[0]?.id ?? null);
 
   const bounds = useMemo(() => {
-    if (manuscripts.length === 0) return { min: 550, max: 800 };
-    const starts = manuscripts.map((ms) => ms.extracted.c14.start);
-    const ends = manuscripts.map((ms) => ms.extracted.c14.end);
+    if (manuscripts.length === 0) return { min: 550, max: 1100 };
+    const starts = manuscripts.map((ms) => ms.extracted.c14.start ?? ms.extracted.c14.center);
+    const ends = manuscripts.map((ms) => ms.extracted.c14.end ?? ms.extracted.c14.center);
     return {
       min: Math.min(...starts) - 20,
       max: Math.max(...ends) + 20,
@@ -44,7 +80,9 @@ export function ManuscriptTimeline() {
       <div className="ms-timeline-header">
         <div>
           <h2 className="ms-timeline-title">Early Qur'anic Manuscripts</h2>
-          <p className="ms-timeline-subtitle">C-14 ranges extracted from catalogue prose.</p>
+          <p className="ms-timeline-subtitle">
+            From the Corpus Coranicum project (BBAW), CC&nbsp;BY-SA&nbsp;4.0. Showing {manuscripts.length} dated codices with linked digital surrogates; full catalogue of {ccManuscripts._meta?.totalManuscriptsInUpstream ?? '2,323'} entries upstream.
+          </p>
         </div>
         <span className="ms-timeline-count">{manuscripts.length} records</span>
       </div>
@@ -58,7 +96,7 @@ export function ManuscriptTimeline() {
           <span className="timeline-tick" style={{ left: '100%' }}>{bounds.max} CE</span>
         </div>
 
-        <div className="timeline-plots" role="list" aria-label="C-14 manuscript ranges">
+        <div className="timeline-plots" role="list" aria-label="Manuscript date ranges">
           {manuscripts.map((ms) => {
             const startPct = clampPercent(((ms.extracted.c14.start - bounds.min) / totalYears) * 100);
             const endPct = clampPercent(((ms.extracted.c14.end - bounds.min) / totalYears) * 100);
@@ -67,7 +105,7 @@ export function ManuscriptTimeline() {
             const isActive = ms.id === activeManuscript?.id;
 
             return (
-              <div key={ms.id} role="listitem">
+              <div key={ms.ccId ?? ms.id} role="listitem">
                 <button
                   type="button"
                   className={'ms-plot-point ' + (isActive ? 'is-active' : '')}
@@ -98,24 +136,40 @@ export function ManuscriptTimeline() {
       {activeManuscript && (
         <article className="ms-tooltip">
           <h3>{activeManuscript.id}</h3>
+          {activeManuscript.title && (
+            <p className="ms-tooltip-repo"><strong>Title:</strong> {activeManuscript.title}</p>
+          )}
+          {activeManuscript.repository && (
+            <p className="ms-tooltip-repo"><strong>Repository:</strong> {activeManuscript.repository}</p>
+          )}
           <div className="ms-tooltip-content">
-            {activeManuscript.extracted.imageUrl && (
-              <img
-                src={activeManuscript.extracted.imageUrl}
-                alt={activeManuscript.id}
-                className="ms-tooltip-image"
-              />
-            )}
             <div className="ms-tooltip-details">
               <p>
-                <strong>C-14 range:</strong>{' '}
+                <strong>Date range:</strong>{' '}
                 {activeManuscript.extracted.c14.start}-{activeManuscript.extracted.c14.end} CE
+                {activeManuscript.extracted.c14.center != null && (
+                  <> (center {activeManuscript.extracted.c14.center})</>
+                )}
               </p>
-              <p>
-                <strong>Dimensions:</strong>{' '}
-                {activeManuscript.extracted.dimensions || 'Unknown'}
-              </p>
-              <p className="ms-tooltip-prose">{activeManuscript.prose}</p>
+              {activeManuscript.script && (
+                <p><strong>Script:</strong> {activeManuscript.script}</p>
+              )}
+              {activeManuscript.extracted.dimensions && (
+                <p><strong>Dimensions:</strong> {activeManuscript.extracted.dimensions}</p>
+              )}
+              {activeManuscript.provenance && (
+                <p><strong>Provenance:</strong> {activeManuscript.provenance}</p>
+              )}
+              {activeManuscript.prose && (
+                <p className="ms-tooltip-prose">{activeManuscript.prose}</p>
+              )}
+              {activeManuscript.extracted.imageUrl && (
+                <p>
+                  <a href={activeManuscript.extracted.imageUrl} target="_blank" rel="noopener noreferrer">
+                    View digital surrogate ↗
+                  </a>
+                </p>
+              )}
             </div>
           </div>
         </article>

@@ -22,7 +22,7 @@ Three views, switchable from the header:
 
 - **Variant explorer.** Pick a verse, pick which readings to compare, see differing words highlighted by category (consonantal, vocalization, word-form, orthographic, verse-numbering). Click a highlighted word to see all alternates with reciter, transmitter, and source citation.
 - **Morphology browser.** For sample verses, compares **QAC** and **Talmon** root / lemma / POS analyses side-by-side, highlighting where the two analyses disagree — useful for showing that disagreements about the text exist below the qirāʾāt level too.
-- **Manuscript timeline.** C-14 ranges of early Qur'an codices (Parisino-petropolitanus, Birmingham, Sanaa, Topkapi) plotted on a shared axis, with a detail panel and Wikimedia Commons image links.
+- **Manuscript timeline.** Datings of early Qur'an codices plotted on a shared axis with a detail panel that links out to digital surrogates (BL, Gallica, Cambridge CUDL, Bodleian, Walters, Qatar National). Sourced from Corpus Coranicum's TEI msDesc export — 71 featured codices drawn from the 2,323-record upstream catalogue.
 
 The bundled dataset is intentionally small — **8 verses, 53 readings, all flagged `curated_sample`** — and the verification work to scholarly-confirm each reading is the open phase. See [Status](#status) below.
 
@@ -47,10 +47,11 @@ To extend the curated sample with full upstream corpora (you'll need to accept T
 
 ```bash
 npm run fetch-data         # downloads to scripts/_raw/ (git-ignored)
-npm run build:hafs-corpus  # writes hafsCorpusData.json (git-ignored — KFGQPC)
-npm run build-variants     # writes fullVariants.json (git-ignored)
-npm run build:morphology   # refreshes morphologyData.json
-npm run build:manuscripts  # refreshes manuscriptsData.json
+npm run build:hafs-corpus     # writes hafsCorpusData.json (git-ignored — KFGQPC)
+npm run build-variants        # writes fullVariants.json (git-ignored)
+npm run build:morphology      # refreshes morphologyData.json
+npm run build:cc-variants     # parses scripts/_raw/quran_variants*.xml → ccVariants.json
+npm run build:cc-manuscripts  # parses sparse-cloned CC TEI → ccManuscripts.json
 ```
 
 `hafsCorpusData.json` and `fullVariants.json` are git-ignored because they're directly derived from upstream corpora whose redistribution licenses aren't yet confirmed. The smaller `morphologyData.json` and `manuscriptsData.json` samples are tracked.
@@ -86,9 +87,9 @@ npm run build:manuscripts  # refreshes manuscriptsData.json
 | Ḥafṣ Uthmānic text | [Tanzil.net](https://tanzil.net/) | Tanzil license — attribution required, no modification of text. |
 | Warsh / Qālūn JSON | [KFGQPC](https://qurancomplex.gov.sa/) via [thetruetruth/quran-data-kfgqpc](https://github.com/thetruetruth/quran-data-kfgqpc) | KFGQPC published files. Redistribution status unconfirmed → derived outputs are git-ignored. |
 | Variant attributions | Ibn al-Jazarī _an-Nashr_; ad-Dānī _at-Taysīr_; ash-Shāṭibī _Ḥirz al-Amānī_ | Public domain. Citations included in tooltips. |
-| Variant overlay | [Corpus Coranicum](https://corpuscoranicum.de/) (BBAW) — TEI variant readings distribution | Academic project. Attribution required. We extract reader + transliteration metadata for the 8 curated verses into `src/data/ccVariants.json`; CC's TEI ships transliteration only (no Arabic surface text in this distribution), so the overlay is **scholarly cross-reference**, not byte-matchable readings. |
+| Variant overlay | [Corpus Coranicum](https://corpuscoranicum.de/) (BBAW) — `quran_variants` TEI from [telota/corpus-coranicum-tei](https://github.com/telota/corpus-coranicum-tei) | **CC BY-SA 4.0**. Reader + transliteration overlay for the 8 curated verses → `src/data/ccVariants.json` (231 entries, 870 readers indexed). CC's TEI ships transliteration only, so the overlay is scholarly cross-reference, not byte-matchable Arabic. |
+| Manuscript catalogue | [Corpus Coranicum](https://corpuscoranicum.de/) (BBAW) — `quran_manuscripts` TEI from [telota/corpus-coranicum-tei](https://github.com/telota/corpus-coranicum-tei) | **CC BY-SA 4.0**. msDesc records for 2,323 Qur'an manuscripts (TELOTA TEI export, 2007–2024). We extract structured metadata (shelfmark, repository, dating, dimensions, script class, image URIs) for the 1,544 with parseable dates ≤ 1100 CE → `src/data/ccManuscripts.json`. The `ManuscriptTimeline` view shows the 71 featured codices that link out to digital surrogates (BL, Gallica, Cambridge CUDL, Bodleian, etc.). |
 | Morphology | [Quranic Arabic Corpus](http://corpus.quran.com/) (Kais Dukes, Leeds) | License (verbatim from `corpus.quran.com/download/`): _"Permission is granted to copy and distribute verbatim copies of this file, but CHANGING IT IS NOT ALLOWED."_ Stricter than vanilla GPL — **no derivatives**. Used illustratively by `MorphologyBrowser`. |
-| Manuscript metadata | Author-written prose summaries; Wikimedia Commons image URLs | Author summaries: this repo's MIT. Images: per-image, on Wikimedia. |
 | Future-work hub | [QUL — Quranic Universal Library](https://qul.tarteel.ai/resources) (Tarteel) | MIT (CMS code). Catalogue of Hafs-centric resources (132 reciters with timing, 209 translations, 115 tafsirs, multiple Hafs orthographies). Downloads sit behind JS-rendered buttons; not yet integrated. Documented for later ingestion. |
 | KFGQPC Hafs Uthmanic font | [KFGQPC](https://fonts.qurancomplex.gov.sa/) | Not bundled. See [Font installation](#font-installation) below. |
 
@@ -159,15 +160,16 @@ src/
 │                                # diff, sourceParsers
 ├── data/                        # quranMeta, quranData, sampleVariants,
 │                                # verificationLedger, sourceManifest,
-│                                # morphologyData, manuscriptsData,
-│                                # ccVariants (Corpus Coranicum overlay),
+│                                # morphologyData,
+│                                # ccVariants (CC variant overlay),
+│                                # ccManuscripts (CC manuscript catalogue),
 │                                # hafsCorpusData (git-ignored),
 │                                # fullVariants (git-ignored)
 └── styles/app.css
 
 scripts/                         # fetch-data, build-variants,
                                  # build-hafs-corpus, fetch-morphology,
-                                 # extract-manuscripts, extract-cc-variants,
+                                 # extract-cc-variants, extract-cc-manuscripts,
                                  # audit-data, init-verification-ledger,
                                  # match-sources, apply-source-matches,
                                  # record-source-provenance

@@ -3,6 +3,9 @@ dist
 .DS_Store
 *.log
 scripts/_raw/
+# Note: scripts/_raw/cc-tei/ is the sparse-clone of telota/corpus-coranicum-tei
+# (CC BY-SA 4.0). Already ignored via the `scripts/_raw/` rule above; calling
+# it out so contributors don't add an exception.
 src/data/fullVariants.json
 # KFGQPC-derived browsing corpus. Regenerate locally with `npm run build:hafs-corpus`
 # from scripts/_raw/kfqpc-hafs.json. Excluded from version control because KFGQPC

@@ -97,7 +97,9 @@ describe('<ManuscriptTimeline>', () => {
   it('renders dated manuscript records and the selected detail panel', () => {
     render(<ManuscriptTimeline />);
     expect(screen.getByText("Early Qur'anic Manuscripts")).toBeInTheDocument();
-    expect(screen.getAllByText('Parisino-petropolitanus').length).toBeGreaterThan(0);
-    expect(screen.getByText(/C-14 range:/)).toBeInTheDocument();
+    // BL Or. 2165 is the earliest featured manuscript in the CC-sourced
+    // catalogue (centerYear 700 CE) and shipped with CC BY-SA 4.0.
+    expect(screen.getAllByText('Or. 2165').length).toBeGreaterThan(0);
+    expect(screen.getByText(/Date range:/)).toBeInTheDocument();
   });
 });
