@@ -4,6 +4,8 @@ A prototype web application for visualizing textual variants across the canonica
 
 > **Status: prototype.** This codebase implements the core architecture and ships with a hand-curated dataset of ~10 verified variant points spread across the Qur'an. A fetcher script (`scripts/fetch-data.js`) is provided to pull and align the full Tanzil + KFGQPC corpora into the same data shape, but running it produces machine-aligned diffs that should be reviewed by a qira'at specialist before being treated as authoritative.
 
+The header offers three views: the **Variant explorer** (default), a **Morphology browser** that compares QAC and Talmon root/lemma/POS analyses for a small sample, and a **Manuscript timeline** plotting C-14 ranges of early Qur'an manuscripts (Parisino-petropolitanus, Birmingham, Sanaa, Topkapi).
+
 ---
 
 ## Quick start
@@ -24,10 +26,15 @@ To extend the curated sample to the full Qur'an:
 
 ```bash
 npm run fetch-data   # downloads Tanzil + KFGQPC sources to scripts/_raw/
+npm run build:hafs-corpus # writes complete Hafs browsing data for the UI
 npm run build-variants # word-aligns and writes src/data/fullVariants.json
+npm run build:morphology # refreshes the morphology comparison sample
+npm run build:manuscripts # refreshes extracted manuscript timeline data
 ```
 
 The app loads `fullVariants.json` if present and falls back to the hand-curated `sampleVariants.json` otherwise.
+
+Two of these outputs are intentionally git-ignored because they are derived directly from upstream corpora whose redistribution licenses are not yet confirmed: `src/data/fullVariants.json` (built from Tanzil + KFGQPC) and `src/data/hafsCorpusData.json` (built from KFGQPC Hafs). Both are regenerated locally by the scripts above; they never enter version control. The smaller `morphologyData.json` and `manuscriptsData.json` samples are tracked.
 
 ---
 
@@ -79,7 +86,7 @@ See `docs/architecture.mmd` for the formal Mermaid diagram and `docs/timeline.mm
 
 ```
 src/
-├── App.jsx                    # top-level state + composition
+├── App.jsx                    # top-level state + composition + view-switcher
 ├── main.jsx                   # React entry point
 ├── components/
 │   ├── ControlPanel.jsx       # surah/ayah picker + riwāya toggles + curated list
@@ -87,21 +94,40 @@ src/
 │   ├── WordToken.jsx          # single word; carries highlight class & a11y
 │   ├── VariantTooltip.jsx     # readings grouped by form, with citations
 │   ├── Legend.jsx             # color key
-│   └── ShapingBadge.jsx       # shows whether HarfBuzz or fallback is active
+│   ├── ShapingBadge.jsx       # shows whether HarfBuzz or fallback is active
+│   ├── AuditBadge.jsx         # surfaces dataset confidence/integrity status
+│   ├── MorphologyBrowser.jsx  # QAC vs Talmon root/lemma/POS for sample verses
+│   └── ManuscriptTimeline.jsx # C-14 timeline of early Qur'an manuscripts
 ├── data/
 │   ├── quranMeta.json         # 114 surahs + riwāyāt registry
-│   ├── sampleVariants.json    # curated, hand-verified variant data
-│   └── fullVariants.json      # (optional) machine-built corpus
+│   ├── quranData.json         # canonical curated dataset (8 verses, 53 readings)
+│   ├── sampleVariants.json    # legacy curated, hand-verified variant data
+│   ├── verificationLedger.json# reviewer-side audit trail per reading
+│   ├── sourceManifest.json    # upstream corpora + authority status
+│   ├── morphologyData.json    # small QAC/Talmon comparison sample
+│   ├── manuscriptsData.json   # author-written manuscript metadata
+│   ├── fullVariants.json      # (optional, git-ignored) machine-built corpus
+│   └── hafsCorpusData.json    # (optional, git-ignored) full Hafs browsing data
 ├── lib/
 │   ├── arabic.js              # diacritic/rasm normalization, classification
 │   ├── alignment.js           # Needleman-Wunsch over words
 │   ├── shaping.js             # harfbuzzjs wrapper with native fallback
-│   └── variantLookup.js       # async getVerse + computeWordStates
+│   ├── dataLoader.js          # async loaders + dataset deep-freeze
+│   ├── diff.js                # diffByCuratedVariants
+│   └── sourceParsers.js       # Tanzil/KFGQPC parsers + tokenizer
 └── styles/app.css
 
 scripts/
 ├── fetch-data.js              # download Tanzil + KFGQPC into _raw/
-└── build-variants.js          # align & emit src/data/fullVariants.json
+├── build-variants.js          # align & emit src/data/fullVariants.json
+├── build-hafs-corpus.js       # write src/data/hafsCorpusData.json (git-ignored)
+├── fetch-morphology.js        # write src/data/morphologyData.json
+├── extract-manuscripts.js     # write src/data/manuscriptsData.json
+├── audit-data.js              # cross-check dataset/ledger integrity
+├── init-verification-ledger.js# refresh ledger stubs idempotently
+├── match-sources.js           # diagnostic match against local corpora
+├── apply-source-matches.js    # gated promotion of manual_placeholder ids
+└── record-source-provenance.js# hash & document local corpus provenance
 
 tests/                         # vitest suites covering arabic, alignment,
                                # variantLookup, and React components
@@ -116,6 +142,16 @@ Arabic shaping is delegated to **`harfbuzzjs`** (HarfBuzz compiled to WebAssembl
 
 This dual-mode approach satisfies the spec's "fail gracefully" requirement: nothing depends on HarfBuzz being available; it's used to **measure** advance widths and inspect which OpenType features fired, not to render.
 
+### Browsers
+
+The app exposes three views, switched by the toggle in the header:
+
+- **Variant explorer** — the default. Compares Hafs against another active riwāya for the selected verse, highlighting differing words and explaining each on click. Sourced from `src/data/quranData.json` (curated) with optional `fullVariants.json` overlay.
+- **Morphology browser** — for the selected verse, compares **QAC** (Quranic Arabic Corpus) and **Talmon** root/lemma/POS analyses side-by-side, highlighting disagreements. Currently a small sample (Q 1:4, 2:9) hardcoded in `scripts/fetch-morphology.js`; intended to demonstrate that morphological analyses themselves disagree before any qira'at-level disagreement enters.
+- **Manuscript timeline** — plots C-14 ranges of early Qur'an manuscripts (Parisino-petropolitanus, Birmingham, Sanaa, Topkapi) on a shared axis, with a detail panel for the selected codex. Dates and dimensions are extracted by regex from author-written prose in `scripts/extract-manuscripts.js`; image URLs link to Wikimedia Commons (no images are bundled).
+
+None of the three browsers generate Arabic text. The morphology and manuscript views are explicitly samples — they document _structure_, not coverage.
+
 ---
 
 ## Data sources & licensing
@@ -127,6 +163,8 @@ This dual-mode approach satisfies the spec's "fail gracefully" requirement: noth
 | **Qālūn JSON**                | KFGQPC, same mirror                                                                                                            | as above                                                                                                       |
 | **Variant attributions**      | Ibn al-Jazarī, _an-Nashr fī al-qirāʾāt al-ʿashr_; ad-Dānī, _at-Taysīr_; ash-Shāṭibī, _Ḥirz al-Amānī_                           | Public domain. Citations included in tooltips.                                                                 |
 | **Cross-reference**           | [Corpus Coranicum](https://corpuscoranicum.de/)                                                                                | Variant entries cross-referenced where listed; consult their terms.                                            |
+| **QAC morphology**            | [Quranic Arabic Corpus](http://corpus.quran.com/)                                                                              | GPL-3.0. Root/lemma/POS triples used by `MorphologyBrowser`; cited in-app.                                     |
+| **Manuscript metadata**       | Author-written prose summaries; Wikimedia Commons image URLs                                                                   | Author summaries: this repo's MIT. Images: per-image licenses on Wikimedia Commons (linked, not bundled).      |
 | **KFGQPC Hafs Uthmanic font** | KFGQPC                                                                                                                         | **Not bundled.** See "Font installation" below.                                                                |
 
 The application code is licensed **MIT** (see `LICENSE`). All Qur'anic text comes from upstream sources and retains its source license; **no Arabic text in this repository was generated by AI**.
