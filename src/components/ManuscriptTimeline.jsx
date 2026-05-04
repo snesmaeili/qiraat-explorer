@@ -41,7 +41,7 @@ function adapt(m) {
 }
 
 export function ManuscriptTimeline() {
-  const manuscripts = useMemo(
+  const allManuscripts = useMemo(
     () =>
       (ccManuscripts.manuscripts ?? [])
         .filter((m) => m.featured && m.origDate?.centerYear != null)
@@ -50,23 +50,75 @@ export function ManuscriptTimeline() {
     [],
   );
 
-  const [activeId, setActiveId] = useState(manuscripts[0]?.id ?? null);
-
-  const bounds = useMemo(() => {
-    if (manuscripts.length === 0) return { min: 550, max: 1100 };
-    const starts = manuscripts.map((ms) => ms.extracted.c14.start ?? ms.extracted.c14.center);
-    const ends = manuscripts.map((ms) => ms.extracted.c14.end ?? ms.extracted.c14.center);
+  // Bounds are computed from the unfiltered set so the slider extents are
+  // stable as the user filters.
+  const fullBounds = useMemo(() => {
+    if (allManuscripts.length === 0) return { min: 550, max: 1100 };
+    const starts = allManuscripts.map((ms) => ms.extracted.c14.start ?? ms.extracted.c14.center);
+    const ends = allManuscripts.map((ms) => ms.extracted.c14.end ?? ms.extracted.c14.center);
     return {
       min: Math.min(...starts) - 20,
       max: Math.max(...ends) + 20,
     };
-  }, [manuscripts]);
+  }, [allManuscripts]);
+
+  // Top-N repositories by featured count, used as the filter pill set.
+  const topRepositories = useMemo(() => {
+    const counts = new Map();
+    for (const ms of allManuscripts) {
+      const repo = (ms.repository ?? 'Unknown').replace(/\s+/g, ' ').trim();
+      counts.set(repo, (counts.get(repo) ?? 0) + 1);
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 6)
+      .map(([repo, n]) => ({ repo, count: n }));
+  }, [allManuscripts]);
+
+  const [yearLo, setYearLo] = useState(fullBounds.min);
+  const [yearHi, setYearHi] = useState(fullBounds.max);
+  const [activeRepos, setActiveRepos] = useState(() => new Set()); // empty = all
+
+  const manuscripts = useMemo(() => {
+    return allManuscripts.filter((ms) => {
+      const c = ms.extracted.c14.center;
+      if (c == null || c < yearLo || c > yearHi) return false;
+      if (activeRepos.size > 0) {
+        const repo = (ms.repository ?? 'Unknown').replace(/\s+/g, ' ').trim();
+        if (!activeRepos.has(repo)) return false;
+      }
+      return true;
+    });
+  }, [allManuscripts, yearLo, yearHi, activeRepos]);
+
+  const [activeId, setActiveId] = useState(allManuscripts[0]?.id ?? null);
+
+  const bounds = useMemo(() => {
+    if (manuscripts.length === 0) return { min: yearLo, max: yearHi };
+    const starts = manuscripts.map((ms) => ms.extracted.c14.start ?? ms.extracted.c14.center);
+    const ends = manuscripts.map((ms) => ms.extracted.c14.end ?? ms.extracted.c14.center);
+    return {
+      min: Math.min(yearLo, Math.min(...starts) - 20),
+      max: Math.max(yearHi, Math.max(...ends) + 20),
+    };
+  }, [manuscripts, yearLo, yearHi]);
 
   const totalYears = bounds.max - bounds.min || 1;
   const activeManuscript =
-    manuscripts.find((ms) => ms.id === activeId) ?? manuscripts[0] ?? null;
+    manuscripts.find((ms) => ms.id === activeId) ??
+    allManuscripts.find((ms) => ms.id === activeId) ??
+    manuscripts[0] ?? null;
 
-  if (manuscripts.length === 0) {
+  function toggleRepo(repo) {
+    setActiveRepos((prev) => {
+      const next = new Set(prev);
+      if (next.has(repo)) next.delete(repo);
+      else next.add(repo);
+      return next;
+    });
+  }
+
+  if (allManuscripts.length === 0) {
     return (
       <div className="ms-timeline-container">
         <h2 className="ms-timeline-title">Early Qur'anic Manuscripts</h2>
@@ -81,10 +133,66 @@ export function ManuscriptTimeline() {
         <div>
           <h2 className="ms-timeline-title">Early Qur'anic Manuscripts</h2>
           <p className="ms-timeline-subtitle">
-            From the Corpus Coranicum project (BBAW), CC&nbsp;BY-SA&nbsp;4.0. Showing {manuscripts.length} dated codices with linked digital surrogates; full catalogue of {ccManuscripts._meta?.totalManuscriptsInUpstream ?? '2,323'} entries upstream.
+            From the Corpus Coranicum project (BBAW), CC&nbsp;BY-SA&nbsp;4.0. Showing {manuscripts.length} of {allManuscripts.length} featured codices; full catalogue of {ccManuscripts._meta?.totalManuscriptsInUpstream ?? '2,323'} entries upstream.
           </p>
         </div>
         <span className="ms-timeline-count">{manuscripts.length} records</span>
+      </div>
+
+      <div className="ms-timeline-filters">
+        <div className="ms-filter-slider" role="group" aria-label="Filter by year">
+          <label>
+            <span>From {yearLo} CE</span>
+            <input
+              type="range"
+              min={fullBounds.min}
+              max={fullBounds.max}
+              value={yearLo}
+              onChange={(e) => {
+                const v = parseInt(e.target.value, 10);
+                setYearLo(Math.min(v, yearHi));
+              }}
+              aria-label="Earliest year"
+            />
+          </label>
+          <label>
+            <span>to {yearHi} CE</span>
+            <input
+              type="range"
+              min={fullBounds.min}
+              max={fullBounds.max}
+              value={yearHi}
+              onChange={(e) => {
+                const v = parseInt(e.target.value, 10);
+                setYearHi(Math.max(v, yearLo));
+              }}
+              aria-label="Latest year"
+            />
+          </label>
+        </div>
+        <div className="ms-filter-pills" role="group" aria-label="Filter by repository">
+          <button
+            type="button"
+            className={'ms-filter-pill ' + (activeRepos.size === 0 ? 'is-active' : '')}
+            onClick={() => setActiveRepos(new Set())}
+          >
+            All repositories
+          </button>
+          {topRepositories.map(({ repo, count }) => {
+            const short = repo.split(',')[0].trim();
+            return (
+              <button
+                key={repo}
+                type="button"
+                className={'ms-filter-pill ' + (activeRepos.has(repo) ? 'is-active' : '')}
+                onClick={() => toggleRepo(repo)}
+                title={repo}
+              >
+                {short} ({count})
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div className="timeline-wrapper">

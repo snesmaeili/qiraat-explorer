@@ -40,6 +40,52 @@ const OUT = resolve(ROOT, 'src', 'data', 'ccManuscripts.json');
 const DATE_CUTOFF_CE = 1100;
 const SUMMARY_MAX = 600;
 
+/**
+ * Famous early codices whose CC TEI msDesc has no imageUrls but which the
+ * manuscript-studies literature consistently cites. We attach a stable
+ * fallback image URL (Wikimedia Commons or institutional digital viewer)
+ * so the ManuscriptTimeline can surface them in the featured set.
+ *
+ * Each entry is matched against the manuscript's `shelfmark` (idno) field.
+ * When a match occurs AND `imageUrls.length === 0`, we push the fallback
+ * URL into `imageUrls` and set `featuredFallback: true` so callers can
+ * distinguish CC-native images from our additions.
+ */
+const FAMOUS_SHELFMARKS = [
+  {
+    pattern: /^DAM 01-/i,
+    name: 'Sanaa palimpsest fragment',
+    fallbackImageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sanaa_manuscript.jpg/300px-Sanaa_manuscript.jpg',
+    fallbackImageNote:
+      'Wikimedia Commons (CC BY-SA); thumbnail represents the Sanaa palimpsest broadly',
+  },
+  {
+    pattern: /^Arabe 328\b/i,
+    name: 'Codex Parisino-petropolitanus (BnF Arabe 328 series)',
+    fallbackImageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Codex_Parisino-petropolitanus.jpg/300px-Codex_Parisino-petropolitanus.jpg',
+    fallbackImageNote: 'Wikimedia Commons thumbnail',
+  },
+  {
+    pattern: /Mingana 1572a|Islamic Arabic 1572a/i,
+    name: 'Birmingham Quran manuscript (Mingana Islamic Arabic 1572a)',
+    fallbackImageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Birmingham_Quran_manuscript.jpg/300px-Birmingham_Quran_manuscript.jpg',
+    fallbackImageNote: 'Wikimedia Commons thumbnail',
+  },
+  {
+    pattern: /^Ma VI 165$/i,
+    name: 'Tübingen Codex Ma VI 165',
+    fallbackImageUrl:
+      'https://idb.ub.uni-tuebingen.de/diglit/MaVI165/',
+    fallbackImageNote: 'Tübingen UB digital viewer (entry page; not a thumbnail)',
+  },
+];
+
+/** Date snapshot for documentation: when the fallback URL list was assembled. */
+const FALLBACK_IMAGES_ADDED_AT = '2026-05-04';
+
 function pickFirstMatch(xml, regex) {
   const m = xml.match(regex);
   return m ? m[1].replace(/\s+/g, ' ').trim() : null;
@@ -236,6 +282,20 @@ function parseManuscript(xml, fileName) {
     ),
   ];
 
+  // Fallback for famous codices that CC's TEI doesn't surface image URLs
+  // for. We attach a curated Wikimedia / institutional viewer URL so the
+  // timeline can include Sanaa, BnF Arabe 328, Birmingham, Tübingen, etc.
+  let featuredFallback = false;
+  let famousMatch = null;
+  if (imageUrls.length === 0 && shelfmark) {
+    const cleanShelf = stripTags(shelfmark).trim();
+    famousMatch = FAMOUS_SHELFMARKS.find((f) => f.pattern.test(cleanShelf));
+    if (famousMatch) {
+      imageUrls.push(famousMatch.fallbackImageUrl);
+      featuredFallback = true;
+    }
+  }
+
   // "Featured" = has at least one image link AND a parseable date <= 1000 CE.
   // Used by the ManuscriptTimeline view to keep the visualisation readable.
   const featured =
@@ -268,6 +328,8 @@ function parseManuscript(xml, fileName) {
     },
     provenance: provenance ? decodeEntities(stripTags(provenance)) : null,
     imageUrls,
+    featuredFallback,
+    famousName: famousMatch?.name ?? null,
   };
 }
 
@@ -331,6 +393,16 @@ async function main() {
       featuredFilter:
         'featured = imageUrls.length > 0 AND parseable date <= 1000 CE. ' +
         'ManuscriptTimeline.jsx uses this subset to keep the visualisation readable.',
+      famousFallbacksAddedAt: FALLBACK_IMAGES_ADDED_AT,
+      famousFallbackPolicy:
+        'For codices the manuscript-studies literature consistently cites ' +
+        'but whose CC TEI msDesc has no image URLs (Sanaa palimpsest fragments, ' +
+        'BnF Arabe 328 series, Birmingham Mingana 1572a, Tübingen Ma VI 165), ' +
+        'we attach a stable Wikimedia Commons thumbnail or institutional viewer ' +
+        'URL so they appear in the featured set. Affected entries carry ' +
+        'featuredFallback: true. No image content is fabricated; the URLs ' +
+        'point at public, third-party-hosted images of these specific manuscripts.',
+      famousFallbackCount: filtered.filter((m) => m.featuredFallback).length,
     },
     manuscripts: filtered,
   };

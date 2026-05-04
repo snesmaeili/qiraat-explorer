@@ -99,12 +99,24 @@ describe('<MorphologyBrowser>', () => {
 });
 
 describe('<ManuscriptTimeline>', () => {
-  it('renders dated manuscript records and the selected detail panel', () => {
+  it('renders dated manuscript records, filters, and the selected detail panel', () => {
     render(<ManuscriptTimeline />);
     expect(screen.getByText("Early Qur'anic Manuscripts")).toBeInTheDocument();
-    // BL Or. 2165 is the earliest featured manuscript in the CC-sourced
-    // catalogue (centerYear 700 CE) and shipped with CC BY-SA 4.0.
+
+    // Filter controls render: date sliders + repository pills.
+    expect(screen.getByLabelText(/Earliest year/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Latest year/i)).toBeInTheDocument();
+    expect(screen.getByText(/All repositories/i)).toBeInTheDocument();
+
+    // BL Or. 2165 was already featured before the famous-shelfmark fallback
+    // injection (centerYear 700 CE).
     expect(screen.getAllByText('Or. 2165').length).toBeGreaterThan(0);
-    expect(screen.getByText(/Date range:/)).toBeInTheDocument();
+    expect(screen.getAllByText(/Date range:/).length).toBeGreaterThan(0);
+
+    // FAMOUS_SHELFMARKS now surfaces codices CC's TEI lacks imageUrls for.
+    // Birmingham (Mingana Islamic Arabic 1572a) and at least one Sanaa
+    // palimpsest fragment (DAM 01-*) must now appear in the timeline list.
+    expect(screen.getAllByText(/Islamic Arabic 1572a/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/^DAM 01-/).length).toBeGreaterThan(0);
   });
 });

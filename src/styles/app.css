@@ -491,6 +491,60 @@ a:hover { text-decoration: underline; }
   color: var(--ink-soft);
   font-size: 0.78rem;
 }
+.ms-timeline-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0.7rem 0 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+.ms-filter-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.ms-filter-slider label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.ms-filter-slider input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent, #2563eb);
+}
+.ms-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.ms-filter-pill {
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.ms-filter-pill:hover {
+  border-color: var(--ink-soft);
+  color: var(--ink);
+}
+.ms-filter-pill.is-active {
+  background: var(--accent, #2563eb);
+  color: white;
+  border-color: var(--accent, #2563eb);
+}
+@media (max-width: 720px) {
+  .ms-filter-slider { grid-template-columns: 1fr; }
+}
 .morphology-browser__grid {
   display: grid;
   gap: 0.85rem;
