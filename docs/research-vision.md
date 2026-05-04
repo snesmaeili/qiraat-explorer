@@ -36,9 +36,10 @@ The Qurʾān contains 114 chapters (_surahs_) and 6,236 numbered verses (_ayāt_
 |---|---|---|
 | **Quran-meta** (JS lib) | Surah / juz / ayah metadata for many riwāyāt; handles `AyahID`, page, line numbering. | MIT; allows custom riwāyah injection. |
 | **quran-data-kfgqpc** | Uthmānī script text from KFGQPC, multiple reciters (Ḥafṣ, Warsh, Qālūn, Dūrī, Shuʿbah, Sūsī, Bazzī, Qunbul). JSON / SQL. | KFGQPC published files; redistribution status to be confirmed before publishing derived data. |
-| **Tanzil Project** | Verified Arabic text (Ḥafṣ ʿan ʿĀṣim, Uthmānī orthography). | CC BY 3.0 (no derivatives). Verbatim use only. |
-| **Corpus Coranicum** (TEI) | Critical dataset: text plus word-level variant readings, manuscript descriptions, concordance. | Academic project (BBAW), 2007–. Use under their terms. |
-| **Quranic Arabic Corpus** | Morphologically annotated Qurʾān (word-by-word grammar and syntax). | GPL-3.0. |
+| **Tanzil Project** | Verified Arabic text (Ḥafṣ ʿan ʿĀṣim, Uthmānī orthography). | CC BY 3.0 (no derivatives). Verbatim use only. License-acceptance gate at `tanzil.net/download/`. |
+| **Corpus Coranicum** (TEI) | Critical dataset: text plus word-level variant readings, manuscript descriptions, concordance. | Academic project (BBAW), 2007–. Use under their terms. **TEI distribution gives transliteration with diacritics, not Arabic surface text** — the inner `<w xml:lang="ara"/>` elements in the variants TEI are self-closing in this dataset. Useful for reader/source attribution overlays; not byte-matchable against Arabic-text datasets. |
+| **Quranic Arabic Corpus** | Morphologically annotated Qurʾān (word-by-word grammar and syntax). | License (verbatim, from `corpus.quran.com/download/`): _"Permission is granted to copy and distribute verbatim copies of this file, but CHANGING IT IS NOT ALLOWED."_ Stricter than vanilla GPL — **no derivatives**. Email-gate before download. |
+| **QUL — Quranic Universal Library** (Tarteel) | Hafs-centric data hub: 132+ reciters with ayah-segmented timing, 209 translations, 115 tafsirs, 27 mushaf layouts, 28 Hafs script orthographies (Uthmani, Imlaei, IndoPak, Digital Khatt, glyph-based with tajweed), 77,429 morphology entries (a packaging of QAC's data). | CMS code MIT (TarteelAI/quranic-universal-library). Per-resource downloads sit behind JS-rendered buttons (static-HTML scrape returns `#_` placeholders); ingestion needs a small fetcher that drives the page. **Multi-qirāʾāt text data is NOT here** — only one explicitly non-Hafs reciter visible (Ali al-Huthaify Qaloon audio); KFGQPC remains the only path for Warsh/Qalun text. |
 | **Uthmani Mushaf repos** | Additional Uthmanic-text sources for cross-checks of verse breaks. | Various (MIT / CC0 preferred). |
 | **MarkItDown** | Tool to convert PDFs / Word / HTML of Qurʾānic prints into Markdown — useful for OCR scans of rare prints. | MIT (Microsoft). |
 | **AI tools** (Claude) | Not a data source; used for formatting and validating outputs. Must always verify against primary sources. | Cannot serve as a "trusted authority." |
@@ -198,3 +199,18 @@ Steps:
 ---
 
 **Where this sits relative to the React app:** `qiraat-explorer` (the React/Vite UI in this repo) is **Phase 0's deliverable demo** — it proves the data model works end to end on a small curated sample (8 verses, 53 readings) and exercises HarfBuzz shaping in the browser. The phases above describe the corpus-scale work that the demo points toward.
+
+---
+
+## What this iteration delivered
+
+Tracking what's actually in the repo today against the phased plan above.
+
+- **Phase 0 — Hafs spine.** Tanzil full Hafs Uthmani corpus (1.4 MB, 6266 lines) is staged at `scripts/_raw/quran-uthmani.txt` with `authorityStatus: official_confirmed` in `src/data/sourceManifest.json`. The 8-verse curated dataset in `src/data/quranData.json` continues to be the runtime source of Arabic text.
+- **Phase 1 — qirāʾāt readings.** KFGQPC Warsh + Qālūn JSONs are present locally (from a GitHub mirror) but `authorityStatus: downloaded_unverified` because local hashes don't match KFGQPC's published package hashes (see [docs/source-matching.md](source-matching.md) and `sourceManifest.json` `notes`). Direct re-download from `qurancomplex.gov.sa/quran-dev/` is the open work to upgrade them.
+- **Phase 2 partial — Corpus Coranicum overlay.** [`scripts/extract-cc-variants.js`](../scripts/extract-cc-variants.js) parses CC's TEI distribution (already in `scripts/_raw/`) and produces [`src/data/ccVariants.json`](../src/data/ccVariants.json) — **231 variant entries across the 8 curated verses, with 870 readers indexed** (every canonical qārī plus shādhdh readings from companions and grammarians). The overlay carries reader name, source id, word location, and Latin transliteration; CC's TEI distribution does not include Arabic surface text in `<w xml:lang="ara"/>`, so the overlay is scholarly cross-reference rather than byte-matchable text. Run with `npm run build:cc-variants`.
+- **Phase 3 — audio.** Not started. QUL hosts 132+ Hafs reciters with ayah-level timing plus one Qālūn reciter (Ali al-Huthaify); ingestion requires a fetcher that drives QUL's JS-rendered download buttons. Documented as the next-most-likely audio source.
+- **Phase 4 — sociolinguistic / geographic metadata.** Not started.
+- **Phase 5 — ML-ready exports + stimulus libraries.** Not started.
+
+The curated dataset (`quranData.json`) remains 8 verses / 53 readings / all `confidence: curated_sample`. Scholar verification (CONTRIBUTING.md) is the orthogonal track that promotes readings to `verified` and is independent of the corpus-breadth work above.
