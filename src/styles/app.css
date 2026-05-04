@@ -342,6 +342,42 @@ a:hover { text-decoration: underline; }
 }
 .tooltip__citations ul { margin: 0.25rem 0 0; padding-left: 1.2rem; }
 
+/* ----- Corpus Coranicum attestations (collapsed by default) ----- */
+.tooltip__cc {
+  margin: 0.5rem 0 0; padding-top: 0.5rem; border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+.tooltip__cc summary {
+  cursor: pointer; color: var(--accent); padding: 0.3rem 0;
+  list-style: revert;
+}
+.tooltip__cc[open] summary { margin-bottom: 0.3rem; }
+.tooltip__cc-note {
+  font-size: 0.78rem; color: var(--ink-soft); line-height: 1.45;
+  margin: 0.25rem 0 0.5rem;
+}
+.tooltip__cc-list {
+  list-style: none; padding: 0; margin: 0; max-height: 22rem; overflow-y: auto;
+  border: 1px solid var(--line); border-radius: 4px;
+}
+.tooltip__cc-form {
+  display: grid; grid-template-columns: 9rem 5rem 1fr; gap: 0.5rem;
+  padding: 0.4rem 0.6rem; border-top: 1px solid var(--line); align-items: baseline;
+}
+.tooltip__cc-form:first-child { border-top: 0; }
+.tooltip__cc-translit {
+  font-style: italic; font-weight: 600; color: var(--ink);
+}
+.tooltip__cc-count {
+  font-size: 0.75rem; color: var(--ink-soft); white-space: nowrap;
+}
+.tooltip__cc-readers {
+  font-size: 0.78rem; color: var(--ink-soft); line-height: 1.4;
+}
+.tooltip__cc-attribution {
+  margin: 0.5rem 0 0; font-size: 0.72rem; color: var(--ink-soft);
+}
+
 /* ----- Legend ----- */
 .legend {
   border: 1px solid var(--line); border-radius: var(--radius);

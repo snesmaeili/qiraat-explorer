@@ -50,6 +50,11 @@ describe('<VerseDisplay>', () => {
     expect(dialog).toHaveTextContent('يُخَٰدِعُونَ');
     expect(dialog).toHaveTextContent(/word-form/i);
     expect(dialog).toHaveTextContent(/Curated sample/i);
+    // CC attestations overlay (CC BY-SA 4.0, sourced from
+    // src/data/ccVariants.json) renders as a collapsible details element.
+    // Q 2:9 word 5 (يَخْدَعُونَ) has CC entries — assert the summary
+    // header is present.
+    expect(dialog).toHaveTextContent(/Corpus Coranicum attestations/i);
   });
 
   it('shows an empty-state when no ayah data is available', () => {
