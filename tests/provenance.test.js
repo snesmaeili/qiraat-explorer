@@ -107,12 +107,29 @@ describe('Provenance and Auditability', () => {
     expect(scriptText).toContain("replacementEligibility = 'eligible_source_id_replacement'");
   });
 
-  it('current sourceManifest unknown files do not permit replacement', () => {
+  it('current sourceManifest authority statuses are documented honestly', () => {
+    // After Phase 6 honest close: Tanzil is official_confirmed (full corpus,
+    // direct download from tanzil.net); KFGQPC files are downloaded_unverified
+    // (came from a GitHub mirror, not qurancomplex.gov.sa, and local hashes
+    // do not match KFGQPC's published package hashes — see notes fields).
+    // Only `official_confirmed` and `scholar_confirmed` permit replacement.
     const manifestPath = resolve(ROOT, 'src', 'data', 'sourceManifest.json');
     const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+    const ALLOWED = new Set([
+      'unknown',
+      'downloaded_unverified',
+      'local_fixture',
+      'official_confirmed',
+      'scholar_confirmed',
+    ]);
     for (const source of Object.values(manifest.sources)) {
-      expect(source.authorityStatus).toBe('unknown');
+      expect(ALLOWED.has(source.authorityStatus)).toBe(true);
     }
+    // The KFGQPC corpora must NOT be marked official_confirmed until a
+    // re-download from qurancomplex.gov.sa is verified against published
+    // package hashes — that is the current open Phase 6 work.
+    expect(manifest.sources['kfgqpc-warsh'].authorityStatus).not.toBe('official_confirmed');
+    expect(manifest.sources['kfgqpc-qalun'].authorityStatus).not.toBe('official_confirmed');
   });
 
   it('current quranData has manual_placeholder restored for unconfirmed source IDs', () => {
@@ -131,15 +148,21 @@ describe('Provenance and Auditability', () => {
     expect(hasReplacedSource).toBe(false); // All should be manual_placeholder or others
   });
 
-  it('source matching can still report exact matches without treating them as authoritative', () => {
+  it('source matching never marks an apply-allowed KFGQPC source as eligible while it is downloaded_unverified', () => {
+    // The applier's six guards (apply-source-matches.js) restrict the apply
+    // operation to sourceIds in {kfqpc-warsh, kfqpc-qalun}. While the local
+    // KFGQPC files remain `downloaded_unverified` (Phase 6 still open), the
+    // matcher MUST NOT mark any reading-against-KFGQPC exact match as
+    // eligible_source_id_replacement. Tanzil exact matches may legitimately
+    // be eligible because Tanzil is official_confirmed — but the applier
+    // ignores them because `tanzil` isn't in its allowlist.
     const reportPath = resolve(ROOT, 'reports', 'audit', 'source-match-report.json');
-    if (existsSync(reportPath)) {
-      const report = JSON.parse(readFileSync(reportPath, 'utf8'));
-      if (report.matches && report.matches.length > 0) {
-        const exactMatch = report.matches.find(m => m.status === 'exact_word_index_match');
-        if (exactMatch) {
-          expect(exactMatch.replacementEligibility).not.toBe('eligible_source_id_replacement');
-        }
+    if (!existsSync(reportPath)) return;
+    const report = JSON.parse(readFileSync(reportPath, 'utf8'));
+    const APPLY_ALLOWED = new Set(['kfqpc-warsh', 'kfqpc-qalun']);
+    for (const m of report.matches ?? []) {
+      if (m.status === 'exact_word_index_match' && APPLY_ALLOWED.has(m.sourceId)) {
+        expect(m.replacementEligibility).not.toBe('eligible_source_id_replacement');
       }
     }
   });

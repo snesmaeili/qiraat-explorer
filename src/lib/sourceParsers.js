@@ -216,12 +216,19 @@ export async function loadLocalSourceCorpus(manifestEntry, rootDir) {
     );
   }
 
-  // Honour expectedHash if the manifest pins one.
-  if (manifestEntry.expectedHash && manifestEntry.expectedHash !== fileHash) {
-    throw new Error(
-      'loadLocalSourceCorpus: ' + fullPath + ' hash ' + fileHash +
-        ' does not match expectedHash ' + manifestEntry.expectedHash,
-    );
+  // Honour expectedHash if the manifest pins one. Accept both the bare-hex
+  // form written by scripts/record-source-provenance.js and the explicit
+  // "sha256:<hex>" form, so either convention works.
+  if (manifestEntry.expectedHash) {
+    const expectedNormalised = manifestEntry.expectedHash.startsWith('sha256:')
+      ? manifestEntry.expectedHash
+      : 'sha256:' + manifestEntry.expectedHash;
+    if (expectedNormalised !== fileHash) {
+      throw new Error(
+        'loadLocalSourceCorpus: ' + fullPath + ' hash ' + fileHash +
+          ' does not match expectedHash ' + manifestEntry.expectedHash,
+      );
+    }
   }
 
   return {
