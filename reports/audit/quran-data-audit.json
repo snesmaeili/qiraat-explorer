@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T12:15:25.682Z",
+  "generatedAt": "2026-05-04T19:41:23.434Z",
   "datasetMeta": {
     "schemaVersion": "2.0.0",
     "purpose": "Curated qira'at variants for the Qira'at Explorer prototype. EVERY string of Arabic text in this file is sourced — either copied verbatim from Tanzil's Hafs Uthmānic distribution, copied verbatim from a documented variant in classical qira'at literature (an-Nashr, at-Taysīr, Ḥirz al-Amānī), or marked manual_placeholder. No Arabic text is AI-generated. See README.md → Sacred Text Integrity Policy.",
@@ -13,7 +13,7 @@
     "generated": false,
     "generationPolicy": "no-arabic-text-generation",
     "lastReviewed": null,
-    "lastInitialised": "2026-05-03T21:24:38.508Z"
+    "lastInitialised": "2026-05-04T19:39:23.208Z"
   },
   "summary": {
     "totalVerses": 8,

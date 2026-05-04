@@ -5,7 +5,7 @@
     "generated": false,
     "generationPolicy": "no-arabic-text-generation",
     "lastReviewed": null,
-    "lastInitialised": "2026-05-03T21:24:38.508Z"
+    "lastInitialised": "2026-05-04T19:39:23.208Z"
   },
   "records": [
     {
@@ -76,7 +76,7 @@
       "variantKey": "q1-4-w0-hafs-consonantal",
       "riwayah": "qalun",
       "readingText": "مَلِكِ",
-      "source": "kfqpc-qalun",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:9c6b7f21"
     },
@@ -100,7 +100,7 @@
       "variantKey": "q1-4-w0-hafs-consonantal",
       "riwayah": "warsh",
       "readingText": "مَلِكِ",
-      "source": "kfqpc-warsh",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:9c6b7f21"
     },
@@ -220,7 +220,7 @@
       "variantKey": "q2-9-w5-hafs-word-form",
       "riwayah": "qalun",
       "readingText": "يُخَٰدِعُونَ",
-      "source": "kfqpc-qalun",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:1ab67fad"
     },
@@ -244,7 +244,7 @@
       "variantKey": "q2-9-w5-hafs-word-form",
       "riwayah": "warsh",
       "readingText": "يُخَٰدِعُونَ",
-      "source": "kfqpc-warsh",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:1ab67fad"
     },
@@ -292,7 +292,7 @@
       "variantKey": "q2-10-w11-hafs-word-form",
       "riwayah": "qalun",
       "readingText": "يَكْذِبُونَ",
-      "source": "kfqpc-qalun",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:2371d0c5"
     },
@@ -316,7 +316,7 @@
       "variantKey": "q2-10-w11-hafs-word-form",
       "riwayah": "warsh",
       "readingText": "يَكْذِبُونَ",
-      "source": "kfqpc-warsh",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:2371d0c5"
     },
@@ -400,7 +400,7 @@
       "variantKey": "q2-132-w0-hafs-word-form",
       "riwayah": "qalun",
       "readingText": "وَأَوْصَىٰ",
-      "source": "kfqpc-qalun",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:4da24bae"
     },
@@ -424,7 +424,7 @@
       "variantKey": "q2-132-w0-hafs-word-form",
       "riwayah": "warsh",
       "readingText": "وَأَوْصَىٰ",
-      "source": "kfqpc-warsh",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:4da24bae"
     },
@@ -508,7 +508,7 @@
       "variantKey": "q3-146-w3-hafs-word-form",
       "riwayah": "qalun",
       "readingText": "قُتِلَ",
-      "source": "kfqpc-qalun",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:c19a3d64"
     },
@@ -532,7 +532,7 @@
       "variantKey": "q3-146-w3-hafs-word-form",
       "riwayah": "warsh",
       "readingText": "قُتِلَ",
-      "source": "kfqpc-warsh",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:c19a3d64"
     },
@@ -616,7 +616,7 @@
       "variantKey": "q5-6-w14-hafs-vocalization",
       "riwayah": "qalun",
       "readingText": "وَأَرْجُلَكُمْ",
-      "source": "kfqpc-qalun",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:2155d89f"
     },
@@ -640,7 +640,7 @@
       "variantKey": "q5-6-w14-hafs-vocalization",
       "riwayah": "warsh",
       "readingText": "وَأَرْجُلَكُمْ",
-      "source": "kfqpc-warsh",
+      "source": "manual_placeholder",
       "status": "unreviewed",
       "textHash": "fnv1a:2155d89f"
     }

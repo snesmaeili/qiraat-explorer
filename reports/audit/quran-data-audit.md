@@ -1,6 +1,6 @@
 # Qiraat Explorer — dataset audit report
 
-Generated: 2026-05-04T12:15:25.790Z
+Generated: 2026-05-04T19:41:23.450Z
 
 ## Dataset metadata
 - schemaVersion: `2.0.0`
@@ -10,7 +10,7 @@ Generated: 2026-05-04T12:15:25.790Z
 
 ## Ledger metadata
 - schemaVersion: `1.0.0`
-- lastInitialised: `2026-05-03T21:24:38.508Z`
+- lastInitialised: `2026-05-04T19:39:23.208Z`
 - lastReviewed: `—`
 
 ## Summary counts
