@@ -1,6 +1,6 @@
 # Qiraat Explorer — dataset audit report
 
-Generated: 2026-05-03T22:04:24.589Z
+Generated: 2026-05-04T12:15:25.790Z
 
 ## Dataset metadata
 - schemaVersion: `2.0.0`

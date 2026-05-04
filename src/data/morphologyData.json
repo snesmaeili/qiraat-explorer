@@ -1,0 +1,62 @@
+{
+  "1:4": [
+    {
+      "wordIndex": 0,
+      "qac": {
+        "root": "م ل ك",
+        "lemma": "مَالِك",
+        "pos": "N"
+      },
+      "talmon": {
+        "root": "م ل ك",
+        "lemma": "مَالِك",
+        "pos": "N"
+      },
+      "arabic": "مَٰلِكِ"
+    },
+    {
+      "wordIndex": 1,
+      "qac": {
+        "root": "ي و م",
+        "lemma": "يَوْم",
+        "pos": "N"
+      },
+      "talmon": {
+        "root": "ي و م",
+        "lemma": "يَوْم",
+        "pos": "N"
+      },
+      "arabic": "يَوْمِ"
+    },
+    {
+      "wordIndex": 2,
+      "qac": {
+        "root": "د ي ن",
+        "lemma": "دِين",
+        "pos": "N"
+      },
+      "talmon": {
+        "root": "د و ن",
+        "lemma": "دِين",
+        "pos": "N"
+      },
+      "arabic": "ٱلدِّينِ"
+    }
+  ],
+  "2:9": [
+    {
+      "wordIndex": 5,
+      "qac": {
+        "root": "خ د ع",
+        "lemma": "خَادَعَ",
+        "pos": "V"
+      },
+      "talmon": {
+        "root": "خ د ع",
+        "lemma": "خَدَعَ",
+        "pos": "V"
+      },
+      "arabic": "يَخْدَعُونَ"
+    }
+  ]
+}

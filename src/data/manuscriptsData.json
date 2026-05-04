@@ -1,0 +1,54 @@
+[
+  {
+    "id": "Parisino-petropolitanus",
+    "prose": "The Codex Parisino-petropolitanus is one of the oldest surviving manuscripts of the Quran. C-14 dating puts it at: 632 - 650 CE. It has impressive dimensions measuring approximately 33.0 x 24.0 cm. Image link: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Codex_Parisino-petropolitanus.jpg/300px-Codex_Parisino-petropolitanus.jpg",
+    "extracted": {
+      "c14": {
+        "start": 632,
+        "end": 650,
+        "center": 641
+      },
+      "dimensions": "33.0 x 24.0 cm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Codex_Parisino-petropolitanus.jpg/300px-Codex_Parisino-petropolitanus.jpg"
+    }
+  },
+  {
+    "id": "Birmingham Quran Manuscript",
+    "prose": "Held at the University of Birmingham, this fragment consists of two parchment leaves. 14C-dated to 568 to 645 CE. The physical dimensions are 34.3 x 25.8 cm. Link: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Birmingham_Quran_manuscript.jpg/300px-Birmingham_Quran_manuscript.jpg",
+    "extracted": {
+      "c14": {
+        "start": 568,
+        "end": 645,
+        "center": 607
+      },
+      "dimensions": "34.3 x 25.8 cm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Birmingham_Quran_manuscript.jpg/300px-Birmingham_Quran_manuscript.jpg"
+    }
+  },
+  {
+    "id": "Sanaa Manuscript",
+    "prose": "A palimpsest discovered in the Great Mosque of Sana'a. The lower text C-14 analysis yields a date of 578-669 CE. The manuscript pages are roughly 36 x 28 cm. Image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sanaa_manuscript.jpg/300px-Sanaa_manuscript.jpg",
+    "extracted": {
+      "c14": {
+        "start": 578,
+        "end": 669,
+        "center": 624
+      },
+      "dimensions": "36 x 28 cm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sanaa_manuscript.jpg/300px-Sanaa_manuscript.jpg"
+    }
+  },
+  {
+    "id": "Topkapi Manuscript",
+    "prose": "Housed in the Topkapi Palace Museum, Istanbul. Often attributed to Uthman, though C-14 dating suggests: 640 - 700 CE. Massive dimensions of 41 x 46 cm. No image available currently.",
+    "extracted": {
+      "c14": {
+        "start": 640,
+        "end": 700,
+        "center": 670
+      },
+      "dimensions": "41 x 46 cm",
+      "imageUrl": null
+    }
+  }
+]

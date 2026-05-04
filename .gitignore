@@ -4,6 +4,10 @@ dist
 *.log
 scripts/_raw/
 src/data/fullVariants.json
+# KFGQPC-derived browsing corpus. Regenerate locally with `npm run build:hafs-corpus`
+# from scripts/_raw/kfqpc-hafs.json. Excluded from version control because KFGQPC
+# license/authority status is `unknown` (see src/data/sourceManifest.json).
+src/data/hafsCorpusData.json
 reports/audit/backups/*.json
 public/fonts/*.ttf
 public/fonts/*.otf
