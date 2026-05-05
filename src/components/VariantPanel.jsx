@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { getSource } from '../lib/dataLoader.js';
 import { ccReadingsFor, ccTotalAttestations, CC_SOURCE } from '../lib/ccVariants.js';
-import { firstAvailableReciter, audioUrl, AUDIO_SOURCE } from '../lib/audio.js';
+import { firstAvailableReciter, audioUrlInfo, audioSourceFor } from '../lib/audio.js';
 
 const CATEGORY_LABEL = {
   vocalization: 'Vocalization',
@@ -153,7 +153,10 @@ function AudioButton({ riwayahId, surah, ayah }) {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef(null);
   const reciter = riwayahId ? firstAvailableReciter(riwayahId) : null;
-  const url = reciter && surah != null && ayah != null ? audioUrl(reciter, surah, ayah) : null;
+  const info = reciter && surah != null ? audioUrlInfo(reciter, surah, ayah) : null;
+  const url = info?.url ?? null;
+  const granularity = info?.granularity ?? null;
+  const sourceMeta = audioSourceFor(reciter);
 
   useEffect(() => {
     return () => {
@@ -170,7 +173,7 @@ function AudioButton({ riwayahId, surah, ayah }) {
         type="button"
         className="tooltip__audio-btn is-disabled"
         disabled
-        title={`Audio not available for riwāya '${riwayahId ?? '?'}' on EveryAyah`}
+        title={`Audio not available for riwāya '${riwayahId ?? '?'}' on the configured CDNs`}
         aria-label="Audio not available"
       >
         ♪
@@ -197,14 +200,27 @@ function AudioButton({ riwayahId, surah, ayah }) {
     }
   }
 
+  const bitrateNote = reciter.bitrate ? ` (${reciter.bitrate})` : '';
+  const granularityNote =
+    granularity === 'surah'
+      ? ` — surah-level audio: plays from the start of surah ${surah}, not just verse ${ayah}`
+      : '';
+  const title =
+    `Play ${reciter.name}${bitrateNote} — via ${sourceMeta.label}${granularityNote}`;
+
   return (
     <button
       type="button"
-      className={'tooltip__audio-btn ' + (playing ? 'is-playing' : '')}
+      className={
+        'tooltip__audio-btn ' +
+        (playing ? 'is-playing ' : '') +
+        (granularity === 'surah' ? 'is-surah-level' : '')
+      }
       onClick={toggle}
-      title={`Play ${reciter.name} (${reciter.bitrate}) — via ${AUDIO_SOURCE.label}`}
+      title={title}
       aria-label={`Play audio of ${reciter.name}`}
       data-src={url}
+      data-granularity={granularity}
     >
       {playing ? '◼' : '▶'}
     </button>

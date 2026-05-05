@@ -70,6 +70,9 @@ describe('<VerseDisplay>', () => {
     const srcs = enabledButtons.map((b) => b.getAttribute('data-src'));
     expect(srcs.some((s) => /everyayah\.com\/data\/Husary_128kbps/.test(s))).toBe(true);
     expect(srcs.some((s) => /everyayah\.com\/data\/warsh\//.test(s))).toBe(true);
+    // Granularity is reported on each enabled button.
+    const granularities = enabledButtons.map((b) => b.getAttribute('data-granularity'));
+    expect(granularities.every((g) => g === 'ayah' || g === 'surah')).toBe(true);
   });
 
   it('shows an empty-state when no ayah data is available', () => {

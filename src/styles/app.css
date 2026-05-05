@@ -411,6 +411,22 @@ a:hover { text-decoration: underline; }
   opacity: 0.35;
   cursor: not-allowed;
 }
+/* Surah-level audio (MP3Quran-backed Qālūn) — same shape but with a
+   subtle dotted border to signal that clicking will play more than the
+   single verse. The full caveat is in the button's title attribute. */
+.tooltip__audio-btn.is-surah-level {
+  border-style: dashed;
+}
+.tooltip__audio-btn.is-surah-level::after {
+  content: '+';
+  position: absolute;
+  margin-left: 1.05rem;
+  margin-top: -0.6rem;
+  font-size: 0.55rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.tooltip__audio-btn { position: relative; }
 
 /* ----- Legend ----- */
 .legend {

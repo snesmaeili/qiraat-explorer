@@ -1,22 +1,39 @@
 {
   "_meta": {
-    "schemaVersion": "1.0.0",
-    "source": "EveryAyah.com",
-    "sourceUrl": "https://everyayah.com/",
-    "recitationsIndex": "https://everyayah.com/recitations_ayat.html",
-    "license": "Each reciter's audio is hosted by EveryAyah under the original recording's license. EveryAyah aggregates publicly available recitations; consult https://everyayah.com/recitations_ayat.html for per-reciter terms. Attribution to the reciter and EveryAyah is required when redistributing.",
-    "urlTemplate": "https://everyayah.com/data/{slug}/{paddedSurah}{paddedAyah}.mp3",
-    "padding": "3-digit zero-padded surah followed immediately by 3-digit zero-padded ayah (e.g. Q 1:1 -> 001001.mp3)",
+    "schemaVersion": "1.1.0",
+    "schemaNote": "Each reciter has either an `everyayah` source (verse-level audio, slug-based) or an `mp3quran` source (surah-level audio, server-base URL). The `audioGranularity` field is `ayah` or `surah` accordingly. UI must render different affordances: ayah-level files are typically a few hundred KB and play exactly the verse; surah-level files are multi-MB and play from the start of the surah.",
+    "sources": {
+      "everyayah": {
+        "label": "EveryAyah.com",
+        "url": "https://everyayah.com/",
+        "recitationsIndex": "https://everyayah.com/recitations_ayat.html",
+        "license": "Each reciter's audio is hosted by EveryAyah under the original recording's license. EveryAyah aggregates publicly available recitations; consult https://everyayah.com/recitations_ayat.html for per-reciter terms. Attribution to the reciter and EveryAyah is required when redistributing.",
+        "urlTemplate": "https://everyayah.com/data/{slug}/{paddedSurah}{paddedAyah}.mp3",
+        "padding": "3-digit zero-padded surah followed immediately by 3-digit zero-padded ayah (e.g. Q 1:1 -> 001001.mp3)",
+        "audioGranularity": "ayah"
+      },
+      "mp3quran": {
+        "label": "MP3Quran.net",
+        "url": "https://www.mp3quran.net/eng",
+        "apiUrl": "https://mp3quran.net/api/v3/reciters?language=en",
+        "license": "Audio aggregated by MP3Quran.net under each reciter's original recording terms. Attribution required when redistributing. Free for personal use; commercial use requires per-reciter consultation.",
+        "urlTemplate": "{serverBase}{paddedSurah}.mp3",
+        "padding": "3-digit zero-padded surah only (one MP3 per surah; no per-verse files exist on this CDN).",
+        "audioGranularity": "surah",
+        "limitationNote": "Surah-level audio only. Clicking play loads a multi-MB file and plays from the start of the surah; the user must scrub to find a specific verse. UI must surface this limitation in the play button's tooltip."
+      }
+    },
     "verifiedAt": "2026-05-04",
-    "verifiedNote": "All slug paths in this file were probed via HTTP HEAD against everyayah.com on the verifiedAt date and returned HTTP 200 for the test fixture (Q 1:1).",
-    "noQalunReciter": "EveryAyah does not host any Qālūn ʿan Nāfiʿ reciter as of 2026-05-04. The variant panel renders 'audio not available' for the Qālūn row. QUL (qul.tarteel.ai/resources/recitation) hosts Ali al-Huthaify Qālūn but downloads are JS-rendered; that's documented as future-work in docs/research-vision.md."
+    "verifiedNote": "Every entry below has its server URL probed via HTTP HEAD against surahs 1, 2, 3, 5 (the four surahs covering the 8 curated verses) and returned HTTP 200."
   },
   "reciters": {
     "husary": {
       "id": "husary",
       "name": "Mahmoud Khalil al-Husary",
       "riwayah": "hafs",
+      "source": "everyayah",
       "slug": "Husary_128kbps",
+      "audioGranularity": "ayah",
       "bitrate": "128kbps",
       "preferred": true
     },
@@ -24,28 +41,36 @@
       "id": "alafasy",
       "name": "Mishary Rashid Alafasy",
       "riwayah": "hafs",
+      "source": "everyayah",
       "slug": "Alafasy_128kbps",
+      "audioGranularity": "ayah",
       "bitrate": "128kbps"
     },
     "maher": {
       "id": "maher",
       "name": "Maher al-Muaiqly",
       "riwayah": "hafs",
+      "source": "everyayah",
       "slug": "MaherAlMuaiqly128kbps",
+      "audioGranularity": "ayah",
       "bitrate": "128kbps"
     },
     "abdul-basit-murattal": {
       "id": "abdul-basit-murattal",
       "name": "Abdul Basit Abdul Samad (Murattal)",
       "riwayah": "hafs",
+      "source": "everyayah",
       "slug": "Abdul_Basit_Murattal_192kbps",
+      "audioGranularity": "ayah",
       "bitrate": "192kbps"
     },
     "abdul-basit-warsh": {
       "id": "abdul-basit-warsh",
       "name": "Abdul Basit Abdul Samad (Warsh)",
       "riwayah": "warsh",
+      "source": "everyayah",
       "slug": "warsh/warsh_Abdul_Basit_128kbps",
+      "audioGranularity": "ayah",
       "bitrate": "128kbps",
       "preferred": true
     },
@@ -53,15 +78,45 @@
       "id": "dosary-warsh",
       "name": "Ibrahim Al-Dosary (Warsh)",
       "riwayah": "warsh",
+      "source": "everyayah",
       "slug": "warsh/warsh_ibrahim_aldosary_128kbps",
+      "audioGranularity": "ayah",
       "bitrate": "128kbps"
     },
     "yassin-warsh": {
       "id": "yassin-warsh",
       "name": "Yassin Al-Jazaery (Warsh)",
       "riwayah": "warsh",
+      "source": "everyayah",
       "slug": "warsh/warsh_yassin_al_jazaery_64kbps",
+      "audioGranularity": "ayah",
       "bitrate": "64kbps"
+    },
+    "husary-qalun": {
+      "id": "husary-qalun",
+      "name": "Mahmoud Khalil al-Husary (Qālūn)",
+      "riwayah": "qalun",
+      "source": "mp3quran",
+      "serverBase": "https://server13.mp3quran.net/husr/Rewayat-Qalon-A-n-Nafi/",
+      "audioGranularity": "surah",
+      "preferred": true,
+      "note": "Same reciter as the EveryAyah Hafs entry; this is his Qālūn ʿan Nāfiʿ recording from MP3Quran. Surah-level audio only — clicking play loads the entire surah."
+    },
+    "akri-qalun": {
+      "id": "akri-qalun",
+      "name": "Marwan Alakri (Qālūn)",
+      "riwayah": "qalun",
+      "source": "mp3quran",
+      "serverBase": "https://server16.mp3quran.net/m_akri/Rewayat-Qalon-A-n-Nafi/",
+      "audioGranularity": "surah"
+    },
+    "sneineh-qalun": {
+      "id": "sneineh-qalun",
+      "name": "Muhammad Abu Sneina (Qālūn)",
+      "riwayah": "qalun",
+      "source": "mp3quran",
+      "serverBase": "https://server16.mp3quran.net/sneineh/Rewayat-Qalon-A-n-Nafi/",
+      "audioGranularity": "surah"
     }
   }
 }
